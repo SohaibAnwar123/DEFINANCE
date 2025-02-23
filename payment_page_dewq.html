@@ -1,0 +1,1152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <!-- navbar start  -->
+  <header class="nav_wrapper dewq_nav">
+    <div class="container">
+      <div class="nav_inner">
+        <div class="nav_left dewq_left">
+          <a href="#"> <img src="assets/img/dewq.svg" alt=""></a>
+        </div>
+        <div class="nav_right h-100">
+          <div class="right_inner w-100 h-100">
+            <div class="nav_icons m-0">
+              <div class="img_wrap">
+                <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/nav_add.svg"
+                    alt=""></a>
+              </div>
+              <div class="img_wrap">
+                <a href=""><img src="assets/img/nav_hat.svg" alt=""></a>
+              </div>
+              <div class="dropdown img_wrap">
+
+                <a id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><img
+                    src="assets/img/nav_notify.svg" alt=""></a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item header_sec flex_align" href="#">
+                      <h4>Notifications: <span>1 New</span></h4>
+                    </a></li>
+                  <li>
+                    <div class="wallet_detail">
+                      <p>
+                        You have <span>Unknown</span> Wallets that need to be identified.
+                        Visit your <span>wallet labels</span> now to update them.
+                      </p>
+                      <a href="" class="wallet_btn flex_align">Visit Wallet Labels</a>
+                    </div>
+                  </li>
+                  <div class="notify_arrow">
+                    <img src="assets/img/notify_arrow.svg" alt="">
+                  </div>
+                </ul>
+
+              </div>
+              <div class="img_wrap">
+                <a href="" data-bs-toggle="modal" data-bs-target="#ModalSetting"><img src="assets/img/nav_setting.svg"
+                    alt=""></a>
+              </div>
+            </div>
+            <div class="dewq_btnz">
+              <a href="DashboardExpiredBusiness.html" class="btn logout_btn dash_btn m-0">Go to Dashboard</a>
+              <a href="sign_up.html" class="btn logout_btn">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- navbar end  -->
+  <!-- hero section start  -->
+  <div class="bg_body bg_multipleAccount">
+    <section class="hero_wrapper payment2_main">
+      <div class="container">
+        <div class="crypto_account justify-content-center position-relative">
+          <div class="payment2_inner pt-0">
+            <h1 class="pt-2">
+              Monthly Reporting for 20 Wallets
+            </h1>
+            <p>
+              2.500/Mo.
+            </p>
+            <div class="btnz_wrap pt-md-4 pb-0 gap-md-3 gap-2">
+              <a href="" class="btn payment_order bewq_order bg_blue flex_align" data-bs-toggle="modal" data-bs-target="#modal_order_365">Pending Payments</a>
+              <a href="" class="btn payment_order bewq_order bg_white flex_align">Restart the Order</a>
+            </div>
+          </div>
+         
+        </div>
+        <div class="need_review">
+          <div class="head_bg">
+            <div class="review_head max_width_100">
+              <h5 class="max_width_100">Select</h5>
+              <h5 class="max_width_100 ps-xl-0 ps-lg-3 ps-0 w-100 text-md-start text-end">Year</h5>
+              <h6 class="max_width_100 text-xl-center text-lg-end text-md-center text-end p-0">Status</h6>
+              <h6 class="max_width_100 text-md-center text-end pe-1">See Detail</h6>
+            </div>
+          </div>
+          <div class="head_bg">
+            <div class="review_content sub_wrap">
+
+              <h4>2018</h4>
+              <a href="" class="btn paid flex_align">Paid</a>
+
+            </div>
+          </div>
+      
+          <!-- accoddin 2 start  -->
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <div class="review_content">
+                  <div class="form-group">
+                    <input type="checkbox" id="csv1">
+                    <label for="csv1"></label>
+                  </div>
+                  <h4>2018</h4>
+                  <a href="" class="btn n_subscribe flex_align">Not Subscribed</a>
+
+                </div>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="checkbox_wrapper">
+                    <div class="checkbox_inner">
+                      <div class="form-group">
+                        <input type="checkbox" id="Jan1">
+                        <label for="Jan1">Jan</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Feb1">
+                        <label for="Feb1">Feb</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Mar1">
+                        <label for="Mar1">Mar</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Apr1">
+                        <label for="Apr1">Apr</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="May1">
+                        <label for="May1">May</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Jun1">
+                        <label for="Jun1">Jun</label>
+                      </div>
+                    </div>
+                    <div class="checkbox_inner">
+                      <div class="form-group">
+                        <input type="checkbox" id="Jul1">
+                        <label for="Jul1">Jul</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Aug1">
+                        <label for="Aug1">Aug</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Sep1">
+                        <label for="Sep1">Sep</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Oct1">
+                        <label for="Oct1">Oct</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Nov1">
+                        <label for="Nov1">Nov</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Dec1">
+                        <label for="Dec1">Dec</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- accoddin 2 end  -->
+          <!-- accoddin 3 start  -->
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <div class="review_content">
+                  <div class="form-group">
+                    <input type="checkbox" id="csv2">
+                    <label for="csv2"></label>
+                  </div>
+                  <h4>2018</h4>
+                  <a href="" class="btn n_subscribe flex_align">Not Subscribed</a>
+
+                </div>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="checkbox_wrapper">
+                    <div class="checkbox_inner">
+                      <div class="form-group">
+                        <input type="checkbox" id="Jan2">
+                        <label for="Jan2">Jan</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Feb2">
+                        <label for="Feb2">Feb</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Mar2">
+                        <label for="Mar2">Mar</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Apr2">
+                        <label for="Apr2">Apr</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="May2">
+                        <label for="May2">May</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Jun2">
+                        <label for="Jun2">Jun</label>
+                      </div>
+                    </div>
+                    <div class="checkbox_inner">
+                      <div class="form-group">
+                        <input type="checkbox" id="Jul2">
+                        <label for="Jul2">Jul</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Aug2">
+                        <label for="Aug2">Aug</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Sep2">
+                        <label for="Sep2">Sep</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Oct2">
+                        <label for="Oct2">Oct</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Nov2">
+                        <label for="Nov2">Nov</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Dec2">
+                        <label for="Dec2">Dec</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- accoddin 3 end  -->
+          <!-- accoddin 4 start  -->
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <div class="review_content">
+                  <div class="form-group">
+                    <input type="checkbox" id="csv3">
+                    <label for="csv3"></label>
+                  </div>
+                  <h4>2018</h4>
+                  <a href="" class="btn n_subscribe flex_align">Not Subscribed</a>
+
+                </div>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="checkbox_wrapper">
+                    <div class="checkbox_inner">
+                      <div class="form-group">
+                        <input type="checkbox" id="Jan3">
+                        <label for="Jan3">Jan</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Feb3">
+                        <label for="Feb3">Feb</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Mar3">
+                        <label for="Mar3">Mar</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Apr3">
+                        <label for="Apr3">Apr</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="May3">
+                        <label for="May3">May</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Jun3">
+                        <label for="Jun3">Jun</l3bel>
+                      </div>
+                    </div>
+                    <div class="checkbox_inner">
+                      <div class="form-group">
+                        <input type="checkbox" id="Jul3">
+                        <label for="Jul3">Jul</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Aug3">
+                        <label for="Aug3">Aug</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Sep3">
+                        <label for="Sep3">Sep</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Oct3">
+                        <label for="Oct3">Oct</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Nov3">
+                        <label for="Nov3">Nov</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Dec3">
+                        <label for="Dec3">Dec</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- accoddin 4 end  -->
+          <!-- accoddin 5 start  -->
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <div class="review_content">
+                  <div class="form-group">
+                    <input type="checkbox" id="csv4">
+                    <label for="csv4"></label>
+                  </div>
+                  <h4>2018</h4>
+                  <a href="" class="btn n_subscribe flex_align">Not Subscribed</a>
+
+                </div>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="checkbox_wrapper">
+                    <div class="checkbox_inner">
+                      <div class="form-group">
+                        <input type="checkbox" id="Jan4">
+                        <label for="Jan4">Jan</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Feb4">
+                        <label for="Feb4">Feb</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Mar4">
+                        <label for="Mar4">Mar</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Apr4">
+                        <label for="Apr4">Apr</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="May4">
+                        <label for="May4">May</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Jun4">
+                        <label for="Jun4">Jun</l3bel>
+                      </div>
+                    </div>
+                    <div class="checkbox_inner">
+                      <div class="form-group">
+                        <input type="checkbox" id="Jul4">
+                        <label for="Jul4">Jul</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Aug4">
+                        <label for="Aug4">Aug</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Sep4">
+                        <label for="Sep4">Sep</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Oct4">
+                        <label for="Oct4">Oct</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Nov4">
+                        <label for="Nov4">Nov</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Dec4">
+                        <label for="Dec4">Dec</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- accoddin 5 end  -->
+          <!-- accoddin 6 start  -->
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSeven">
+                <div class="review_content">
+                  <div class="form-group">
+                    <input type="checkbox" id="csv5">
+                    <label for="csv5"></label>
+                  </div>
+                  <h4>2018</h4>
+                  <a href="" class="btn n_subscribe flex_align">Not Subscribed</a>
+
+                </div>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+
+                </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="checkbox_wrapper">
+                    <div class="checkbox_inner">
+                      <div class="form-group">
+                        <input type="checkbox" id="Jan5">
+                        <label for="Jan5">Jan</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Feb5">
+                        <label for="Feb5">Feb</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Mar5">
+                        <label for="Mar5">Mar</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Apr5">
+                        <label for="Apr5">Apr</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="May5">
+                        <label for="May5">May</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Jun5">
+                        <label for="Jun5">Jun</l3bel>
+                      </div>
+                    </div>
+                    <div class="checkbox_inner">
+                      <div class="form-group">
+                        <input type="checkbox" id="Jul4">
+                        <label for="Jul4">Jul</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Aug5">
+                        <label for="Aug5">Aug</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Sep5">
+                        <label for="Sep5">Sep</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Oct5">
+                        <label for="Oct5">Oct</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Nov5">
+                        <label for="Nov5">Nov</label>
+                      </div>
+                      <div class="form-group">
+                        <input type="checkbox" id="Dec5">
+                        <label for="Dec5">Dec</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- accoddin 6 end  -->
+        </div>
+      </div>
+    </section>
+    <!-- hero section end  -->
+    <!-- total payment section start  -->
+    <section class="total_payment">
+      <div class="container">
+        <div class="payment_inner">
+          <div class="payment_left">
+            <h1>
+              Total: $5.000
+            </h1>
+            <h3>
+              Select Currency:
+            </h3>
+            <div class="drop_wrap">
+              <select class="form-select custom_select" aria-label="Default select example">
+
+                <option selected>CLU</option>
+                <option value="RocketUSD">RocketUSD</option>
+                <option value="HOGE">HOGE</option>
+                <option value="UNI">UNI</option>
+              </select>
+            </div>
+          </div>
+          <div class="payment_right">
+            <h1>
+              Token Total: <span>8,945,327.108</span>
+            </h1>
+            <a href="" class="btn flex_align send_payment" data-bs-toggle="modal"
+              data-bs-target="#modal_order_detail">Send Payment</a>
+            <a href="" class="btn flex_align send_payment backgrnd_clr_white mt-xl-5 mt-md-4 mt-2">Send a New Payment</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- total payment section end  -->
+    <div class="defi_img defi_manage defi_dewq">
+      <div class="container">
+        <div class="img_wrap">
+          <img src="assets/img/dewq.svg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <!-- footer start  -->
+    <footer class="footer_wrapper footer_manage">
+      <div class="container">
+        <div class="footer_inner">
+          <ul>
+            <li>TERMS AND CONDITIONS </li>
+            <li>PRIVACY POLICY</li>
+            <li> STATEMENT TO CONSUMERS OF DEWQ FINANCE DATA AND SERVICES</li>
+          </ul>
+          <div class="social_icons">
+            <div class="img_wrap">
+              <a href=""><img src="assets/img/linkedin.svg" alt=""></a>
+            </div>
+            <div class="img_wrap">
+              <a href=""><img src="assets/img/twitter.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- footer end  -->
+  <!-- modal add acount start -->
+  <!-- Modal -->
+  <section class="modal_add_user">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img src="assets/img/X.svg" alt="" data-bs-dismiss="modal" aria-label="Close">
+          </div>
+          <div class="modal-body">
+            <h2>
+              Add an User to Your Account
+            </h2>
+            <div class="input_wrap">
+              <div class="user_img">
+                <img src="assets/img/view_user.svg" alt="">
+              </div>
+              <label for="" data-bs-toggle="modal" data-bs-target="#exampleModal1">View Users</label>
+              <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal1"> <input type="text"
+                  class="form-control"></a>
+              <div class="right_arrow">
+                <img src="assets/img/right_arrow.svg" alt="">
+              </div>
+            </div>
+            <div class="input_wrap">
+              <div class="user_img">
+                <img src="assets/img/add_user.svg" alt="">
+              </div>
+              <label for="" data-bs-toggle="modal" data-bs-target="#add_user2">Add Users</label>
+              <a href="" data-bs-toggle="modal" data-bs-target="#add_user2"><input type="text" class="form-control"></a>
+              <div class="right_arrow">
+                <img src="assets/img/right_arrow.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- modal add acount end -->
+  <!-- modal add acount2 start -->
+  <!-- Modal -->
+  <section class="modal_add_user2">
+    <div class="modal fade" id="add_user2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-between">
+            <a href="" data-bs-toggle="modal" data-bs-dismiss="modal"> <img src="assets/img/left_arrow.svg" alt=""></a>
+            <img src="assets/img/X.svg" alt="" data-bs-dismiss="modal" aria-label="Close">
+          </div>
+          <div class="modal-body">
+            <h2>
+              Add Users
+            </h2>
+            <div class="input_wrap">
+              <label for="">Username</label>
+              <a> <input type="text" class="form-control" placeholder="New Username"></a>
+            </div>
+            <div class="input_wrap">
+              <label for="">Email</label>
+              <a><input type="text" class="form-control" placeholder="Email"></a>
+            </div>
+            <div class="input_wrap">
+              <label for="">Account Type</label>
+              <div class="dropdown">
+                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                  aria-expanded="false">Select Account Type<img src="assets/img/drop_down.svg" alt=""
+                    class="rotate"></a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Super Administrator</a></li>
+                  <li><a class="dropdown-item" href="#">Site Admin</a></li>
+                  <li><a class="dropdown-item" href="#">Business Owner</a></li>
+                  <li><a class="dropdown-item" href="#">Business Admin</a></li>
+                </ul>
+              </div>
+
+            </div>
+            <a class="btn confirm_btn flex_align pushme" id="foo">Confirm</a>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- modal add acount2 end -->
+  <!-- modal view  user start -->
+  <section class="modal_view_user">
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a href="" data-bs-toggle="modal" data-bs-dismiss="modal"> <img src="assets/img/left_arrow.svg" alt=""></a>
+            <img src="assets/img/X.svg" alt="" data-bs-dismiss="modal" aria-label="Close">
+          </div>
+          <div class="modal-body">
+            <h2>
+              View Users
+            </h2>
+            <div class="user_main">
+              <div class="user_inner">
+                <h4>
+                  Super Administrator
+                </h4>
+                <div class="user_name border_bg">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+                <div class="user_name">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="user_inner">
+                <h4>
+                  Contractor
+                </h4>
+                <div class="user_name border_bg">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+                <div class="user_name">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="user_inner">
+                <h4>
+                  Site Admin
+                </h4>
+                <div class="user_name border_bg">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+                <div class="user_name">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="user_inner">
+                <h4>
+                  Business Owner
+                </h4>
+                <div class="user_name border_bg">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+                <div class="user_name">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="user_inner">
+                <h4>
+                  Business Admin
+                </h4>
+                <div class="user_name border_bg">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+                <div class="user_name">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="user_inner">
+                <h4>
+                  Personal
+                </h4>
+                <div class="user_name border_bg">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+                <div class="user_name">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- modal view  user end -->
+  <!-- delete modal start  -->
+  <section class="modal_delete">
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img src="assets/img/X_black.svg" alt="" data-bs-dismiss="modal" aria-label="Close">
+          </div>
+          <div class="modal-body">
+            <h2>
+              Remove User
+            </h2>
+            <p>
+              Are you sure you want to remove <span>John Doe?</span>
+              By doing this, this person won’t have access to the account anymore
+            </p>
+            <div class="btn_wrap">
+              <a href="" class="btn cancel_btn flex_align">Cancel</a>
+              <a href="" class="btn confirm_btn flex_align">Confirm</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- delete modal end  -->
+  <!-- setting modal start  -->
+  <section class="modal_setting">
+    <div class="modal fade" id="ModalSetting" tabindex="-1" aria-labelledby="ModalSetting" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img src="assets/img/X.svg" alt="" data-bs-dismiss="modal" aria-label="Close">
+          </div>
+          <div class="modal-body">
+            <h2>
+              Account Settings
+            </h2>
+            <div class="input_wrap">
+              <div class="user_img">
+                <img src="assets/img/update_user.svg" alt="">
+              </div>
+              <label for="" data-bs-toggle="modal" data-bs-target="#UpdateName">Update Account Nickname</label>
+              <a href="" data-bs-toggle="modal" data-bs-target="#UpdateName"> <input type="text"
+                  class="form-control"></a>
+              <div class="right_arrow">
+                <img src="assets/img/right_arrow.svg" alt="">
+              </div>
+            </div>
+            <div class="input_wrap">
+              <div class="user_img">
+                <img src="assets/img/email.svg" alt="">
+              </div>
+              <label for="" data-bs-toggle="modal" data-bs-target="#UpdateEmail">Update Email</label>
+              <a href="" data-bs-toggle="modal" data-bs-target="#UpdateEmail"><input type="email"
+                  class="form-control"></a>
+              <div class="right_arrow">
+                <img src="assets/img/right_arrow.svg" alt="">
+              </div>
+            </div>
+            <div class="input_wrap">
+              <div class="user_img">
+                <img src="assets/img/change_pass.svg" alt="">
+              </div>
+              <label for="" data-bs-toggle="modal" data-bs-target="#ChangePassword">Change Password</label>
+              <a href="" data-bs-toggle="modal" data-bs-target="#ChangePassword"><input type="password"
+                  class="form-control"></a>
+              <div class="right_arrow">
+                <img src="assets/img/right_arrow.svg" alt="">
+              </div>
+            </div>
+            <div class="input_wrap">
+              <div class="user_img">
+                <img src="assets/img/NFT.svg" alt="">
+              </div>
+              <label for="">NFT Membership Confirmation</label>
+              <a href=""><input type="text" class="form-control"></a>
+              <div class="coming_soon">
+                <p>
+                  (Coming Soon)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- setting modal end  -->
+  <!-- modal update_name start -->
+  <!-- Modal -->
+  <section class="update_name">
+    <div class="modal fade" id="UpdateName" tabindex="-1" aria-labelledby="UpdateName" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-start">
+            <a href="" data-bs-toggle="modal" data-bs-dismiss="modal"> <img src="assets/img/left_arrow.svg" alt=""></a>
+          </div>
+          <div class="modal-body">
+            <h2>
+              Account Settings
+            </h2>
+            <div class="input_wrap">
+              <label for="">Update Account Nickname</label>
+              <a href=""> <input type="text" class="form-control" placeholder="Enter Your New Nickname"></a>
+            </div>
+            <a href="" class="btn confirm_btn flex_align">Confirm</a>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- modal update_name end -->
+  <!-- modal update_email start -->
+  <!-- Modal -->
+  <section class="update_name">
+    <div class="modal fade" id="UpdateEmail" tabindex="-1" aria-labelledby="UpdateEmail" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-start">
+            <a href="" data-bs-toggle="modal" data-bs-dismiss="modal"> <img src="assets/img/left_arrow.svg" alt=""></a>
+          </div>
+          <div class="modal-body">
+            <h2>
+              Account Settings
+            </h2>
+            <div class="input_wrap">
+              <label for="">Update Account Email</label>
+              <a href=""> <input type="email" class="form-control" placeholder="Enter your new email"></a>
+            </div>
+            <a href="" class="btn confirm_btn flex_align">Confirm</a>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- modal update_email end -->
+  <!-- modal change_password start -->
+  <!-- Modal -->
+  <section class="update_name">
+    <div class="modal fade" id="ChangePassword" tabindex="-1" aria-labelledby="ChangePassword" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-start">
+            <a href="" data-bs-toggle="modal" data-bs-dismiss="modal"> <img src="assets/img/left_arrow.svg" alt=""></a>
+          </div>
+          <div class="modal-body">
+            <h2>
+              Account Settings
+            </h2>
+            <div class="input_wrap">
+              <label for="">Change Password</label>
+              <a href=""> <input type="password" class="form-control" placeholder="Enter your new password"></a>
+            </div>
+            <div class="input_wrap mt-md-4">
+              <a href=""> <input type="password" class="form-control" placeholder="Confirm Password"></a>
+            </div>
+            <a href="" class="btn confirm_btn flex_align">Confirm</a>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- modal change_password end -->
+  <!-- modal modal_order_detail start -->
+  <!-- Modal -->
+  <section class="modal_order_detail">
+    <div class="modal fade" id="modal_order_detail" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-between">
+            <a>
+              <div class="img_wrap">
+                <img src="assets/img/nav_logo.svg" alt="">
+              </div>
+            </a>
+            <img src="assets/img/X.svg" alt="" data-bs-dismiss="modal" aria-label="Close">
+          </div>
+          <div class="modal-body pb-md-4">
+            <h2 class="pb-0">
+              Order Details
+            </h2>
+            <p class="order_detail">You are making a payment for:
+              June 2022, May 2021, December 2021 [...]</p>
+
+            <div class="report_inner order_inner">
+
+              <div class="input_wrap">
+                <label for="">Send to Address:</label>
+                <div class="input_calender">
+                  <p>
+                    0x22f3806ap
+                  </p>
+                  <img src="assets/img/Doc.svg" alt="">
+                </div>
+              </div>
+              <div class="input_wrap">
+                <label for="">Amount:</label>
+                <div class="input_calender">
+                  <p>
+                    8,945,327.108
+                  </p>
+                  <img src="assets/img/Doc.svg" alt="">
+                </div>
+              </div>
+
+            </div>
+            <p class="order_detail order__detail">To complete the order a valid payment must be sent by: [Time]</p>
+            <div class="order_btn">
+              <a class="btn confirm_btn flex_align mt-0" data-bs-toggle="modal"
+                data-bs-target="#modal_payment_sent">Payment Sent</a>
+              <a class="btn confirm_btn flex_align mt-0 cancel_btn">Cancel Order</a>
+            </div>
+            <p class="order_detail order__detail">*To confirm that you have sent payment, please click the payment sent
+              button once complete.</p>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- modal modal_order_detail end -->
+
+  <!-- modal modal_payment_sent start -->
+  <!-- Modal -->
+  <section class="modal_payment_sent">
+    <div class="modal fade" id="modal_payment_sent" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header payment_head justify-content-between">
+            <a>
+              <div class="img_wrap">
+                <img src="assets/img/nav_logo.svg" alt="">
+              </div>
+            </a>
+            <img src="assets/img/X.svg" alt="" data-bs-dismiss="modal" aria-label="Close">
+          </div>
+          <div class="modal-body">
+            <div class="img_wrap text-center my-md-5">
+              <img src="assets/img/success.svg" alt="">
+            </div>
+            <h2>
+              Success!
+            </h2>
+            <h6>
+              You successfully paid for [Years]
+            </h6>
+            <a href="" class="btn flex_align go_dash">Go to Dashboard</a>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- modal modal_payment_sent end -->
+
+
+
+  <!-- modal modal_personal_wallet start -->
+  <!-- Modal -->
+  <section class="modal_personal_wallet">
+    <div class="modal fade" id="modal_personal_wallet" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-between">
+            <a>
+              <div class="img_wrap">
+                <img src="assets/img/nav_logo.svg" alt="">
+              </div>
+            </a>
+            <img src="assets/img/X.svg" alt="" data-bs-dismiss="modal" aria-label="Close">
+          </div>
+          <div class="modal-body">
+            <h2>
+              Add a Personal Wallet
+            </h2>
+            <h6>
+              Fill out the following fields to add your personal wallet
+            </h6>
+            <div class="wallet_inner">
+              <div class="input_wrap">
+                <label for="">Wallet Address</label>
+                <a> <input type="text" class="form-control" placeholder="Enter Wallet Address"></a>
+              </div>
+              <div class="input_wrap">
+                <label for="">Wallet Name</label>
+                <a> <input type="text" class="form-control" placeholder="Enter Wallet Name"></a>
+              </div>
+            </div>
+            <div class="text_area">
+              <label for="">Description (Optional)</label>
+              <textarea name="" id="" class="form-control" placeholder="Add a description..."></textarea>
+            </div>
+            <a class="btn confirm_btn flex_align">Submit</a>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- modal modal_personal_wallet end -->
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  <!-- <img src="assets/img/tick.svg" alt=""> -->
+</body>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.month_focus').click(function () {
+      $(this).toggleClass('highlighted');
+    });
+  });
+</script>
+<script>
+  // $('#showLayers').click(function() {
+  //   $(this).toggleClass('rotate');
+  // });
+
+  // $(".rotate").click(function () {
+  //     // $(this).toggleClass("down");
+  // });
+
+  $(".custom_select").click(function () {
+    $(this).toggleClass('customselect__open');
+  });
+</script>
+
+</html>

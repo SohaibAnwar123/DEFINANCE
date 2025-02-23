@@ -1,0 +1,2009 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <!-- navbar start  -->
+  <header class="nav_wrapper">
+    <div class="container">
+      <div class="nav_inner">
+        <div class="nav_left">
+          <a href="#"> <img src="assets/img/nav_logo.svg" alt=""></a>
+        </div>
+        <div class="nav_right">
+          <div class="right_inner">
+            <div class="nav_icons">
+              <div class="img_wrap">
+                <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/nav_add.svg"
+                    alt=""></a>
+              </div>
+              <div class="position-relative w-100">
+                <div class="img_wrap tool_icon" id="tool_drop">
+                  <a><img src="assets/img/tool.svg" alt="" class=""></a>
+                </div>
+                <ul class="ul_open" id="ul_drop">
+                  <li class="m-0"><a href=""><img src="assets/img/chart.svg" alt=""></a></li>
+                  <li><a href=""><img src="assets/img/calender.svg" alt=""></a></li>
+                  <li><a href=""><img src="assets/img/wallet.svg" alt=""></a></li>
+                  <li class="popover1"><a class="popover__trigger">
+                      <img src="assets/img/speaker.svg" alt="">
+                    </a>
+                    <ul class="popover__menu">
+                      <li class="popover__menu-item"><button>Coming Soon</button></li>
+                    </ul>
+                  </li>
+                  <li class="popover1 m-0">
+                    <a class="popover__trigger"><img src="assets/img/whale-tail.svg" alt="">
+                    </a>
+                    <ul class="popover__menu whale_poper">
+                      <li class="popover__menu-item"><button>Coming Soon</button></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="img_wrap">
+                <a href=""><img src="assets/img/nav_hat.svg" alt=""></a>
+              </div>
+              <div class="dropdown img_wrap">
+
+                <a id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><img
+                    src="assets/img/nav_notify.svg" alt=""></a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item header_sec flex_align" href="#">
+                      <h4>Notifications: <span>1 New</span></h4>
+                    </a></li>
+                  <li>
+                    <div class="wallet_detail">
+                      <p>
+                        You have <span>Unknown</span> Wallets that need to be identified.
+                        Visit your <span>wallet labels</span> now to update them.
+                      </p>
+                      <a href="" class="wallet_btn flex_align">Visit Wallet Labels</a>
+                    </div>
+                  </li>
+                  <div class="notify_arrow">
+                    <img src="assets/img/notify_arrow.svg" alt="">
+                  </div>
+                </ul>
+
+              </div>
+              <div class="img_wrap">
+                <a href="" data-bs-toggle="modal" data-bs-target="#ModalSetting"><img src="assets/img/nav_setting.svg"
+                    alt=""></a>
+              </div>
+              <div class="img_wrap">
+                <a href="multiple_accounts.html"><img src="assets/img/account_change.svg"
+                    alt=""></a>
+              </div>
+            </div>
+            <a href="sign_up.html" class="btn logout_btn">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- navbar end  -->
+  <!-- hero section start  -->
+  <div class="bg_body bg_multipleAccount">
+    <section class="hero_wrapper">
+      <div class="container">
+        <div class="crypto_account">
+          <div class="crypto_left">
+            <h2>
+              Hi again, John Doe
+            </h2>
+            <div class="active_sub">
+              <div class="add_time">
+                <h4>
+                  Subscription: <span>Active</span>
+                </h4>
+
+                <a href="" class="time_btn" data-bs-toggle="modal" data-bs-target="#modal_order_detail"><img src="assets/img/add_time.svg" alt="">Add Time</a>
+              </div>
+
+              <div class="add_time">
+                <p>
+                  Days Left: <span>###</span>
+                </p>
+                <p>
+                  Expires on <span>##</span><span>/</span><span>##</span><span>/</span><span>####</span>
+                </p>
+              </div>
+            </div>
+            <h1>
+              Total Balance: 500$
+            </h1>
+          </div>
+          <div class="crypto_right">
+            <div class="crypto_btn monthly">
+              <a class="flex_align" data-bs-toggle="modal" data-bs-target="#modal_monthly_report"><img
+                  src="assets/img/calender.svg" alt="">
+                Monthly Report</a>
+            </div>
+            <div class="crypto_btn wallet">
+              <a class="flex_align"><img src="assets/img/wallet.svg" alt="">
+                Manage Wallet Labels</a>
+            </div>
+            <div class="crypto_btn personal">
+              <a class="flex_align" data-bs-toggle="modal" data-bs-target="#modal_personal_wallet"><img
+                  src="assets/img/plus.svg" alt="">
+                Add a PersonalWallet</a>
+            </div>
+          </div>
+        </div>
+        <!-- wallet balance section start -->
+        <section class="wallet_balance">
+
+          <div class="wallet_main dash_main">
+            <div class="wallet_header">
+              <div class="wallet_title">
+                <h3>
+                  Wallet
+                </h3>
+                <img src="assets/img/top_down.svg" alt="">
+              </div>
+              <div class="wallet_title">
+                <h3>
+                  Available Balance
+                </h3>
+                <img src="assets/img/top_down.svg" alt="">
+              </div>
+              <div class="wallet_title">
+                <h3>
+                  Cost Basis
+                </h3>
+                <img src="assets/img/top_down.svg" alt="">
+              </div>
+            </div>
+            <!-- accordin main start  -->
+            <div class="wallet_content dash_content">
+              <div class="accordion" id="accordionExample">
+                <!-- accoddin 1 start  -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <div class="accordion_head">
+                        <div class="crypto_img d-flex align-items-center gap-2">
+                          <img src="assets/img/fox.svg" alt="">
+                          <h3>
+                            Metamask
+                          </h3>
+                        </div>
+                        <p>
+                          100,48
+                        </p>
+                        <p>
+                          100,48
+                        </p>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample" style="">
+                    <div class="accordion-body">
+                      <!-- accoddin 1-1 start  -->
+                      <div class="accordion1" id="accordionExample1">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo_1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseTwo_1" aria-expanded="false" aria-controls="collapseTwo_1">
+                              <div class="accordion_head ps-md-4 py-md-2">
+                                <div class="crypto_img d-flex align-items-center gap-2">
+                                  <img src="assets/img/bnb.svg" alt="">
+                                  <h3>
+                                    Metamask
+                                  </h3>
+                                </div>
+                                <p>
+                                  100,48
+                                </p>
+                                <p>
+                                  100,48
+                                </p>
+                              </div>
+                            </button>
+                          </h2>
+                          <div id="collapseTwo_1" class="accordion1-collapse collapse" aria-labelledby="headingTwo_1"
+                            data-bs-parent="#accordionExample1" style="">
+                            <div class="accordion-body">
+                              <!-- table here bnn -->
+                              <div class="table_wrap">
+                                <table class="table">
+                                  <thead>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">
+                                        <div class="crypto_img d-flex align-items-center">
+                                          <img src="assets/img/bnb.svg" alt="">
+                                          <h3>
+                                            BNB
+                                 
+                                          </h3>
+                                        </div>
+                                      </th>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            74,48
+                                          </h3>
+                                          <p>
+                                            Available Balance
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            74,48
+                                
+                                          </h3>
+                                          <p>
+                                            Cost Basis
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            74,48
+                                           
+                                          </h3>
+                                          <p>
+                                            Tokens
+                                          </p>
+                                        </div>
+
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">
+                                        <div class="crypto_img d-flex align-items-center">
+                                          <img src="assets/img/pink_crypto.svg" alt="">
+                                          <h3>
+                                            CLU
+                                          </h3>
+                                        </div>
+                                      </th>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Available Balance
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Cost Basis
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Tokens
+                                          </p>
+                                        </div>
+
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">
+                                        <div class="crypto_img d-flex align-items-center">
+                                          <img src="assets/img/pink_crypto.svg" alt="">
+                                          <h3>
+                                            CLU
+                                          </h3>
+                                        </div>
+                                      </th>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Available Balance
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Cost Basis
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Tokens
+                                          </p>
+                                        </div>
+
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo_2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseTwo_2" aria-expanded="false" aria-controls="collapseTwo_2">
+                              <div class="accordion_head ps-md-4 py-md-2">
+                                <div class="crypto_img d-flex align-items-center gap-2">
+                                  <img src="assets/img/eth.svg" alt="">
+                                  <h3>
+                                    Metamask
+                                  </h3>
+                                </div>
+                                <p>
+                                  100,48
+                                </p>
+                                <p>
+                                  100,48
+                                </p>
+                              </div>
+                            </button>
+                          </h2>
+                          <div id="collapseTwo_2" class="accordion1-collapse collapse" aria-labelledby="headingTwo_2"
+                            data-bs-parent="#accordionExample1" style="">
+                            <div class="accordion-body">
+                              <!-- table here  eth-->
+                              <div class="table_wrap">
+                                <table class="table">
+                                  <thead>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">
+                                        <div class="crypto_img d-flex align-items-center">
+                                          <img src="assets/img/eth.svg" alt="">
+                                          <h3>
+                                            ETH
+                                          </h3>
+                                        </div>
+                                      </th>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Available Balance
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Cost Basis
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Tokens
+                                          </p>
+                                        </div>
+
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">
+                                        <div class="crypto_img d-flex align-items-center">
+                                          <img src="assets/img/hoge.svg" alt="">
+                                          <h3>
+                                            HOGE
+                                          </h3>
+                                        </div>
+                                      </th>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Available Balance
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Cost Basis
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Tokens
+                                          </p>
+                                        </div>
+
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">
+                                        <div class="crypto_img d-flex align-items-center">
+                                          <img src="assets/img/uni.svg" alt="">
+                                          <h3>
+                                            UNI
+                                          </h3>
+                                        </div>
+                                      </th>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Available Balance
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Cost Basis
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Tokens
+                                          </p>
+                                        </div>
+
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- accoddin 1-1 end  -->
+                    </div>
+                  </div>
+                </div>
+                <!-- accoddin 1 end  -->
+                <!-- accoddin 2 start  -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <div class="accordion_head">
+                        <div class="crypto_img d-flex align-items-center gap-2">
+                          <img src="assets/img/blue_circle.svg" alt="">
+                          <h3>
+                            Metamask
+                          </h3>
+                        </div>
+                        <p>
+                          100,48
+                        </p>
+                        <p>
+                          100,48
+                        </p>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="accordion1" id="accordionExample1">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree_1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseThree_1" aria-expanded="false" aria-controls="collapseThree_1">
+                              <div class="accordion_head ps-md-4 py-md-2">
+                                <div class="crypto_img d-flex align-items-center gap-2">
+                                  <img src="assets/img/bnb.svg" alt="">
+                                  <h3>
+                                    Metamask
+                                  </h3>
+                                </div>
+                                <p>
+                                  100,48
+                                </p>
+                                <p>
+                                  100,48
+                                </p>
+                              </div>
+                            </button>
+                          </h2>
+                          <div id="collapseThree_1" class="accordion1-collapse collapse"
+                            aria-labelledby="headingThree_1" data-bs-parent="#accordionExample1">
+                            <div class="accordion-body">
+                              <!-- table here bnn -->
+                              <div class="table_wrap">
+                                <table class="table">
+                                  <thead>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">
+                                        <div class="crypto_img d-flex align-items-center">
+                                          <img src="assets/img/bnb.svg" alt="">
+                                          <h3>
+                                            BNB
+                                          </h3>
+                                        </div>
+                                      </th>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            74,48
+                                          </h3>
+                                          <p>
+                                            Available Balance
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            74,48
+                                          </h3>
+                                          <p>
+                                            Cost Basis
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            74,48
+                                          </h3>
+                                          <p>
+                                            Tokens
+                                          </p>
+                                        </div>
+
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">
+                                        <div class="crypto_img d-flex align-items-center">
+                                          <img src="assets/img/pink_crypto.svg" alt="">
+                                          <h3>
+                                            CLU
+                                          </h3>
+                                        </div>
+                                      </th>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Available Balance
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Cost Basis
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Tokens
+                                          </p>
+                                        </div>
+
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">
+                                        <div class="crypto_img d-flex align-items-center">
+                                          <img src="assets/img/pink_crypto.svg" alt="">
+                                          <h3>
+                                            CLU
+                                          </h3>
+                                        </div>
+                                      </th>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Available Balance
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Cost Basis
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Tokens
+                                          </p>
+                                        </div>
+
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree_2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseThree_2" aria-expanded="false" aria-controls="collapseThree_2">
+                              <div class="accordion_head ps-md-4 py-md-2">
+                                <div class="crypto_img d-flex align-items-center gap-2">
+                                  <img src="assets/img/eth.svg" alt="">
+                                  <h3>
+                                    Metamask
+                                  </h3>
+                                </div>
+                                <p>
+                                  100,48
+                                </p>
+                                <p>
+                                  100,48
+                                </p>
+                              </div>
+                            </button>
+                          </h2>
+                          <div id="collapseThree_2" class="accordion1-collapse collapse"
+                            aria-labelledby="headingThree_2" data-bs-parent="#accordionExample1">
+                            <div class="accordion-body">
+                              <!-- table here  eth-->
+                              <div class="table_wrap">
+                                <table class="table">
+                                  <thead>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">
+                                        <div class="crypto_img d-flex align-items-center">
+                                          <img src="assets/img/eth.svg" alt="">
+                                          <h3>
+                                            ETH
+                                          </h3>
+                                        </div>
+                                      </th>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Available Balance
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Cost Basis
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Tokens
+                                          </p>
+                                        </div>
+
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">
+                                        <div class="crypto_img d-flex align-items-center">
+                                          <img src="assets/img/hoge.svg" alt="">
+                                          <h3>
+                                            HOGE
+                                          </h3>
+                                        </div>
+                                      </th>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Available Balance
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Cost Basis
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Tokens
+                                          </p>
+                                        </div>
+
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">
+                                        <div class="crypto_img d-flex align-items-center">
+                                          <img src="assets/img/uni.svg" alt="">
+                                          <h3>
+                                            UNI
+                                          </h3>
+                                        </div>
+                                      </th>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Available Balance
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Cost Basis
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Tokens
+                                          </p>
+                                        </div>
+
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- accoddin 2 end  -->
+                <!-- accoddin 3 start  -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      <div class="accordion_head">
+                        <div class="crypto_img d-flex align-items-center gap-2">
+                          <img src="assets/img/atom.svg" alt="">
+                          <h3>
+                            Metamask
+                          </h3>
+                        </div>
+                        <p>
+                          100,48
+                        </p>
+                        <p>
+                          100,48
+                        </p>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample" style="">
+                    <div class="accordion-body">
+                      <div class="accordion1" id="accordionExample1">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingFour_1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseFour_1" aria-expanded="false" aria-controls="collapseFour_1">
+                              <div class="accordion_head ps-md-4 py-md-2">
+                                <div class="crypto_img d-flex align-items-center gap-2">
+                                  <img src="assets/img/bnb.svg" alt="">
+                                  <h3>
+                                    Metamask
+                                  </h3>
+                                </div>
+                                <p>
+                                  100,48
+                                </p>
+                                <p>
+                                  100,48
+                                </p>
+                              </div>
+                            </button>
+                          </h2>
+                          <div id="collapseFour_1" class="accordion1-collapse collapse" aria-labelledby="headingFour_1"
+                            data-bs-parent="#accordionExample1" style="">
+                            <div class="accordion-body">
+                              <!-- table here bnn -->
+                              <div class="table_wrap">
+                                <table class="table">
+                                  <thead>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">
+                                        <div class="crypto_img d-flex align-items-center">
+                                          <img src="assets/img/bnb.svg" alt="">
+                                          <h3>
+                                            BNB
+                                          </h3>
+                                        </div>
+                                      </th>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            74,48
+                                          </h3>
+                                          <p>
+                                            Available Balance
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            74,48
+                                          </h3>
+                                          <p>
+                                            Cost Basis
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            74,48
+                                          </h3>
+                                          <p>
+                                            Tokens
+                                          </p>
+                                        </div>
+
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">
+                                        <div class="crypto_img d-flex align-items-center">
+                                          <img src="assets/img/pink_crypto.svg" alt="">
+                                          <h3>
+                                            CLU
+                                          </h3>
+                                        </div>
+                                      </th>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Available Balance
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Cost Basis
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Tokens
+                                          </p>
+                                        </div>
+
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">
+                                        <div class="crypto_img d-flex align-items-center">
+                                          <img src="assets/img/pink_crypto.svg" alt="">
+                                          <h3>
+                                            CLU
+                                          </h3>
+                                        </div>
+                                      </th>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Available Balance
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Cost Basis
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Tokens
+                                          </p>
+                                        </div>
+
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree_2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseFour_2" aria-expanded="false" aria-controls="collapseFour_2">
+                              <div class="accordion_head ps-md-4 py-md-2">
+                                <div class="crypto_img d-flex align-items-center gap-2">
+                                  <img src="assets/img/eth.svg" alt="">
+                                  <h3>
+                                    Metamask
+                                  </h3>
+                                </div>
+                                <p>
+                                  100,48
+                                </p>
+                                <p>
+                                  100,48
+                                </p>
+                              </div>
+                            </button>
+                          </h2>
+                          <div id="collapseFour_2" class="accordion1-collapse collapse" aria-labelledby="headingFour_2"
+                            data-bs-parent="#accordionExample1" style="">
+                            <div class="accordion-body">
+                              <!-- table here  eth-->
+                              <div class="table_wrap">
+                                <table class="table">
+                                  <thead>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">
+                                        <div class="crypto_img d-flex align-items-center">
+                                          <img src="assets/img/eth.svg" alt="">
+                                          <h3>
+                                            ETH
+                                          </h3>
+                                        </div>
+                                      </th>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Available Balance
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Cost Basis
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Tokens
+                                          </p>
+                                        </div>
+
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">
+                                        <div class="crypto_img d-flex align-items-center">
+                                          <img src="assets/img/hoge.svg" alt="">
+                                          <h3>
+                                            HOGE
+                                          </h3>
+                                        </div>
+                                      </th>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Available Balance
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Cost Basis
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Tokens
+                                          </p>
+                                        </div>
+
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">
+                                        <div class="crypto_img d-flex align-items-center">
+                                          <img src="assets/img/uni.svg" alt="">
+                                          <h3>
+                                            UNI
+                                          </h3>
+                                        </div>
+                                      </th>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Available Balance
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Cost Basis
+                                          </p>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="available_balance">
+                                          <h3 class="text-center">
+                                            181,48
+                                          </h3>
+                                          <p>
+                                            Tokens
+                                          </p>
+                                        </div>
+
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- accoddin 3 end  -->
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <!-- wallet balance section end -->
+      </div>
+    </section>
+    <!-- hero section end  -->
+
+    <div class="defi_img defi_manage">
+      <div class="container">
+        <div class="img_wrap">
+          <img src="assets/img/nav_logo.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- footer start  -->
+    <footer class="footer_wrapper footer_manage">
+      <div class="container">
+        <div class="footer_inner">
+          <ul>
+            <li>TERMS AND CONDITIONS </li>
+            <li>PRIVACY POLICY</li>
+            <li> STATEMENT TO CONSUMERS OF DEWQ FINANCE DATA AND SERVICES</li>
+          </ul>
+          <div class="social_icons">
+            <div class="img_wrap">
+              <a href=""><img src="assets/img/linkedin.svg" alt=""></a>
+            </div>
+            <div class="img_wrap">
+              <a href=""><img src="assets/img/twitter.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- footer end  -->
+  <!-- modal add acount start -->
+  <!-- Modal -->
+  <section class="modal_add_user">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img src="assets/img/X.svg" alt="" data-bs-dismiss="modal" aria-label="Close">
+          </div>
+          <div class="modal-body">
+            <h2>
+              Add an User to Your Account
+            </h2>
+            <div class="input_wrap">
+              <div class="user_img">
+                <img src="assets/img/view_user.svg" alt="">
+              </div>
+              <label for="" data-bs-toggle="modal" data-bs-target="#exampleModal1">View Users</label>
+              <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal1"> <input type="text"
+                  class="form-control"></a>
+              <div class="right_arrow">
+                <img src="assets/img/right_arrow.svg" alt="">
+              </div>
+            </div>
+            <div class="input_wrap">
+              <div class="user_img">
+                <img src="assets/img/add_user.svg" alt="">
+              </div>
+              <label for="" data-bs-toggle="modal" data-bs-target="#add_user2">Add Users</label>
+              <a href="" data-bs-toggle="modal" data-bs-target="#add_user2"><input type="text" class="form-control"></a>
+              <div class="right_arrow">
+                <img src="assets/img/right_arrow.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- modal add acount end -->
+  <!-- modal add acount2 start -->
+  <!-- Modal -->
+  <section class="modal_add_user2">
+    <div class="modal fade" id="add_user2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-between">
+            <a href="" data-bs-toggle="modal" data-bs-dismiss="modal"> <img src="assets/img/left_arrow.svg" alt=""></a>
+            <img src="assets/img/X.svg" alt="" data-bs-dismiss="modal" aria-label="Close">
+          </div>
+          <div class="modal-body">
+            <h2>
+              Add Users
+            </h2>
+            <div class="input_wrap">
+              <label for="">Username</label>
+              <a> <input type="text" class="form-control" placeholder="New Username"></a>
+            </div>
+            <div class="input_wrap">
+              <label for="">Email</label>
+              <a><input type="text" class="form-control" placeholder="Email"></a>
+            </div>
+            <div class="input_wrap">
+              <label for="">Account Type</label>
+              <div class="dropdown">
+                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                  aria-expanded="false">Select Account Type<img src="assets/img/drop_down.svg" alt=""
+                    class="rotate"></a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Super Administrator</a></li>
+                  <li><a class="dropdown-item" href="#">Site Admin</a></li>
+                  <li><a class="dropdown-item" href="#">Business Owner</a></li>
+                  <li><a class="dropdown-item" href="#">Business Admin</a></li>
+                </ul>
+              </div>
+
+            </div>
+            <a class="btn confirm_btn flex_align pushme" id="foo">Confirm</a>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- modal add acount2 end -->
+  <!-- modal view  user start -->
+  <section class="modal_view_user">
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a href="" data-bs-toggle="modal" data-bs-dismiss="modal"> <img src="assets/img/left_arrow.svg" alt=""></a>
+            <img src="assets/img/X.svg" alt="" data-bs-dismiss="modal" aria-label="Close">
+          </div>
+          <div class="modal-body">
+            <h2>
+              View Users
+            </h2>
+            <div class="user_main">
+              <div class="user_inner">
+                <h4>
+                  Super Administrator
+                </h4>
+                <div class="user_name border_bg">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+                <div class="user_name">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="user_inner">
+                <h4>
+                  Contractor
+                </h4>
+                <div class="user_name border_bg">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+                <div class="user_name">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="user_inner">
+                <h4>
+                  Site Admin
+                </h4>
+                <div class="user_name border_bg">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+                <div class="user_name">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="user_inner">
+                <h4>
+                  Business Owner
+                </h4>
+                <div class="user_name border_bg">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+                <div class="user_name">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="user_inner">
+                <h4>
+                  Business Admin
+                </h4>
+                <div class="user_name border_bg">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+                <div class="user_name">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="user_inner">
+                <h4>
+                  Personal
+                </h4>
+                <div class="user_name border_bg">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+                <div class="user_name">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- modal view  user end -->
+  <!-- delete modal start  -->
+  <section class="modal_delete">
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img src="assets/img/X_black.svg" alt="" data-bs-dismiss="modal" aria-label="Close">
+          </div>
+          <div class="modal-body">
+            <h2>
+              Remove User
+            </h2>
+            <p>
+              Are you sure you want to remove <span>John Doe?</span>
+              By doing this, this person won’t have access to the account anymore
+            </p>
+            <div class="btn_wrap">
+              <a href="" class="btn cancel_btn flex_align">Cancel</a>
+              <a href="" class="btn confirm_btn flex_align">Confirm</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- delete modal end  -->
+  <!-- setting modal start  -->
+  <section class="modal_setting">
+    <div class="modal fade" id="ModalSetting" tabindex="-1" aria-labelledby="ModalSetting" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img src="assets/img/X.svg" alt="" data-bs-dismiss="modal" aria-label="Close">
+          </div>
+          <div class="modal-body">
+            <h2>
+              Account Settings
+            </h2>
+            <div class="input_wrap">
+              <div class="user_img">
+                <img src="assets/img/update_user.svg" alt="">
+              </div>
+              <label for="" data-bs-toggle="modal" data-bs-target="#UpdateName">Update Account Nickname</label>
+              <a href="" data-bs-toggle="modal" data-bs-target="#UpdateName"> <input type="text"
+                  class="form-control"></a>
+              <div class="right_arrow">
+                <img src="assets/img/right_arrow.svg" alt="">
+              </div>
+            </div>
+            <div class="input_wrap">
+              <div class="user_img">
+                <img src="assets/img/email.svg" alt="">
+              </div>
+              <label for="" data-bs-toggle="modal" data-bs-target="#UpdateEmail">Update Email</label>
+              <a href="" data-bs-toggle="modal" data-bs-target="#UpdateEmail"><input type="email"
+                  class="form-control"></a>
+              <div class="right_arrow">
+                <img src="assets/img/right_arrow.svg" alt="">
+              </div>
+            </div>
+            <div class="input_wrap">
+              <div class="user_img">
+                <img src="assets/img/change_pass.svg" alt="">
+              </div>
+              <label for="" data-bs-toggle="modal" data-bs-target="#ChangePassword">Change Password</label>
+              <a href="" data-bs-toggle="modal" data-bs-target="#ChangePassword"><input type="password"
+                  class="form-control"></a>
+              <div class="right_arrow">
+                <img src="assets/img/right_arrow.svg" alt="">
+              </div>
+            </div>
+            <div class="input_wrap">
+              <div class="user_img">
+                <img src="assets/img/NFT.svg" alt="">
+              </div>
+              <label for="">NFT Membership Confirmation</label>
+              <a href=""><input type="text" class="form-control"></a>
+              <div class="coming_soon">
+                <p>
+                  (Coming Soon)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- setting modal end  -->
+  <!-- modal update_name start -->
+  <!-- Modal -->
+  <section class="update_name">
+    <div class="modal fade" id="UpdateName" tabindex="-1" aria-labelledby="UpdateName" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-start">
+            <a href="" data-bs-toggle="modal" data-bs-dismiss="modal"> <img src="assets/img/left_arrow.svg" alt=""></a>
+          </div>
+          <div class="modal-body">
+            <h2>
+              Account Settings
+            </h2>
+            <div class="input_wrap">
+              <label for="">Update Account Nickname</label>
+              <a href=""> <input type="text" class="form-control" placeholder="Enter Your New Nickname"></a>
+            </div>
+            <a href="" class="btn confirm_btn flex_align">Confirm</a>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- modal update_name end -->
+  <!-- modal update_email start -->
+  <!-- Modal -->
+  <section class="update_name">
+    <div class="modal fade" id="UpdateEmail" tabindex="-1" aria-labelledby="UpdateEmail" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-start">
+            <a href="" data-bs-toggle="modal" data-bs-dismiss="modal"> <img src="assets/img/left_arrow.svg" alt=""></a>
+          </div>
+          <div class="modal-body">
+            <h2>
+              Account Settings
+            </h2>
+            <div class="input_wrap">
+              <label for="">Update Account Email</label>
+              <a href=""> <input type="email" class="form-control" placeholder="Enter your new email"></a>
+            </div>
+            <a href="" class="btn confirm_btn flex_align">Confirm</a>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- modal update_email end -->
+  <!-- modal change_password start -->
+  <!-- Modal -->
+  <section class="update_name">
+    <div class="modal fade" id="ChangePassword" tabindex="-1" aria-labelledby="ChangePassword" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-start">
+            <a href="" data-bs-toggle="modal" data-bs-dismiss="modal"> <img src="assets/img/left_arrow.svg" alt=""></a>
+          </div>
+          <div class="modal-body">
+            <h2>
+              Account Settings
+            </h2>
+            <div class="input_wrap">
+              <label for="">Change Password</label>
+              <a href=""> <input type="password" class="form-control" placeholder="Enter your new password"></a>
+            </div>
+            <div class="input_wrap mt-md-4">
+              <a href=""> <input type="password" class="form-control" placeholder="Confirm Password"></a>
+            </div>
+            <a href="" class="btn confirm_btn flex_align">Confirm</a>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- modal change_password end -->
+  <!-- modal modal_monthly_report start -->
+  <!-- Modal -->
+  <section class="modal_monthly_report">
+    <div class="modal fade" id="modal_monthly_report" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-between">
+            <a>
+              <div class="img_wrap">
+                <img src="assets/img/nav_logo.svg" alt="">
+              </div>
+            </a>
+            <img src="assets/img/X.svg" alt="" data-bs-dismiss="modal" aria-label="Close">
+          </div>
+          <div class="modal-body">
+            <h2>
+              Monthly Report
+            </h2>
+            <div class="report_inner">
+              <div class="input_wrap">
+                <label for="">All My Wallets</label>
+                <div class="dropdown">
+                  <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                    aria-expanded="false">Select Account Type<img src="assets/img/drop_down.svg" alt=""
+                      class="rotate"></a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">All My Wallets</a></li>
+                    <li><a class="dropdown-item" href="#">Metamask</a></li>
+                    <li><a class="dropdown-item" href="#">Coinbase</a></li>
+                    <li><a class="dropdown-item" href="#">Mycellium</a></li>
+                  </ul>
+                </div>
+
+              </div>
+              <div class="input_wrap">
+                <label for="">Months</label>
+                <div class="input_calender" data-bs-toggle="modal" data-bs-target="#modal_monthly_calender">
+                  <p>
+                    Jun -Jul
+                  </p>
+                  <img src="assets/img/drop_down.svg" alt="">
+                </div>
+              </div>
+              <div class="checkbox_wrap">
+                <div class="form-group">
+                  <input type="checkbox" id="csv">
+                  <label for="csv">CSV</label>
+                </div>
+                <div class="form-group">
+                  <input type="checkbox" id="excel">
+                  <label for="excel">Excel</label>
+                </div>
+              </div>
+
+              <div class="input_wrap">
+                <label for="">Years</label>
+                <div class="input_calender" data-bs-toggle="modal" data-bs-target="#modal_year_calender">
+                  <p>
+                    2022
+                  </p>
+                  <img src="assets/img/drop_down.svg" alt="">
+                </div>
+              </div>
+            </div>
+            <a class="btn confirm_btn flex_align">Download</a>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- modal modal_monthly_report end -->
+  <!-- modal modal_monthly_calender start -->
+  <!-- Modal -->
+  <section class="modal_monthly_calender">
+    <div class="modal fade" id="modal_monthly_calender" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-between">
+            <h5>
+              Select the months
+            </h5>
+            <div class="checkbox_wrap">
+              <div class="form-group">
+                <input type="checkbox" id="all">
+                <label for="all">All</label>
+              </div>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="months_wrap">
+              <h3 class="month_focus">Jan</h3>
+              <h3 class="month_focus">Feb</h3>
+              <h3 class="month_focus">Mar</h3>
+              <h3 class="month_focus">Apr</h3>
+              <h3 class="month_focus">May</h3>
+              <h3 class="month_focus">Jun</h3>
+              <h3 class="month_focus">Jul</h3>
+              <h3 class="month_focus">Aug</h3>
+              <h3 class="month_focus">Sep</h3>
+              <h3 class="month_focus">Oct</h3>
+              <h3 class="month_focus">Nov</h3>
+              <h3 class="month_focus">Dec</h3>
+            </div>
+
+            <a class="btn confirm_btn flex_align">Accept</a>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- modal modal_monthly_calender end -->
+  <!-- modal modal_year_calender start -->
+  <!-- Modal -->
+  <section class="modal_year_calender">
+    <div class="modal fade" id="modal_year_calender" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-between">
+            <h5>
+              Select the years
+            </h5>
+            <div class="year_left_right d-flex gap-2">
+              <a href=""><img src="assets/img/year_left.svg" alt=""></a>
+              <a href=""><img src="assets/img/year_right.svg" alt=""></a>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="months_wrap">
+              <h3 class="month_focus">2015</h3>
+              <h3 class="month_focus">2016</h3>
+              <h3 class="month_focus">2017</h3>
+              <h3 class="month_focus">2018</h3>
+              <h3 class="month_focus">2019</h3>
+              <h3 class="month_focus">2020</h3>
+              <h3 class="month_focus">2021</h3>
+              <h3 class="month_focus">2022</h3>
+            </div>
+            <a class="btn confirm_btn flex_align">Accept</a>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- modal modal_year_calender end -->
+  <!-- modal modal_personal_wallet start -->
+  <!-- Modal -->
+  <section class="modal_personal_wallet">
+    <div class="modal fade" id="modal_personal_wallet" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-between">
+            <a>
+              <div class="img_wrap">
+                <img src="assets/img/nav_logo.svg" alt="">
+              </div>
+            </a>
+            <img src="assets/img/X.svg" alt="" data-bs-dismiss="modal" aria-label="Close">
+          </div>
+          <div class="modal-body">
+            <h2>
+              Add a Personal Wallet
+            </h2>
+            <h6>
+              Fill out the following fields to add your personal wallet
+            </h6>
+            <div class="wallet_inner">
+              <div class="input_wrap">
+                <label for="">Wallet Address</label>
+                <a> <input type="text" class="form-control" placeholder="Enter Wallet Address"></a>
+              </div>
+              <div class="input_wrap">
+                <label for="">Wallet Name</label>
+                <a> <input type="text" class="form-control" placeholder="Enter Wallet Name"></a>
+              </div>
+            </div>
+            <div class="text_area">
+              <label for="">Description (Optional)</label>
+              <textarea name="" id="" class="form-control" placeholder="Add a description..."></textarea>
+            </div>
+            <a class="btn confirm_btn flex_align">Submit</a>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- modal modal_personal_wallet end -->
+    <!-- modal modal_order_detail start -->
+  <!-- Modal -->
+  <section class="modal_order_detail">
+    <div class="modal fade" id="modal_order_detail" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-between">
+            <a>
+              <div class="img_wrap">
+                <img src="assets/img/nav_logo.svg" alt="">
+              </div>
+            </a>
+            <img src="assets/img/X.svg" alt="" data-bs-dismiss="modal" aria-label="Close">
+          </div>
+          <div class="modal-body">
+            <h2 class="pb-0">
+              Order Details
+            </h2>
+            <p class="order_detail order__detail mb-md-5 px-md-0 px-2">You are adding 365 days to your subscription at a $$/mo. billed annually.</p>
+          
+            <div class="report_inner order_inner">
+             
+              <div class="drop_wrap">
+                <label>
+                  Select Currency:
+                </label>
+                <div class="dropdown">
+                  <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">CLU<img src="assets/img/drop_down.svg" alt="" class="rotate"></a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">CLU</a></li>
+                    <li><a class="dropdown-item" href="#">RocketUSD</a></li>
+                    <li><a class="dropdown-item" href="#">HOGE</a></li>
+                    <li><a class="dropdown-item" href="#">UNI</a></li>
+                  </ul>
+                </div>
+                <h4>
+                  Total:  $$/Mo.
+                </h4>
+              </div>
+            </div>
+            <a class="btn confirm_btn flex_align mt-0" data-bs-toggle="modal" data-bs-target="#modal_order_365">Send Payment</a>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- modal modal_order_detail end -->
+    <!-- modal modal_order_365 start -->
+  <!-- Modal -->
+  <section class="modal_order_365">
+    <div class="modal fade" id="modal_order_365" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-between">
+            <a>
+              <div class="img_wrap">
+                <img src="assets/img/nav_logo.svg" alt="">
+              </div>
+            </a>
+            <img src="assets/img/X.svg" alt="" data-bs-dismiss="modal" aria-label="Close">
+          </div>
+          <div class="modal-body">
+            <h2 class="pb-0">
+              Order Details
+            </h2>
+            <p class="order_detail order__detail my-xl-5 my-md-4 my-3">You are making a payment for: <span>365 Days of Subscription</span></p>
+          
+            <div class="report_inner order_inner">
+          
+              <div class="input_wrap">
+                <label for="">Send to Address:</label>
+                <div class="input_calender">
+                  <p>
+                    0x22f3806ap
+                  </p>
+                  <img src="assets/img/Doc.svg" alt="">
+                </div>
+              </div>
+              <div class="input_wrap">
+                <label for="">Amount:</label>
+                <div class="input_calender">
+                  <p>
+                    8,945,327.108
+                  </p>
+                  <img src="assets/img/Doc.svg" alt="">
+                </div>
+              </div>
+          
+            </div>
+            <p class="order_detail order__detail my-xl-5 my-md-4 my-3">To complete the order a valid payment must be sent by: [Time]</p>
+            <div class="order_btn">
+            <a class="btn confirm_btn flex_align mt-0" data-bs-toggle="modal" data-bs-target="#modal_payment_sent">Payment Sent</a>
+            <a class="btn confirm_btn flex_align mt-0 cancel_btn">Cancel Order</a>
+            </div>
+            <p class="order_detail order__detail">*To confirm that you have sent payment, please click the payment sent button once complete.</p>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- modal modal_order_365 end -->
+   <!-- modal modal_payment_sent start -->
+  <!-- Modal -->
+  <section class="modal_payment_sent">
+    <div class="modal fade" id="modal_payment_sent" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header payment_head justify-content-between">
+            <a>
+              <div class="img_wrap">
+                <img src="assets/img/nav_logo.svg"  alt="">
+              </div>
+            </a>
+            <img src="assets/img/X.svg" alt="" data-bs-dismiss="modal" aria-label="Close">
+          </div>
+          <div class="modal-body">
+            <div class="img_wrap text-center my-md-5">
+              <img src="assets/img/success.svg" alt="">
+             </div>
+            <h2>
+              Success!
+            </h2>
+            <h6>
+              You successfully paid for [Years] 
+            </h6>
+       <a href="" class="btn flex_align go_dash">Go to Dashboard</a>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- modal modal_payment_sent end -->
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  <!-- <img src="assets/img/tick.svg" alt=""> -->
+</body>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.month_focus').click(function () {
+      $(this).toggleClass('highlighted');
+    });
+  });
+</script>
+<script>
+  $('.ul_open').css('display', 'none');
+  $('#tool_drop').click(function (e) {
+    e.preventDefault();
+    $('#ul_drop').slideToggle();
+  });
+</script>
+
+</html>

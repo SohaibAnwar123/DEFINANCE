@@ -1,0 +1,7497 @@
+@font-face {
+  font-family: teko;
+  src: url(../font/Teko-Bold.ttf);
+  src: url(../font/Teko-Light.ttf);
+  src: url(../font/Teko-Medium.ttf);
+  src: url(../font/Teko-Regular.ttf);
+  src: url(../font/Teko-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: teko_light;
+  src: url(../font/Teko-Light.ttf);
+}
+
+@font-face {
+  font-family: teko_md;
+  src: url(../font/Teko-Medium.ttf);
+}
+
+@font-face {
+  font-family: teko_rg;
+  src: url(../font/Teko-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: teko;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:focus-visible {
+  outline: none;
+}
+
+.btn {
+  padding: 0;
+  border: none;
+}
+
+.flex_align {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex_bt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.max_width_100 {
+  max-width: 100% !important;
+}
+
+.backgrnd_clr_white {
+  background-color: #fff !important;
+}
+
+.container {
+  max-width: 1250px;
+  width: 100%;
+}
+
+.nav_left img {
+  max-width: 300px;
+  width: 100%;
+}
+
+.index_nav {
+  background-color: unset !important;
+  background-image: url("../img/index_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  width: 100%;
+  z-index: 999999999999999999999999;
+}
+
+.index_nav .nav_inner {
+  padding: 0 !important;
+  height: 126px;
+}
+
+.index_nav .index_tabs {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 18px;
+}
+
+.index_nav .index_tabs li a {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #77CAD2;
+  font-family: teko_rg;
+  cursor: pointer;
+}
+
+.index_hero {
+  min-height: calc(100vh - 126px);
+  background-image: url("../img/index_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: 126px;
+}
+
+.index_hero .container {
+  max-width: 1250px;
+  width: 100%;
+}
+
+.index_hero .hero__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.index_hero .hero__main .hero_content {
+  max-width: 540px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.index_hero .hero__main .hero_content .hero_title {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 70px;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 25px;
+}
+
+.index_hero .hero__main .hero_content .hero_detail {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 35px;
+  color: #77CAD2;
+  margin-bottom: 35px;
+  font-family: teko_rg;
+}
+
+.index_hero .hero__main .hero_content .register_btn {
+  max-width: 179px;
+  width: 100%;
+  margin: 0 auto;
+  height: 50px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+  font-family: teko_rg;
+}
+
+.index_hero .hero_img {
+  max-width: 620px;
+  width: 100%;
+  margin-left: auto;
+}
+
+.index_hero .hero_img img {
+  -webkit-transform: translate(10%, 0px);
+          transform: translate(10%, 0px);
+}
+
+.why_choose {
+  padding-top: 190px;
+  padding-bottom: 200px;
+  background: #5F6265;
+}
+
+.why_choose .why_choose_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.why_choose .why_choose_main .img_wrap img {
+  max-width: 550px;
+  width: 100%;
+}
+
+.why_choose .why_choose_main .why_choose_content {
+  max-width: 550px;
+  width: 100%;
+}
+
+.why_choose .why_choose_main .why_choose_content h3 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 35px;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.why_choose .why_choose_main .why_choose_content p {
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 35px;
+  color: #FFFFFF;
+  font-family: teko_light;
+}
+
+.service_wrap {
+  background-color: #3a3839eb;
+  padding: 120px 0;
+}
+
+.service_wrap h1 {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 70px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.service_wrap .service_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 930px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 60px 0px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.service_wrap .service_inner .service_box {
+  text-align: center;
+}
+
+.service_wrap .service_inner .service_box p {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 35px;
+  color: #77CAD2;
+  font-family: teko_light;
+}
+
+.service_wrap .service_inner .service_box .img_wrap img {
+  max-width: 141px;
+  width: 100%;
+}
+
+.price_wrap {
+  background: #F0F0F0;
+  padding: 100px 0;
+}
+
+.price_wrap h2 {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 70px;
+  text-align: center;
+  color: #191A1D;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 10px;
+}
+
+.price_wrap p {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-family: teko_rg;
+  color: #3A3839;
+  margin-bottom: 40px;
+}
+
+.price_wrap .price_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.price_wrap .price_inner .price_box {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(119, 202, 210, 0.98)), to(rgba(119, 202, 210, 0.7644)));
+  background: linear-gradient(180deg, rgba(119, 202, 210, 0.98) 0%, rgba(119, 202, 210, 0.7644) 100%);
+  -webkit-box-shadow: 4px 4px 21px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 21px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 60px 70px 90px 70px;
+  max-width: 432px;
+  width: 100%;
+}
+
+.price_wrap .price_inner .price_box .price__box {
+  padding: 30px 70px 90px 70px;
+  background: #F0F0F0;
+  -webkit-box-shadow: 4px 4px 21px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 21px rgba(0, 0, 0, 0.25);
+  height: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.price_wrap .price_inner .price_box .account_btn {
+  border-radius: 20px;
+  max-width: 280px;
+  width: 100%;
+  height: 64px;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-family: teko_light;
+  color: #F0F0F0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 56, 57, 0.62)), to(#282225));
+  background: linear-gradient(180deg, rgba(58, 56, 57, 0.62) 0%, #282225 100%);
+}
+
+.price_wrap .price_inner .price_box .account_btn.account__btn {
+  background: -webkit-gradient(linear, left top, left bottom, from(#77CAD2), to(#D9D9D9));
+  background: linear-gradient(180deg, #77CAD2 0%, #D9D9D9 100%);
+  color: #000000;
+}
+
+.price_wrap .price_inner .price_box h1 {
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 80px;
+  text-align: center;
+  color: #3A3839;
+  margin: 40px 0;
+  font-family: teko_rg;
+}
+
+.price_wrap .price_inner .price_box h5 {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 35px;
+  color: #3A3839;
+  font-family: teko_light;
+}
+
+.price_wrap .price_inner .price_box .buynow_btn {
+  max-width: 240px;
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  font-family: teko_light;
+  margin-top: 40px;
+  color: #000000;
+  background: #fff;
+}
+
+.price_wrap .price_inner .price_box .buynow_btn.buynow__btn {
+  background: #77CAD2;
+}
+
+.team_wrap {
+  padding-top: 90px;
+  padding-bottom: 200px;
+  background: #3A3839;
+}
+
+.team_wrap h2 {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 70px;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 50px;
+}
+
+.team_wrap .team_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.team_wrap .team_inner .team_box .img_wrap img {
+  border-radius: 50%;
+  margin-bottom: 50px;
+}
+
+.team_wrap .team_inner .team_box h3 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.team_wrap .team_inner .team_box p {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: teko_light;
+}
+
+.contact_wrap {
+  padding: 160px 0;
+  background-color: #5F6265;
+}
+
+.contact_wrap .contact_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact_wrap .contact_inner .contact_box {
+  max-width: 508px;
+  width: 100%;
+  background: #FFFFFF;
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 40px 100px 50px 50px;
+}
+
+.contact_wrap .contact_inner .contact_box h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 36px;
+  margin-bottom: 25px;
+  color: #1D1B19;
+}
+
+.contact_wrap .contact_inner .contact_box .input_wrap label {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #3A3839;
+  margin-bottom: 10px;
+}
+
+.contact_wrap .contact_inner .contact_box .input_wrap input {
+  border: none;
+  border-bottom: 1px solid #3A3839;
+  border-radius: unset;
+  margin-bottom: 35px;
+}
+
+.contact_wrap .contact_inner .contact_box .input_wrap textarea {
+  background: #F0F0F0;
+  border-radius: 5px;
+  height: 160px;
+  margin-bottom: 40px;
+}
+
+.contact_wrap .contact_inner .contact_box .input_wrap .form-control:focus {
+  border-color: unset;
+  background-color: unset;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+}
+
+.contact_wrap .contact_inner .contact_box .send_message {
+  max-width: 247px;
+  width: 100%;
+  margin: 0 auto;
+  height: 60px;
+  background: #77CAD2;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  font-family: teko_light;
+  color: #3A3839;
+}
+
+.contact_wrap .live_wrap {
+  max-width: 508px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.contact_wrap .live_wrap .live_chat {
+  max-width: 247px;
+  width: 100%;
+  margin: 0 auto;
+  height: 60px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  gap: 5px;
+}
+
+.contact_wrap .live_wrap .live_chat span {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+  font-family: teko_rg;
+}
+
+.nav_wrapper {
+  background-color: #000000;
+}
+
+.nav_wrapper .nav_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 126px;
+}
+
+.nav_wrapper .nav_inner .nav_right {
+  height: 64px;
+}
+
+.nav_wrapper .nav_inner .nav_right .btn {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+  background: #FFFFFF;
+  border-radius: 5px;
+}
+
+.nav_wrapper .nav_inner .nav_right .btn.sign_btn {
+  width: 143px;
+  height: 65px;
+}
+
+.nav_wrapper .nav_inner .nav_right .btn.logout_btn {
+  max-width: 179px;
+  width: 100%;
+  height: 50px;
+}
+
+.nav_wrapper .nav_inner .nav_right .btn.create_btn {
+  width: 225px;
+  height: 65px;
+}
+
+.nav_wrapper .nav_inner .nav_right .btn.logout_btn {
+  width: 179px;
+  height: 50px;
+}
+
+.nav_wrapper .nav_inner .nav_right .btn.logout_btn.dash_btn {
+  background-color: #77CAD2;
+  margin-left: 60px;
+  margin-right: 20px;
+}
+
+.nav_wrapper .nav_inner .nav_right .right_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 550px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav_wrapper .nav_inner .nav_right .right_inner .nav_icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+  gap: 25px;
+}
+
+.nav_wrapper .nav_inner .nav_right .right_inner .nav_icons .img_wrap {
+  max-width: 50px;
+  width: 100%;
+  height: 52px;
+  cursor: pointer;
+}
+
+.nav_wrapper .nav_inner .nav_right .right_inner .nav_icons .img_wrap img {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.nav_wrapper .nav_inner .nav_right .nav-tabs {
+  border: none;
+  width: 487px;
+  margin-left: auto;
+  background: #282B30;
+  -webkit-box-shadow: inset 0px 3px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: inset 0px 3px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav_wrapper .nav_inner .nav_right .nav-tabs .nav-link {
+  width: 160px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 33px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 18px;
+  text-align: center;
+  color: #5F6265;
+}
+
+.nav_wrapper .nav_inner .nav_right .nav-tabs .nav-link:hover {
+  border: none;
+}
+
+.nav_wrapper .nav_inner .nav_right .nav-tabs .nav-link.active {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.35);
+  color: #191A1D;
+  border-radius: 100px;
+}
+
+.nav_wrapper .nav_inner .nav_right .dropdown .dropdown-menu {
+  left: -302px !important;
+  top: 48px !important;
+  width: 431px;
+  padding: 0;
+}
+
+.nav_wrapper .nav_inner .nav_right .dropdown .dropdown-menu li {
+  background-color: #77CAD2;
+}
+
+.nav_wrapper .nav_inner .nav_right .dropdown .dropdown-menu li .dropdown-item {
+  text-align: center;
+}
+
+.nav_wrapper .nav_inner .nav_right .dropdown .dropdown-menu li .dropdown-item.header_sec {
+  background-color: #3A3839;
+  padding: 20px 0;
+}
+
+.nav_wrapper .nav_inner .nav_right .dropdown .dropdown-menu li .dropdown-item.header_sec h4 {
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 27px;
+  color: #FFFFFF;
+  font-family: teko_light;
+}
+
+.nav_wrapper .nav_inner .nav_right .dropdown .dropdown-menu li .wallet_detail {
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+
+.nav_wrapper .nav_inner .nav_right .dropdown .dropdown-menu li .wallet_detail p {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 36px;
+  font-family: teko_light;
+  color: #191A1D;
+  margin: 0 auto;
+  max-width: 380px;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.nav_wrapper .nav_inner .nav_right .dropdown .dropdown-menu li .wallet_detail p span {
+  font-weight: 700;
+}
+
+.nav_wrapper .nav_inner .nav_right .dropdown .dropdown-menu li .wallet_detail .wallet_btn {
+  max-width: 179px;
+  width: 100%;
+  margin: 0 auto;
+  height: 50px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  font-family: teko_md;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: #000000;
+}
+
+.nav_wrapper .nav_inner .nav_right .dropdown .notify_arrow {
+  position: absolute;
+  top: -38px;
+  right: 0;
+}
+
+.tool_icon {
+  position: relative;
+}
+
+.ul_open {
+  display: none;
+  background: #2A2A2C;
+  border-radius: 10px;
+  width: 255px;
+  list-style: none;
+  padding: 5px 10px;
+  margin: 0;
+  margin-left: -68px;
+  position: absolute;
+  text-align: center;
+}
+
+.ul_open li {
+  display: inline;
+  margin: 0 8px;
+}
+
+.ul_open img {
+  width: 25px !important;
+}
+
+.ul_open .popover__menu {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  list-style-type: none;
+  min-width: 80px;
+  position: absolute;
+  padding: 0;
+  top: 43px;
+  padding: 0;
+  opacity: 0;
+  right: 7px;
+  opacity: 0;
+}
+
+.ul_open .popover__menu.whale_poper {
+  right: -36px;
+}
+
+.ul_open .popover__menu:after {
+  bottom: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #fff;
+  border-width: 14px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
+}
+
+.ul_open .popover__menu-item {
+  white-space: nowrap;
+}
+
+.ul_open .popover__menu-item button {
+  width: 100%;
+  text-align: center;
+  padding: 10px 13px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+}
+
+.ul_open .popover__menu-item button:hover, .ul_open .popover__menu-item button:focus {
+  background-color: #fff;
+}
+
+.ul_open .popover--active .popover__menu {
+  opacity: 1;
+}
+
+.ul_open button {
+  border-color: #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0.6rem 1rem;
+}
+
+.popover {
+  background-color: #77CAD2;
+  z-index: 99999999999999999999999;
+  left: -115px !important;
+}
+
+.popover .popover-header {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  color: #3A3839;
+  background-color: #77CAD2;
+  border: none;
+}
+
+.popover .popover-body {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  color: #3A3839;
+  padding-top: 0;
+}
+
+.popover .popover-arrow {
+  left: 115px !important;
+}
+
+.popover .popover-arrow::before {
+  border-top-color: #77CAD2 !important;
+}
+
+.popover .popover-arrow::after {
+  border-top-color: #77CAD2 !important;
+}
+
+.alert_success {
+  color: #20a320 !important;
+  position: absolute !important;
+  padding: 0 !important;
+  padding-top: 10px !important;
+  left: 35px !important;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.alert_danger {
+  color: #DD1F1F !important;
+  position: absolute !important;
+  padding: 0 !important;
+  padding-top: 10px !important;
+  left: 35px !important;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.manage_wallet .container {
+  max-width: 1385px !important;
+  width: 100% !important;
+}
+
+.manage_wallet .active_days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 706px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.manage_wallet .active_days .active_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+  max-width: 130px;
+  width: 100%;
+}
+
+.manage_wallet .active_days .active_btnz {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+
+.manage_wallet .active_days .active_btnz .active_btn {
+  background: #77CAD2;
+  -webkit-box-shadow: 0px 2px 4px #3A3839;
+          box-shadow: 0px 2px 4px #3A3839;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  font-family: teko_rg;
+  color: #000000;
+  max-width: 117px;
+  width: 100%;
+  height: 55px;
+}
+
+.manage_wallet .active_heading {
+  font-family: teko_rg;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+.manage_wallet .wallet_title {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.manage_wallet .wallet_title.wallet__title {
+  max-width: 706px;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.manage_wallet .wallet_title.wallet__title img {
+  width: 24px !important;
+}
+
+.manage_wallet .wallet_title h1 {
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 65px;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.manage_wallet .wallet_title img {
+  max-width: 75px;
+  width: 100%;
+}
+
+.manage_wallet h3 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+  padding-left: 35px;
+}
+
+.manage_wallet .wallet_label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+  padding-left: 35px;
+}
+
+.manage_wallet .wallet_label .add_wallet {
+  max-width: 201px;
+  width: 100%;
+  height: 52px;
+  background: #77CAD2;
+  -webkit-box-shadow: 0px 2px 4px #3A3839;
+          box-shadow: 0px 2px 4px #3A3839;
+  border-radius: 5px;
+  gap: 10px;
+}
+
+.manage_wallet .wallet_label .add_wallet span {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: teko_rg;
+  color: #000000;
+}
+
+.manage_wallet .wallet_label .wallet_dropdown {
+  max-width: 255px;
+  width: 100%;
+}
+
+.manage_wallet .wallet_label .wallet_dropdown .dropdown {
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  height: 52px;
+}
+
+.manage_wallet .wallet_label .wallet_dropdown .dropdown a {
+  padding: 0 15px;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 25px;
+  color: #191A1D;
+  font-family: teko_light;
+}
+
+.manage_wallet .wallet_label .wallet_dropdown .dropdown a img {
+  width: 24px;
+}
+
+.manage_wallet .wallet_label .input_wrap {
+  position: relative;
+  max-width: 314px;
+  width: 100%;
+  height: 52px;
+}
+
+.manage_wallet .wallet_label .input_wrap input {
+  padding: 6px 0;
+  padding-left: 45px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 28px;
+  color: #AAA0A0;
+  border: none;
+  -webkit-box-shadow: 0px 2px 4px #3a3839;
+          box-shadow: 0px 2px 4px #3a3839;
+  border-radius: 6px;
+  font-family: teko_light;
+  height: 100%;
+}
+
+.manage_wallet .wallet_label .input_wrap .img_wrap {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  -webkit-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
+}
+
+.table_wrap.transaction_tbl table {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  margin-bottom: 35px;
+}
+
+.table_wrap.transaction_tbl table th {
+  text-align: center !important;
+}
+
+.table_wrap.transaction_tbl table td:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.table_wrap.transaction_tbl table td:last-child {
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.table_wrap tr,
+.table_wrap th {
+  border-style: unset;
+}
+
+.table_wrap tr {
+  height: 81px;
+  position: relative;
+}
+
+.table_wrap tr:hover .edit_tr {
+  display: block !important;
+}
+
+.table_wrap tr:hover .edit_delete_btnz {
+  display: block !important;
+}
+
+.table_wrap .edit_tr {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none !important;
+  max-width: 33px;
+  width: 100%;
+  background: #77CAD2;
+  border-radius: 10px 0px 0px 0px;
+  height: 81px;
+  -webkit-transform: translate(1px, 0px);
+          transform: translate(1px, 0px);
+}
+
+.table_wrap .edit_tr span {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  font-family: teko_rg;
+  vertical-align: middle;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.table_wrap .edit_delete_btnz {
+  position: absolute;
+  right: 0;
+  display: none !important;
+}
+
+.table_wrap .edit_delete_btnz .edit_delete {
+  background: #77CAD2;
+  border-radius: 10px 0px 0px 10px;
+  width: 48px;
+  height: 38px;
+}
+
+.table_wrap .edit_delete_btnz .edit_delete.bg_clr {
+  background: #B71C1C;
+  margin-top: 5px;
+}
+
+.table_wrap td:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.table_wrap td:last-child {
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.table_wrap th {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 40px;
+  color: #D9D9D9;
+  padding: 5px;
+  font-family: teko_light;
+  text-align: center;
+}
+
+.table_wrap .bg_white {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.09);
+}
+
+.table_wrap td {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #3A3839;
+  font-family: teko_light;
+  padding: 25px 0;
+  text-align: center;
+}
+
+.table_wrap .table {
+  border-collapse: separate;
+  border-spacing: 0 0.3em;
+  margin-bottom: 60px;
+}
+
+.table_wrap .table.second_tbl {
+  padding-bottom: 200px;
+}
+
+.hero_wrapper .container {
+  max-width: 1350px;
+  width: 100%;
+}
+
+.hero_wrapper .hero_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding-left: 130px;
+  padding-bottom: 250px;
+  padding-top: 100px;
+  gap: 40px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.hero_wrapper .hero_inner .hero_left {
+  max-width: 485px;
+  width: 100%;
+}
+
+.hero_wrapper .hero_inner .hero_left .hero_title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 69px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.hero_wrapper .hero_inner .hero_left .hero_detail {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 34px;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+.hero_wrapper .hero_inner .hero_left .input_wrap {
+  position: relative;
+}
+
+.hero_wrapper .hero_inner .hero_left .input_wrap input {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: #5F6265;
+  padding: 10px 0;
+  padding-left: 35px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.hero_wrapper .hero_inner .hero_left .input_wrap .img_wrap {
+  position: absolute;
+  right: 0;
+  z-index: 9999999;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  right: 35px;
+}
+
+.hero_wrapper .hero_inner .hero_left .input_wrap .question_mark {
+  position: absolute;
+  right: 0;
+  z-index: 9999999;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  right: -40px;
+}
+
+.hero_wrapper .hero_inner .hero_left .navtab_wrap {
+  margin-bottom: 24px;
+  margin-top: 45px;
+}
+
+.hero_wrapper .hero_inner .hero_left .navtab_wrap .nav-tabs {
+  border: none;
+  width: 325px !important;
+  background: #282B30;
+  -webkit-box-shadow: inset 0px 3px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0px 3px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 100px;
+}
+
+.hero_wrapper .hero_inner .hero_left .navtab_wrap .nav-tabs .nav-link {
+  width: 162px !important;
+  color: #5F6265;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 33px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  border: none;
+}
+
+.hero_wrapper .hero_inner .hero_left .navtab_wrap .nav-tabs .nav-link.active {
+  background: #77CAD2;
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.35);
+  border-radius: 100px;
+  width: 162px !important;
+  color: #191A1D;
+  border: 1px solid #191A1D;
+}
+
+.hero_wrapper .hero_inner .hero_left .create_btn {
+  width: 100%;
+  background: #77CAD2;
+  -webkit-box-shadow: 0px 2px 4px #3A3839;
+          box-shadow: 0px 2px 4px #3A3839;
+  border-radius: 5px;
+  height: 56px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: #000000;
+  margin-bottom: 7px;
+}
+
+.hero_wrapper .hero_inner .hero_left .already_login {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.hero_wrapper .hero_inner .hero_left .already_login a {
+  color: #77CAD2;
+}
+
+.hero_wrapper .hero_inner .hero_right {
+  max-width: 700px;
+  width: 100%;
+}
+
+.hero_wrapper .multiple_inner {
+  background-color: #5F6265;
+  -webkit-box-shadow: 4px 6px 4px black;
+          box-shadow: 4px 6px 4px black;
+  border-radius: 5px;
+  padding: 0 160px;
+  padding-top: 50px;
+  padding-bottom: 110px;
+  margin-bottom: 115px;
+}
+
+.hero_wrapper .multiple_inner h2 {
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 64px;
+  color: #77CAD2;
+  margin-bottom: 25px;
+}
+
+.hero_wrapper .multiple_inner .your_account {
+  padding-bottom: 50px;
+}
+
+.hero_wrapper .multiple_inner .your_account h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.hero_wrapper .multiple_inner .your_account p {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 52px;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.hero_wrapper .multiple_inner .your_account .input_wrap {
+  position: relative;
+  max-width: 339px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero_wrapper .multiple_inner .your_account .input_wrap input {
+  padding: 6px 0;
+  padding-left: 65px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 43px;
+  color: #AAA0A0;
+  border: none;
+  -webkit-box-shadow: 0px 2px 4px #3A3839;
+          box-shadow: 0px 2px 4px #3A3839;
+  border-radius: 6px;
+}
+
+.hero_wrapper .multiple_inner .your_account .input_wrap .img_wrap {
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  -webkit-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
+}
+
+.hero_wrapper .multiple_inner .account_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 60px;
+}
+
+.hero_wrapper .multiple_inner .account_main .account_inner {
+  max-width: 359px;
+  width: 100%;
+}
+
+.hero_wrapper .multiple_inner .account_main .account_inner h3 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 57px;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+}
+
+.hero_wrapper .multiple_inner .account_main .account_inner .input_wrap {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.hero_wrapper .multiple_inner .account_main .account_inner .input_wrap .form-control:disabled {
+  background-color: #fff;
+}
+
+.hero_wrapper .multiple_inner .account_main .account_inner .input_wrap label {
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  -webkit-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 25px;
+  color: #191A1D;
+  cursor: pointer;
+}
+
+.hero_wrapper .multiple_inner .account_main .account_inner .input_wrap input {
+  -webkit-box-shadow: 0px 0px 0px 2px #77cad2;
+          box-shadow: 0px 0px 0px 2px #77cad2;
+  border-radius: 10px;
+  height: 54px;
+  cursor: pointer;
+}
+
+.hero_wrapper .multiple_inner .account_main .account_inner .input_wrap .img_wrap {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  -webkit-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
+}
+
+.hero_wrapper .crypto_account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #5F6265;
+  border-radius: 5px;
+  padding: 30px 50px 30px 70px;
+  margin-bottom: 30px;
+}
+
+.hero_wrapper .crypto_account .crypto_left {
+  max-width: 450px;
+  width: 100%;
+}
+
+.hero_wrapper .crypto_account .crypto_left h2 {
+  font-family: teko_light;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 64px;
+  color: #77CAD2;
+}
+
+.hero_wrapper .crypto_account .crypto_left p {
+  font-family: teko_light;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 57px;
+  color: #FFFFFF;
+}
+
+.hero_wrapper .crypto_account .crypto_left h1 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 86px;
+  color: #FFFFFF;
+}
+
+.hero_wrapper .crypto_account .crypto_left .active_sub h4 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 28px;
+  font-family: teko_rg;
+  color: #FFFFFF;
+}
+
+.hero_wrapper .crypto_account .crypto_left .active_sub h4 span {
+  text-decoration: underline;
+}
+
+.hero_wrapper .crypto_account .crypto_left .add_time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.hero_wrapper .crypto_account .crypto_left .add_time .time_btn {
+  max-width: 110px;
+  width: 100%;
+  height: 32px;
+  background: #77CAD2;
+  -webkit-box-shadow: 0px 2px 4px #3A3839;
+          box-shadow: 0px 2px 4px #3A3839;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 17px;
+  font-family: teko_md;
+  color: #000000;
+}
+
+.hero_wrapper .crypto_account .crypto_left .add_time p {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 28px;
+  font-family: teko_rg;
+  color: #FFFFFF;
+}
+
+.hero_wrapper .crypto_account .crypto_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 444px;
+  width: 100%;
+  gap: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero_wrapper .crypto_account .crypto_right .crypto_btn {
+  height: 56px;
+  background: #77CAD2;
+  -webkit-box-shadow: 0px 2px 4px #3A3839;
+          box-shadow: 0px 2px 4px #3A3839;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero_wrapper .crypto_account .crypto_right .crypto_btn a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  height: 100%;
+  gap: 9px;
+}
+
+.hero_wrapper .crypto_account .crypto_right .crypto_btn.monthly {
+  max-width: 188px;
+  width: 100%;
+}
+
+.hero_wrapper .crypto_account .crypto_right .crypto_btn.wallet {
+  max-width: 222px;
+  width: 100%;
+}
+
+.hero_wrapper .crypto_account .crypto_right .crypto_btn.personal {
+  max-width: 216px;
+  width: 100%;
+}
+
+.hero_wrapper .crypto_account .payment2_inner {
+  padding-top: 60px;
+  padding-bottom: 14px;
+}
+
+.hero_wrapper .crypto_account .payment2_inner h3 {
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 45px;
+  position: absolute;
+  left: 72px;
+  top: 33px;
+  color: #77CAD2;
+}
+
+.hero_wrapper .crypto_account .payment2_inner h1 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  color: #FFFFFF;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.hero_wrapper .crypto_account .payment2_inner p {
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 44px;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: teko_light;
+}
+
+.hero_wrapper .crypto_account .payment2_inner .payment2_detail {
+  padding-top: 55px;
+  padding-bottom: 100px;
+}
+
+.hero_wrapper .crypto_account .payment2_inner .btnz_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  padding-bottom: 120px;
+}
+
+.hero_wrapper .crypto_account .payment2_inner .btnz_wrap .payment_order {
+  max-width: 575px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  border-radius: 5px;
+  font-family: teko_light;
+  height: 82px;
+}
+
+.hero_wrapper .crypto_account .payment2_inner .btnz_wrap .payment_order.bewq_order {
+  height: 60px;
+  font-size: 30px;
+}
+
+.hero_wrapper .crypto_account .payment2_inner .btnz_wrap .payment_order.bg_blue {
+  background: #77CAD2;
+  -webkit-box-shadow: 0px 2px 4px #3A3839;
+          box-shadow: 0px 2px 4px #3A3839;
+}
+
+.hero_wrapper .crypto_account .payment2_inner .btnz_wrap .payment_order.bg_white {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 4px #3A3839;
+          box-shadow: 0px 2px 4px #3A3839;
+}
+
+.hero_wrapper.payment2_main {
+  margin-bottom: 120px;
+}
+
+.hero_wrapper .need_review {
+  background: linear-gradient(270.21deg, #737576 0.29%, rgba(78, 81, 83, 0.6566) 96.33%);
+  -webkit-box-shadow: 8px 10px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 8px 10px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 35px 47px 200px 47px;
+}
+
+.hero_wrapper .need_review .head_bg {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.09);
+  margin-bottom: 5px;
+}
+
+.hero_wrapper .need_review .review_head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  padding: 10px 33px;
+  padding-right: 0;
+  max-width: 815px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.hero_wrapper .need_review .review_head h5 {
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 45px;
+  font-family: teko_light;
+  color: #191A1D;
+  max-width: 100px;
+  width: 100%;
+  text-align: start;
+}
+
+.hero_wrapper .need_review .review_head h6 {
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 45px;
+  font-family: teko_light;
+  color: #191A1D;
+  max-width: 255px;
+  width: 100%;
+  text-align: center;
+}
+
+.hero_wrapper .need_review .accordion .accordion-button::after {
+  background-image: url("../img/drop_left.svg");
+  background-size: contain;
+  height: 30px;
+  width: 30px;
+}
+
+.hero_wrapper .need_review .accordion .accordion-button:not(.collapsed)::after {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.hero_wrapper .need_review .accordion .accordion-header {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  margin-bottom: 5px;
+}
+
+.hero_wrapper .need_review .accordion .accordion-button {
+  padding: 0;
+  width: 115px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.hero_wrapper .need_review .accordion .accordion-button:focus {
+  border-color: unset;
+  background-color: unset;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+}
+
+.hero_wrapper .need_review .accordion .accordion-button:not(.collapsed) {
+  border-color: unset;
+  background-color: unset;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+}
+
+.hero_wrapper .need_review .accordion .accordion-item {
+  border: none;
+}
+
+.hero_wrapper .need_review .accordion .accordion-body {
+  background: linear-gradient(270.21deg, #737576 0.29%, rgba(78, 81, 83, 0.6566) 96.33%);
+}
+
+.hero_wrapper .need_review .review_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  padding: 5px 33px;
+  max-width: 860px;
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+}
+
+.hero_wrapper .need_review .review_content.sub_wrap {
+  max-width: 625px;
+  width: 100%;
+  margin: 0 auto;
+  padding-right: 44px;
+  padding-left: 30px;
+}
+
+.hero_wrapper .need_review .review_content h4 {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 50px;
+  color: #191A1D;
+  font-family: teko_rg;
+  max-width: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+.hero_wrapper .need_review .review_content .btn {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 57px;
+  font-family: teko_light;
+  max-width: 249px;
+  width: 100%;
+  border-radius: 34px;
+  height: 65px;
+}
+
+.hero_wrapper .need_review .review_content .btn.partial {
+  color: #BB8300;
+  background: rgba(250, 186, 35, 0.6);
+}
+
+.hero_wrapper .need_review .review_content .btn.subscribe {
+  color: #209F00;
+  background: rgba(132, 228, 164, 0.62);
+}
+
+.hero_wrapper .need_review .review_content .btn.paid {
+  color: #77CAD2;
+  background: rgba(119, 202, 210, 0.19);
+}
+
+.hero_wrapper .need_review .review_content .btn.n_subscribe {
+  color: #B71C1C;
+  background: rgba(183, 28, 28, 0.31);
+}
+
+.hero_wrapper .need_review .form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.hero_wrapper .need_review .form-group label {
+  position: relative;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 38px;
+  color: red;
+  font-family: teko_light;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.hero_wrapper .need_review .form-group label::before {
+  content: '';
+  -webkit-appearance: none;
+  background: rgba(119, 202, 210, 0.69);
+  border-radius: 5px;
+  padding: 0px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.hero_wrapper .need_review .form-group input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url("../img/green_tick.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 0px;
+  left: 2px;
+  width: 30px;
+  height: 30px;
+}
+
+.hero_wrapper .need_review .checkbox_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 425px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero_wrapper .need_review .checkbox_wrapper .checkbox_inner .form-group {
+  margin-bottom: 15px;
+}
+
+.hero_wrapper .need_review .checkbox_wrapper .checkbox_inner .form-group label {
+  color: #fff;
+}
+
+.hero_wrapper .need_review .checkbox_wrapper .checkbox_inner .form-group.paid_input label::before {
+  background: #5F6265;
+}
+
+.hero_wrapper .need_review .checkbox_wrapper .checkbox_inner .form-group p {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  font-family: teko_light;
+  color: #FFFFFF;
+  margin-left: 10px;
+}
+
+.hero_wrapper .need_review .checkbox_wrapper .checkbox_inner .form-group input:checked + label:after {
+  background-image: url("../img/blue_tick.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hero_wrapper .need_review .checkbox_wrapper .checkbox_inner .form-group label::before {
+  background: #fff;
+}
+
+.hero_wrapper .wallet_balance .wallet_main {
+  background: linear-gradient(269.77deg, #585D62 0.1%, rgba(95, 98, 101, 0.656647) 98.07%, rgba(95, 98, 101, 0.656647) 98.07%, rgba(95, 98, 101, 0.656647) 98.07%);
+  -webkit-box-shadow: 8px 10px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 8px 10px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding-top: 75px;
+  padding-bottom: 40px;
+  margin-bottom: 115px;
+}
+
+.hero_wrapper .wallet_balance .wallet_main .wallet_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.hero_wrapper .wallet_balance .wallet_main .wallet_header::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #F5F5F5;
+}
+
+.hero_wrapper .wallet_balance .wallet_main .wallet_header .wallet_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero_wrapper .wallet_balance .wallet_main .wallet_header .wallet_title h3 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 38px;
+  color: #FFFFFF;
+  font-family: teko_light;
+}
+
+.hero_wrapper .wallet_balance .wallet_main .wallet_content {
+  padding-top: 20px;
+  max-width: 1150px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero_wrapper .wallet_balance .wallet_main .wallet_content .accordion-button::after {
+  background-image: url("../img/drop_left.svg");
+  background-size: contain;
+}
+
+.hero_wrapper .wallet_balance .wallet_main .wallet_content .accordion-button:not(.collapsed)::after {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.hero_wrapper .wallet_balance .wallet_main .wallet_content.prototype_1 .accordion-button {
+  background: #77CAD2;
+  -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.09);
+}
+
+.hero_wrapper .wallet_balance .wallet_main .wallet_content .accordion-button {
+  padding: 0;
+  padding-right: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.hero_wrapper .wallet_balance .wallet_main .wallet_content .accordion-item {
+  margin-bottom: 5px;
+  background: #585d6200;
+  border: none;
+}
+
+.hero_wrapper .wallet_balance .wallet_main .wallet_content .accordion-button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.hero_wrapper .wallet_balance .wallet_main .wallet_content .accordion-button:not(.collapsed) {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.hero_wrapper .wallet_balance .wallet_main .wallet_content .accordion_head {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 930px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3px 0;
+}
+
+.hero_wrapper .wallet_balance .wallet_main .wallet_content .accordion_head p {
+  font-family: teko_rg;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 43px;
+  color: #191A1D;
+}
+
+.hero_wrapper .wallet_balance .wallet_main .wallet_content .accordion_head h3 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 43px;
+  color: #191A1D;
+}
+
+.hero_wrapper .wallet_balance .wallet_main .wallet_content .table_wrap {
+  max-width: 1000px;
+  width: 100%;
+  margin-left: auto;
+}
+
+.hero_wrapper .wallet_balance .wallet_main .wallet_content .table_wrap tr {
+  border-style: unset;
+  border: none;
+  border-color: transparent;
+}
+
+.hero_wrapper .wallet_balance .wallet_main .wallet_content .table_wrap .crypto_img {
+  gap: 10px;
+  padding-top: 10px;
+  max-width: 250px;
+  width: 100%;
+}
+
+.hero_wrapper .wallet_balance .wallet_main .wallet_content .table_wrap .crypto_img img {
+  max-width: 50px;
+  width: 100%;
+}
+
+.hero_wrapper .wallet_balance .wallet_main .wallet_content .table_wrap h3 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 43px;
+  color: #FFFFFF;
+  max-width: 200px;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.hero_wrapper .wallet_balance .wallet_main .wallet_content .table_wrap p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-align: center;
+  word-wrap: break-word;
+  max-width: 200px;
+  width: 100%;
+}
+
+.hero_wrapper .wallet_balance .wallet_main .expired_sec {
+  padding-top: 97px;
+}
+
+.hero_wrapper .wallet_balance .wallet_main .expired_sec .expired_content {
+  max-width: 810px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 200px;
+}
+
+.hero_wrapper .wallet_balance .wallet_main .expired_sec .expired_content h3 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: teko_rg;
+}
+
+.hero_wrapper .wallet_balance .wallet_main .expired_sec .expired_content p {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 72px;
+  text-align: center;
+  color: #D9D9D9;
+  font-family: teko_light;
+}
+
+.hero_wrapper .wallet_balance .wallet_main .expired_sec .expired_content p a {
+  color: #77CAD2;
+}
+
+.hero_wrapper .wallet_balance .wallet_main .expired_sec .expired_content.expired__content {
+  padding-bottom: 100px;
+}
+
+.total_payment {
+  padding-bottom: 200px;
+}
+
+.total_payment .payment_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.total_payment .payment_inner h1 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.total_payment .payment_inner .send_payment {
+  max-width: 600px;
+  width: 100%;
+  height: 65px;
+  background: #77CAD2;
+  -webkit-box-shadow: 0px 2px 4px #3A3839;
+          box-shadow: 0px 2px 4px #3A3839;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  font-family: teko_light;
+  margin-top: 60px;
+}
+
+.total_payment .payment_inner .payment_left h3 {
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 45px;
+  color: #FFFFFF;
+  font-family: teko_rg;
+  margin-bottom: 20px;
+}
+
+.total_payment .payment_inner .payment_left .drop_wrap select {
+  position: relative;
+  width: 350px;
+  height: 52px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 37px;
+  padding-left: 25px;
+  font-family: teko_rg;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../img/drop_down.svg");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  padding-right: 1.5rem;
+}
+
+.total_payment .payment_inner .payment_left .drop_wrap select option {
+  background-color: #D9D9D9;
+}
+
+.total_payment .payment_inner .payment_left .drop_wrap select::-ms-expand {
+  display: none;
+}
+
+.total_payment .payment_inner .payment_left .drop_wrap img {
+  position: absolute;
+  bottom: 50%;
+  right: 15px;
+  -webkit-transform: translate(0%, 50%);
+          transform: translate(0%, 50%);
+}
+
+.total_payment .payment_inner .payment_left .drop_wrap .select-styled {
+  position: absolute;
+}
+
+.total_payment .payment_inner .payment_left .drop_wrap .dropdown-toggle::after {
+  content: none;
+}
+
+.total_payment .payment_inner .payment_left .drop_wrap .dropdown {
+  width: 350px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.total_payment .payment_inner .payment_left .drop_wrap .dropdown a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+  padding-right: 15px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 37px;
+  color: #191A1D;
+  height: 52px;
+  font-family: teko_rg;
+}
+
+.total_payment .payment_inner .payment_left .drop_wrap .dropdown ul {
+  width: 100%;
+  padding: 0;
+}
+
+.total_payment .payment_inner .payment_left .drop_wrap .dropdown ul li {
+  background: #D9D9D9;
+  margin-bottom: 5px;
+}
+
+.defi_img {
+  background-color: #5F6265;
+}
+
+.defi_img.defi_manage {
+  background-color: #3A3839;
+}
+
+.defi_img.defi_dewq .img_wrap img {
+  max-width: 135px;
+}
+
+.defi_img .container {
+  border-bottom: 1px solid #808080d4;
+  padding-bottom: 26px;
+}
+
+.defi_img .container img {
+  max-width: 247px;
+  width: 100%;
+}
+
+.defi_img .container .person_img {
+  position: absolute;
+  bottom: 10px;
+  right: 25px;
+}
+
+.defi_img .container .person_img img {
+  max-width: 296px;
+  width: 100%;
+}
+
+.footer_wrapper {
+  padding: 40px 0;
+  background-color: #5F6265;
+}
+
+.footer_wrapper.footer_manage {
+  background-color: #3A3839;
+}
+
+.footer_wrapper .footer_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer_wrapper .footer_inner ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 950px;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.footer_wrapper .footer_inner ul li {
+  list-style: none;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: #FFFFFF;
+}
+
+.footer_wrapper .footer_inner .social_icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 13px;
+}
+
+.bg_body {
+  background-color: #5F6265;
+}
+
+.bg_body.bg_multipleAccount {
+  background-color: #3A3839;
+  padding-top: 45px;
+}
+
+.bg_body.bg_multipleAccount .container {
+  max-width: 1231px;
+  width: 100%;
+}
+
+.modal_add_user .modal-dialog {
+  min-width: 611px !important;
+}
+
+.modal_add_user .modal-dialog .modal-content {
+  background: linear-gradient(90.07deg, #191A1D 1.75%, #3A3839 22.89%);
+  border-radius: 5px;
+}
+
+.modal_add_user .modal-dialog .modal-content .modal-header {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  border: none;
+  padding-bottom: 20px;
+}
+
+.modal_add_user .modal-dialog .modal-content .modal-body {
+  padding: 0;
+  padding-bottom: 75px;
+}
+
+.modal_add_user .modal-dialog .modal-content .modal-body h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  color: #77CAD2;
+  text-align: center;
+  padding-bottom: 23px;
+}
+
+.modal_add_user .modal-dialog .modal-content .modal-body .input_wrap {
+  position: relative;
+  max-width: 353px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 7px;
+}
+
+.modal_add_user .modal-dialog .modal-content .modal-body .input_wrap .user_img {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  -webkit-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
+}
+
+.modal_add_user .modal-dialog .modal-content .modal-body .input_wrap label {
+  position: absolute;
+  left: 70px;
+  top: 50%;
+  -webkit-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 36px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.modal_add_user .modal-dialog .modal-content .modal-body .input_wrap .right_arrow {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  -webkit-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
+  cursor: pointer;
+}
+
+.modal_add_user .modal-dialog .modal-content .modal-body .input_wrap input {
+  background: #191A1D;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 68px;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.modal_view_user .modal-dialog {
+  min-width: 760px !important;
+}
+
+.modal_view_user .modal-dialog .modal-content {
+  background: linear-gradient(90.07deg, #191A1D 1.75%, #3A3839 22.89%);
+  border-radius: 5px;
+}
+
+.modal_view_user .modal-dialog .modal-content .modal-header {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: none;
+  padding-bottom: 20px;
+}
+
+.modal_view_user .modal-dialog .modal-content .modal-body {
+  padding: 0;
+  padding-bottom: 75px;
+}
+
+.modal_view_user .modal-dialog .modal-content .modal-body h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  color: #77CAD2;
+  text-align: center;
+  padding-bottom: 23px;
+}
+
+.modal_view_user .modal-dialog .modal-content .modal-body .user_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 46px 65px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 680px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.modal_view_user .modal-dialog .modal-content .modal-body .user_main .user_inner {
+  max-width: 175px;
+  width: 100%;
+}
+
+.modal_view_user .modal-dialog .modal-content .modal-body .user_main .user_inner h4 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 22px;
+  margin-bottom: 10px;
+  color: #FFFFFF;
+}
+
+.modal_view_user .modal-dialog .modal-content .modal-body .user_main .user_inner .user_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.modal_view_user .modal-dialog .modal-content .modal-body .user_main .user_inner .user_name h5 {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
+  word-wrap: break-word;
+  word-wrap: break-word;
+  max-width: 130px;
+  width: 100%;
+}
+
+.modal_view_user .modal-dialog .modal-content .modal-body .user_main .user_inner .user_name.border_bg {
+  border-bottom: 1px solid #626060;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.modal_view_user .modal-dialog .modal-content .modal-body .user_main .user_inner .user_name .img_wrap img {
+  max-width: 30px;
+  width: 100%;
+  position: absolute;
+  top: -5px;
+  right: 0px;
+}
+
+.modal_delete .modal-dialog {
+  min-width: 469px !important;
+}
+
+.modal_delete .modal-dialog .modal-content {
+  background: #F4F4F4;
+  border-radius: 5px;
+}
+
+.modal_delete .modal-dialog .modal-content .modal-header {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  border: none;
+  padding-bottom: 20px;
+}
+
+.modal_delete .modal-dialog .modal-content .modal-body {
+  padding: 0;
+  padding-bottom: 35px;
+}
+
+.modal_delete .modal-dialog .modal-content .modal-body h2 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 57px;
+  color: #77CAD2;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.modal_delete .modal-dialog .modal-content .modal-body p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #5F6265;
+  max-width: 405px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.modal_delete .modal-dialog .modal-content .modal-body p span {
+  font-weight: 700;
+}
+
+.modal_delete .modal-dialog .modal-content .modal-body .btn_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal_delete .modal-dialog .modal-content .modal-body .btn_wrap .btn {
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 36px;
+  color: #FFFFFF;
+  max-width: 175px;
+  width: 100%;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  height: 59px;
+}
+
+.modal_delete .modal-dialog .modal-content .modal-body .btn_wrap .btn.cancel_btn {
+  background: #C71A1A;
+}
+
+.modal_delete .modal-dialog .modal-content .modal-body .btn_wrap .btn.confirm_btn {
+  background: #77CAD2;
+}
+
+.modal_add_user2 .modal-dialog {
+  min-width: 611px !important;
+}
+
+.modal_add_user2 .modal-dialog .modal-content {
+  background: linear-gradient(90.07deg, #191A1D 1.75%, #3A3839 22.89%);
+  border-radius: 5px;
+}
+
+.modal_add_user2 .modal-dialog .modal-content .modal-header {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  border: none;
+  padding-bottom: 20px;
+}
+
+.modal_add_user2 .modal-dialog .modal-content .modal-body {
+  padding: 0;
+  padding-bottom: 75px;
+}
+
+.modal_add_user2 .modal-dialog .modal-content .modal-body h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  color: #77CAD2;
+  text-align: center;
+}
+
+.modal_add_user2 .modal-dialog .modal-content .modal-body .input_wrap {
+  max-width: 353px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.modal_add_user2 .modal-dialog .modal-content .modal-body .input_wrap label {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 43px;
+  color: #FFFFFF;
+}
+
+.modal_add_user2 .modal-dialog .modal-content .modal-body .input_wrap input {
+  background: #F5F5F5;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  height: 52px;
+  border: none;
+  padding-left: 10px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 22px;
+  color: #5F6265;
+}
+
+.modal_add_user2 .modal-dialog .modal-content .modal-body .input_wrap input::-webkit-input-placeholder {
+  color: #5F6265;
+}
+
+.modal_add_user2 .modal-dialog .modal-content .modal-body .input_wrap input:-ms-input-placeholder {
+  color: #5F6265;
+}
+
+.modal_add_user2 .modal-dialog .modal-content .modal-body .input_wrap input::-ms-input-placeholder {
+  color: #5F6265;
+}
+
+.modal_add_user2 .modal-dialog .modal-content .modal-body .input_wrap input::placeholder {
+  color: #5F6265;
+}
+
+.modal_add_user2 .modal-dialog .modal-content .modal-body .input_wrap .dropdown .btn {
+  max-width: 353px;
+  width: 100%;
+  height: 53px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+  padding-right: 15px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #191A1D;
+}
+
+.modal_add_user2 .modal-dialog .modal-content .modal-body .input_wrap .dropdown ul {
+  max-width: 353px;
+  width: 100%;
+}
+
+.modal_add_user2 .modal-dialog .modal-content .modal-body .input_wrap .dropdown ul li a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.modal_add_user2 .modal-dialog .modal-content .modal-body .confirm_btn {
+  background: #77CAD2;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  max-width: 175px;
+  width: 100%;
+  margin: 0 auto;
+  height: 59px;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 36px;
+  color: #191A1D;
+  margin-top: 35px;
+}
+
+.dropdown-toggle::after {
+  content: none;
+}
+
+.rotate {
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.rotate.down {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.modal_order_365 .modal-dialog,
+.modal_monthly_report .modal-dialog,
+.modal_order_detail .modal-dialog {
+  min-width: 1189px !important;
+}
+
+.modal_order_365 .modal-dialog .modal-content,
+.modal_monthly_report .modal-dialog .modal-content,
+.modal_order_detail .modal-dialog .modal-content {
+  background: -webkit-gradient(linear, left top, right top, color-stop(3.57%, #191A1D), color-stop(100%, #052F33), to(#052F33));
+  background: linear-gradient(90deg, #191A1D 3.57%, #052F33 100%, #052F33 100%);
+  border-radius: 10px;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-header,
+.modal_monthly_report .modal-dialog .modal-content .modal-header,
+.modal_order_detail .modal-dialog .modal-content .modal-header {
+  border: none;
+  padding-bottom: 20px;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-header .img_wrap img,
+.modal_monthly_report .modal-dialog .modal-content .modal-header .img_wrap img,
+.modal_order_detail .modal-dialog .modal-content .modal-header .img_wrap img {
+  max-width: 247px;
+  width: 100%;
+  padding-top: 30px;
+  padding-left: 25px;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body,
+.modal_monthly_report .modal-dialog .modal-content .modal-body,
+.modal_order_detail .modal-dialog .modal-content .modal-body {
+  padding: 0;
+  padding-bottom: 100px;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body h2,
+.modal_monthly_report .modal-dialog .modal-content .modal-body h2,
+.modal_order_detail .modal-dialog .modal-content .modal-body h2 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 86px;
+  color: #77CAD2;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .order_detail,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .order_detail,
+.modal_order_detail .modal-dialog .modal-content .modal-body .order_detail {
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 35px;
+  text-align: center;
+  max-width: 350px;
+  width: 100%;
+  margin: 0 auto;
+  color: #FFFFFF;
+  font-family: teko_light;
+  margin-bottom: 30px;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .order_detail.order__detail,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .order_detail.order__detail,
+.modal_order_detail .modal-dialog .modal-content .modal-body .order_detail.order__detail {
+  font-size: 30px;
+  line-height: 30px;
+  max-width: 100%;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .order_detail.order__detail span,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .order_detail.order__detail span,
+.modal_order_detail .modal-dialog .modal-content .modal-body .order_detail.order__detail span {
+  text-decoration: underline;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .payment2_titl,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .payment2_titl,
+.modal_order_detail .modal-dialog .modal-content .modal-body .payment2_titl {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #77CAD2;
+  font-family: teko_light;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .report_inner,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .report_inner,
+.modal_order_detail .modal-dialog .modal-content .modal-body .report_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 760px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 20px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .report_inner.order_inner,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .report_inner.order_inner,
+.modal_order_detail .modal-dialog .modal-content .modal-body .report_inner.order_inner {
+  display: unset;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .report_inner .checkbox_wrap,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .report_inner .checkbox_wrap,
+.modal_order_detail .modal-dialog .modal-content .modal-body .report_inner .checkbox_wrap {
+  max-width: 353px;
+  width: 100%;
+  margin-left: 30px;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .report_inner .checkbox_wrap .form-group,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .report_inner .checkbox_wrap .form-group,
+.modal_order_detail .modal-dialog .modal-content .modal-body .report_inner .checkbox_wrap .form-group {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .report_inner .checkbox_wrap .form-group input,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .report_inner .checkbox_wrap .form-group input,
+.modal_order_detail .modal-dialog .modal-content .modal-body .report_inner .checkbox_wrap .form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .report_inner .checkbox_wrap .form-group label,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .report_inner .checkbox_wrap .form-group label,
+.modal_order_detail .modal-dialog .modal-content .modal-body .report_inner .checkbox_wrap .form-group label {
+  position: relative;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 38px;
+  color: #FFFFFF;
+  font-family: teko_light;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .report_inner .checkbox_wrap .form-group label:before,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .report_inner .checkbox_wrap .form-group label:before,
+.modal_order_detail .modal-dialog .modal-content .modal-body .report_inner .checkbox_wrap .form-group label:before {
+  content: '';
+  -webkit-appearance: none;
+  background-color: gray;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 0px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .report_inner .checkbox_wrap .form-group input:checked + label:after,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .report_inner .checkbox_wrap .form-group input:checked + label:after,
+.modal_order_detail .modal-dialog .modal-content .modal-body .report_inner .checkbox_wrap .form-group input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url("../img/blue_tick.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  top: -2px;
+  left: 2px;
+  width: 30px;
+  height: 30px;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .report_inner .input_wrap,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .report_inner .input_wrap,
+.modal_order_detail .modal-dialog .modal-content .modal-body .report_inner .input_wrap {
+  max-width: 353px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .report_inner .input_wrap label,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .report_inner .input_wrap label,
+.modal_order_detail .modal-dialog .modal-content .modal-body .report_inner .input_wrap label {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #FFFFFF;
+  font-family: teko_light;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .report_inner .input_wrap .input_calender,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .report_inner .input_wrap .input_calender,
+.modal_order_detail .modal-dialog .modal-content .modal-body .report_inner .input_wrap .input_calender {
+  position: relative;
+  background: #F5F5F5;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  height: 52px;
+  border: none;
+  padding-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .report_inner .input_wrap .input_calender.bg_calender,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .report_inner .input_wrap .input_calender.bg_calender,
+.modal_order_detail .modal-dialog .modal-content .modal-body .report_inner .input_wrap .input_calender.bg_calender {
+  background-color: #AAA0A0;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .report_inner .input_wrap .input_calender img,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .report_inner .input_wrap .input_calender img,
+.modal_order_detail .modal-dialog .modal-content .modal-body .report_inner .input_wrap .input_calender img {
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  right: 10px;
+  position: absolute;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .report_inner .input_wrap .input_calender p,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .report_inner .input_wrap .input_calender p,
+.modal_order_detail .modal-dialog .modal-content .modal-body .report_inner .input_wrap .input_calender p {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 33px;
+  font-family: 'teko_rg';
+  color: #191A1D;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  left: 10px;
+  position: absolute;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .report_inner .input_wrap .dropdown .btn,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .report_inner .input_wrap .dropdown .btn,
+.modal_order_detail .modal-dialog .modal-content .modal-body .report_inner .input_wrap .dropdown .btn {
+  max-width: 353px;
+  width: 100%;
+  height: 53px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+  padding-right: 15px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 33px;
+  font-family: 'teko_rg';
+  color: #191A1D;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .report_inner .input_wrap .dropdown .dropdown-toggle::after,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .report_inner .input_wrap .dropdown .dropdown-toggle::after,
+.modal_order_detail .modal-dialog .modal-content .modal-body .report_inner .input_wrap .dropdown .dropdown-toggle::after {
+  content: none;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .report_inner .input_wrap .dropdown .rotate,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .report_inner .input_wrap .dropdown .rotate,
+.modal_order_detail .modal-dialog .modal-content .modal-body .report_inner .input_wrap .dropdown .rotate {
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .report_inner .input_wrap .dropdown .rotate.down,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .report_inner .input_wrap .dropdown .rotate.down,
+.modal_order_detail .modal-dialog .modal-content .modal-body .report_inner .input_wrap .dropdown .rotate.down {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .report_inner .input_wrap .dropdown ul,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .report_inner .input_wrap .dropdown ul,
+.modal_order_detail .modal-dialog .modal-content .modal-body .report_inner .input_wrap .dropdown ul {
+  max-width: 353px;
+  width: 100%;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .report_inner .input_wrap .dropdown ul li a,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .report_inner .input_wrap .dropdown ul li a,
+.modal_order_detail .modal-dialog .modal-content .modal-body .report_inner .input_wrap .dropdown ul li a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .confirm_btn,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .confirm_btn,
+.modal_order_detail .modal-dialog .modal-content .modal-body .confirm_btn {
+  background: #77CAD2;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  max-width: 277px;
+  width: 100%;
+  margin: 0 auto;
+  height: 64px;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 30px;
+  color: #191A1D;
+  margin-top: 100px;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .order_btn,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .order_btn,
+.modal_order_detail .modal-dialog .modal-content .modal-body .order_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 640px;
+  width: 100%;
+  margin: 25px auto;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .order_btn .cancel_btn,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .order_btn .cancel_btn,
+.modal_order_detail .modal-dialog .modal-content .modal-body .order_btn .cancel_btn {
+  background-color: #DD1F1F;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .order_btn.payment_btn,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .order_btn.payment_btn,
+.modal_order_detail .modal-dialog .modal-content .modal-body .order_btn.payment_btn {
+  max-width: 470px;
+  width: 100%;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .order_btn.payment_btn .confirm_btn,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .order_btn.payment_btn .confirm_btn,
+.modal_order_detail .modal-dialog .modal-content .modal-body .order_btn.payment_btn .confirm_btn {
+  max-width: 100%;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .drop_wrap,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .drop_wrap,
+.modal_order_detail .modal-dialog .modal-content .modal-body .drop_wrap {
+  max-width: 350px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .drop_wrap label,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .drop_wrap label,
+.modal_order_detail .modal-dialog .modal-content .modal-body .drop_wrap label {
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 45px;
+  color: #FFFFFF;
+  font-family: teko_rg;
+  margin-bottom: 20px;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .drop_wrap .dropdown,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .drop_wrap .dropdown,
+.modal_order_detail .modal-dialog .modal-content .modal-body .drop_wrap .dropdown {
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .drop_wrap .dropdown a,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .drop_wrap .dropdown a,
+.modal_order_detail .modal-dialog .modal-content .modal-body .drop_wrap .dropdown a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+  padding-right: 15px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 37px;
+  color: #191A1D;
+  height: 52px;
+  font-family: teko_rg;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .drop_wrap .dropdown ul,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .drop_wrap .dropdown ul,
+.modal_order_detail .modal-dialog .modal-content .modal-body .drop_wrap .dropdown ul {
+  width: 100%;
+  padding: 0;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .drop_wrap .dropdown ul li,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .drop_wrap .dropdown ul li,
+.modal_order_detail .modal-dialog .modal-content .modal-body .drop_wrap .dropdown ul li {
+  background: #D9D9D9;
+  margin-bottom: 5px;
+}
+
+.modal_order_365 .modal-dialog .modal-content .modal-body .drop_wrap h4,
+.modal_monthly_report .modal-dialog .modal-content .modal-body .drop_wrap h4,
+.modal_order_detail .modal-dialog .modal-content .modal-body .drop_wrap h4 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  margin: 50px 0;
+  color: #FFFFFF;
+  font-family: teko_rg;
+}
+
+.modal_personal_wallet.modal_manage_wallet .modal-dialog {
+  min-width: 1050px !important;
+}
+
+.modal_personal_wallet.modal_manage_wallet .modal-dialog .modal-content .modal-body .wallet_inner {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  max-width: 510px !important;
+  width: 100% !important;
+  margin: a auto;
+}
+
+.modal_personal_wallet.modal_manage_wallet .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.modal_personal_wallet.modal_manage_wallet .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap label {
+  padding-bottom: 0;
+}
+
+.modal_personal_wallet.modal_manage_wallet .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap input {
+  width: 370px;
+  color: #B2B6BB;
+  font-family: teko_rg;
+}
+
+.modal_personal_wallet.modal_manage_wallet .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap input::-webkit-input-placeholder {
+  color: #B2B6BB;
+}
+
+.modal_personal_wallet.modal_manage_wallet .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap input:-ms-input-placeholder {
+  color: #B2B6BB;
+}
+
+.modal_personal_wallet.modal_manage_wallet .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap input::-ms-input-placeholder {
+  color: #B2B6BB;
+}
+
+.modal_personal_wallet.modal_manage_wallet .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap input::placeholder {
+  color: #B2B6BB;
+}
+
+.modal_personal_wallet.modal_manage_wallet .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap .dropdown .btn {
+  max-width: 370px !important;
+  width: 370px;
+  color: #B2B6BB;
+  font-family: teko_rg;
+}
+
+.modal_personal_wallet.modal_manage_wallet .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap .dropdown ul li a {
+  color: #B2B6BB;
+}
+
+.modal_personal_wallet.modal_manage_wallet .modal-dialog .modal-content .modal-body .text_area {
+  max-width: 510px !important;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal_personal_wallet.modal_manage_wallet .modal-dialog .modal-content .modal-body .text_area textarea {
+  height: 160px;
+  max-width: 370px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 25px;
+  color: #B2B6BB;
+  font-family: teko_rg;
+}
+
+.modal_personal_wallet.modal_manage_wallet .modal-dialog .modal-content .modal-body .text_area textarea::-webkit-input-placeholder {
+  color: #B2B6BB;
+}
+
+.modal_personal_wallet.modal_manage_wallet .modal-dialog .modal-content .modal-body .text_area textarea:-ms-input-placeholder {
+  color: #B2B6BB;
+}
+
+.modal_personal_wallet.modal_manage_wallet .modal-dialog .modal-content .modal-body .text_area textarea::-ms-input-placeholder {
+  color: #B2B6BB;
+}
+
+.modal_personal_wallet.modal_manage_wallet .modal-dialog .modal-content .modal-body .text_area textarea::placeholder {
+  color: #B2B6BB;
+}
+
+.modal_personal_wallet .modal-dialog {
+  min-width: 1189px !important;
+}
+
+.modal_personal_wallet .modal-dialog .modal-content {
+  background: -webkit-gradient(linear, left top, right top, color-stop(3.57%, #191A1D), color-stop(100%, #052F33), to(#052F33));
+  background: linear-gradient(90deg, #191A1D 3.57%, #052F33 100%, #052F33 100%);
+  border-radius: 10px;
+}
+
+.modal_personal_wallet .modal-dialog .modal-content .modal-header {
+  border: none;
+  padding-bottom: 20px;
+}
+
+.modal_personal_wallet .modal-dialog .modal-content .modal-header .img_wrap img {
+  max-width: 247px;
+  width: 100%;
+  padding-top: 30px;
+  padding-left: 25px;
+}
+
+.modal_personal_wallet .modal-dialog .modal-content .modal-body {
+  padding: 0;
+  padding-bottom: 70px;
+}
+
+.modal_personal_wallet .modal-dialog .modal-content .modal-body h2 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 86px;
+  color: #77CAD2;
+  text-align: center;
+}
+
+.modal_personal_wallet .modal-dialog .modal-content .modal-body h6 {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 57px;
+  color: #FFFFFF;
+  padding-bottom: 60px;
+  text-align: center;
+  font-family: teko_light;
+}
+
+.modal_personal_wallet .modal-dialog .modal-content .modal-body label {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #FFFFFF;
+  font-family: teko_light;
+  padding-bottom: 5px;
+}
+
+.modal_personal_wallet .modal-dialog .modal-content .modal-body .text_area {
+  max-width: 870px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.modal_personal_wallet .modal-dialog .modal-content .modal-body .text_area textarea {
+  height: 165px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 25px;
+  color: #B2B6BB;
+  font-family: teko_rg;
+}
+
+.modal_personal_wallet .modal-dialog .modal-content .modal-body .text_area textarea::-webkit-input-placeholder {
+  color: #B2B6BB;
+}
+
+.modal_personal_wallet .modal-dialog .modal-content .modal-body .text_area textarea:-ms-input-placeholder {
+  color: #B2B6BB;
+}
+
+.modal_personal_wallet .modal-dialog .modal-content .modal-body .text_area textarea::-ms-input-placeholder {
+  color: #B2B6BB;
+}
+
+.modal_personal_wallet .modal-dialog .modal-content .modal-body .text_area textarea::placeholder {
+  color: #B2B6BB;
+}
+
+.modal_personal_wallet .modal-dialog .modal-content .modal-body .wallet_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 870px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.modal_personal_wallet .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap {
+  max-width: 350px;
+  width: 100%;
+}
+
+.modal_personal_wallet .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap input {
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 0;
+  height: 52px;
+  padding-left: 14px;
+  position: relative;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 20px;
+  color: #B2B6BB;
+  font-family: teko_rg;
+}
+
+.modal_personal_wallet .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap input::-webkit-input-placeholder {
+  color: #B2B6BB;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+}
+
+.modal_personal_wallet .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap input:-ms-input-placeholder {
+  color: #B2B6BB;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.modal_personal_wallet .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap input::-ms-input-placeholder {
+  color: #B2B6BB;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.modal_personal_wallet .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap input::placeholder {
+  color: #B2B6BB;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+}
+
+.modal_personal_wallet .modal-dialog .modal-content .modal-body .confirm_btn {
+  background: #77CAD2;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  max-width: 277px;
+  width: 100%;
+  margin: 0 auto;
+  height: 64px;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 30px;
+  color: #191A1D;
+  margin-top: 100px;
+}
+
+.modal_Checkout_inbox .modal,
+.modal_payment_sent .modal {
+  z-index: 999999999999999999999999;
+}
+
+.modal_Checkout_inbox .modal-dialog,
+.modal_payment_sent .modal-dialog {
+  min-width: 996px !important;
+}
+
+.modal_Checkout_inbox .modal-dialog .modal-content,
+.modal_payment_sent .modal-dialog .modal-content {
+  background: -webkit-gradient(linear, left top, right top, color-stop(3.57%, #191A1D), color-stop(100%, #052F33), to(#052F33));
+  background: linear-gradient(90deg, #191A1D 3.57%, #052F33 100%, #052F33 100%);
+  border-radius: 10px;
+}
+
+.modal_Checkout_inbox .modal-dialog .modal-content .modal-header,
+.modal_payment_sent .modal-dialog .modal-content .modal-header {
+  border: none;
+  padding-bottom: 20px;
+}
+
+.modal_Checkout_inbox .modal-dialog .modal-content .modal-header .img_wrap img,
+.modal_payment_sent .modal-dialog .modal-content .modal-header .img_wrap img {
+  max-width: 148px;
+  width: 100%;
+  padding-top: 30px;
+  padding-left: 25px;
+}
+
+.modal_Checkout_inbox .modal-dialog .modal-content .modal-header.payment_head .img_wrap img,
+.modal_payment_sent .modal-dialog .modal-content .modal-header.payment_head .img_wrap img {
+  max-width: 250px;
+  width: 100%;
+  padding-top: 30px;
+  padding-left: 25px;
+}
+
+.modal_Checkout_inbox .modal-dialog .modal-content .modal-body,
+.modal_payment_sent .modal-dialog .modal-content .modal-body {
+  padding: 0;
+  padding-bottom: 100px;
+}
+
+.modal_Checkout_inbox .modal-dialog .modal-content .modal-body h2,
+.modal_payment_sent .modal-dialog .modal-content .modal-body h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: #77CAD2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal_Checkout_inbox .modal-dialog .modal-content .modal-body h6,
+.modal_payment_sent .modal-dialog .modal-content .modal-body h6 {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 30px;
+  color: #FFFFFF;
+  padding-bottom: 10px;
+  text-align: center;
+  font-family: teko_light;
+}
+
+.modal_Checkout_inbox .modal-dialog .modal-content .modal-body label,
+.modal_payment_sent .modal-dialog .modal-content .modal-body label {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #FFFFFF;
+  font-family: teko_light;
+  padding-bottom: 5px;
+}
+
+.modal_Checkout_inbox .modal-dialog .modal-content .modal-body .text_area,
+.modal_payment_sent .modal-dialog .modal-content .modal-body .text_area {
+  max-width: 870px;
+  width: 100%;
+  margin: 0 auto;
+  height: 168px;
+}
+
+.modal_Checkout_inbox .modal-dialog .modal-content .modal-body .text_area textarea,
+.modal_payment_sent .modal-dialog .modal-content .modal-body .text_area textarea {
+  height: 100%;
+}
+
+.modal_Checkout_inbox .modal-dialog .modal-content .modal-body .wallet_inner,
+.modal_payment_sent .modal-dialog .modal-content .modal-body .wallet_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 870px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.modal_Checkout_inbox .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap,
+.modal_payment_sent .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap {
+  max-width: 350px;
+  width: 100%;
+}
+
+.modal_Checkout_inbox .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap input,
+.modal_payment_sent .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap input {
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 0;
+  height: 52px;
+  padding-left: 14px;
+  position: relative;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 20px;
+}
+
+.modal_Checkout_inbox .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap input::-webkit-input-placeholder,
+.modal_payment_sent .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 20px;
+  color: #B2B6BB;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+}
+
+.modal_Checkout_inbox .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap input:-ms-input-placeholder,
+.modal_payment_sent .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 20px;
+  color: #B2B6BB;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.modal_Checkout_inbox .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap input::-ms-input-placeholder,
+.modal_payment_sent .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap input::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 20px;
+  color: #B2B6BB;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.modal_Checkout_inbox .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap input::placeholder,
+.modal_payment_sent .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap input::placeholder {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 20px;
+  color: #B2B6BB;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+}
+
+.modal_Checkout_inbox .modal-dialog .modal-content .modal-body .confirm_btn,
+.modal_payment_sent .modal-dialog .modal-content .modal-body .confirm_btn {
+  background: #77CAD2;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  max-width: 277px;
+  width: 100%;
+  margin: 0 auto;
+  height: 64px;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 30px;
+  color: #191A1D;
+  margin-top: 100px;
+}
+
+.modal_Checkout_inbox .modal-dialog .modal-content .modal-body .go_dash,
+.modal_payment_sent .modal-dialog .modal-content .modal-body .go_dash {
+  max-width: 470px;
+  width: 100%;
+  margin: 0 auto;
+  height: 65px;
+  background: #77CAD2;
+  -webkit-box-shadow: 0px 2px 4px #3A3839;
+          box-shadow: 0px 2px 4px #3A3839;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 57px;
+  color: #000000;
+  font-family: teko_rg;
+  margin-top: 60px;
+}
+
+.modal_monthly_calender .modal-dialog {
+  min-width: 263px !important;
+  max-width: 263px !important;
+  margin: 0 auto;
+}
+
+.modal_monthly_calender .modal-dialog .modal-content {
+  background: #FFFFFF;
+  border-radius: 5px;
+}
+
+.modal_monthly_calender .modal-dialog .modal-content .modal-header {
+  border: none;
+  padding-bottom: 12px;
+}
+
+.modal_monthly_calender .modal-dialog .modal-content .modal-header h5 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 16px;
+  color: #1B1B1B;
+}
+
+.modal_monthly_calender .modal-dialog .modal-content .modal-header .checkbox_wrap .form-group {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.modal_monthly_calender .modal-dialog .modal-content .modal-header .checkbox_wrap .form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.modal_monthly_calender .modal-dialog .modal-content .modal-header .checkbox_wrap .form-group label {
+  position: relative;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  font-family: teko_light;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.modal_monthly_calender .modal-dialog .modal-content .modal-header .checkbox_wrap .form-group label:before {
+  content: '';
+  -webkit-appearance: none;
+  background: #77CAD2;
+  border-radius: 3px;
+  padding: 0px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
+}
+
+.modal_monthly_calender .modal-dialog .modal-content .modal-header .checkbox_wrap .form-group input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url("../img/tick.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: -3px;
+  left: -1px;
+  width: 18px;
+  height: 18px;
+}
+
+.modal_monthly_calender .modal-dialog .modal-content .modal-body {
+  padding: 0;
+  padding-bottom: 10px;
+}
+
+.modal_monthly_calender .modal-dialog .modal-content .modal-body .months_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 250px;
+  gap: 16px 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.modal_monthly_calender .modal-dialog .modal-content .modal-body .months_wrap h3 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 16px;
+  text-align: center;
+  color: #1B1B1B;
+  max-width: 70px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.modal_monthly_calender .modal-dialog .modal-content .modal-body .months_wrap .highlighted {
+  background: #77CAD2;
+  border-radius: 16px;
+  padding: 6px 0;
+}
+
+.modal_monthly_calender .modal-dialog .modal-content .modal-body .confirm_btn {
+  background: #77CAD2;
+  border-radius: 5px;
+  max-width: 92px;
+  width: 100%;
+  margin: 0 auto;
+  height: 26px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  margin-top: 30px;
+}
+
+.modal_year_calender .modal-dialog {
+  min-width: 263px !important;
+  max-width: 263px !important;
+  margin: 0 auto;
+}
+
+.modal_year_calender .modal-dialog .modal-content {
+  background: #FFFFFF;
+  border-radius: 5px;
+}
+
+.modal_year_calender .modal-dialog .modal-content .modal-header {
+  border: none;
+  padding-bottom: 12px;
+}
+
+.modal_year_calender .modal-dialog .modal-content .modal-header h5 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 16px;
+  color: #1B1B1B;
+}
+
+.modal_year_calender .modal-dialog .modal-content .modal-body {
+  padding: 0;
+  padding-bottom: 40px;
+}
+
+.modal_year_calender .modal-dialog .modal-content .modal-body .months_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 250px;
+  gap: 16px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.modal_year_calender .modal-dialog .modal-content .modal-body .months_wrap h3 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 16px;
+  text-align: center;
+  color: #1B1B1B;
+  max-width: 70px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.modal_year_calender .modal-dialog .modal-content .modal-body .months_wrap .highlighted {
+  background: #77CAD2;
+  border-radius: 16px;
+  padding: 6px 0;
+}
+
+.modal_year_calender .modal-dialog .modal-content .modal-body .confirm_btn {
+  background: #77CAD2;
+  border-radius: 5px;
+  max-width: 92px;
+  width: 100%;
+  margin: 0 auto;
+  height: 26px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  margin-top: 30px;
+}
+
+.modal_setting .modal-dialog {
+  min-width: 611px !important;
+}
+
+.modal_setting .modal-dialog .modal-content {
+  background: linear-gradient(90.07deg, #191A1D 1.75%, #3A3839 22.89%);
+  border-radius: 5px;
+}
+
+.modal_setting .modal-dialog .modal-content .modal-header {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  border: none;
+  padding-bottom: 20px;
+}
+
+.modal_setting .modal-dialog .modal-content .modal-body {
+  padding: 0;
+  padding-bottom: 75px;
+}
+
+.modal_setting .modal-dialog .modal-content .modal-body h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  color: #77CAD2;
+  text-align: center;
+  padding-bottom: 23px;
+}
+
+.modal_setting .modal-dialog .modal-content .modal-body .input_wrap {
+  position: relative;
+  max-width: 353px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 7px;
+}
+
+.modal_setting .modal-dialog .modal-content .modal-body .input_wrap .user_img {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  -webkit-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
+}
+
+.modal_setting .modal-dialog .modal-content .modal-body .input_wrap label {
+  position: absolute;
+  left: 70px;
+  top: 50%;
+  -webkit-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 36px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.modal_setting .modal-dialog .modal-content .modal-body .input_wrap .right_arrow {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  -webkit-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
+  cursor: pointer;
+}
+
+.modal_setting .modal-dialog .modal-content .modal-body .input_wrap .coming_soon {
+  position: absolute;
+  right: -28%;
+  top: 50%;
+  -webkit-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
+  cursor: pointer;
+}
+
+.modal_setting .modal-dialog .modal-content .modal-body .input_wrap .coming_soon p {
+  font-family: teko_md;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  color: #D9D9D9;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.modal_setting .modal-dialog .modal-content .modal-body .input_wrap input {
+  background: #191A1D;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 68px;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.update_name .modal-dialog {
+  min-width: 611px !important;
+}
+
+.update_name .modal-dialog .modal-content {
+  background: linear-gradient(90.07deg, #191A1D 1.75%, #3A3839 22.89%);
+  border-radius: 5px;
+}
+
+.update_name .modal-dialog .modal-content .modal-header {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  border: none;
+  padding-bottom: 20px;
+}
+
+.update_name .modal-dialog .modal-content .modal-body {
+  padding: 0;
+  padding-bottom: 20px;
+}
+
+.update_name .modal-dialog .modal-content .modal-body h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  color: #77CAD2;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.update_name .modal-dialog .modal-content .modal-body .input_wrap {
+  max-width: 353px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.update_name .modal-dialog .modal-content .modal-body .input_wrap label {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.update_name .modal-dialog .modal-content .modal-body .input_wrap input {
+  background: #F5F5F5;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  height: 52px;
+  border: none;
+  padding-left: 10px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 22px;
+  color: #AAA0A0;
+}
+
+.update_name .modal-dialog .modal-content .modal-body .input_wrap input::-webkit-input-placeholder {
+  color: #AAA0A0;
+}
+
+.update_name .modal-dialog .modal-content .modal-body .input_wrap input:-ms-input-placeholder {
+  color: #AAA0A0;
+}
+
+.update_name .modal-dialog .modal-content .modal-body .input_wrap input::-ms-input-placeholder {
+  color: #AAA0A0;
+}
+
+.update_name .modal-dialog .modal-content .modal-body .input_wrap input::placeholder {
+  color: #AAA0A0;
+}
+
+.update_name .modal-dialog .modal-content .modal-body .confirm_btn {
+  background: #77CAD2;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  max-width: 175px;
+  width: 100%;
+  margin: 0 auto;
+  height: 59px;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 36px;
+  color: #191A1D;
+  margin-top: 35px;
+}
+
+.dropdown .btn {
+  max-width: 353px;
+  width: 100%;
+  height: 53px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+  padding-right: 15px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #191A1D;
+}
+
+.dropdown .dropdown-toggle::after {
+  content: none;
+}
+
+.dropdown .rotate {
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.dropdown ul {
+  max-width: 353px;
+  width: 100%;
+}
+
+.dropdown ul li a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.dropdown-toggle.show .rotate {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.total_payment .payment_inner .payment_left .drop_wrap select.customselect__open {
+  background-image: url("../img/drop_left.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
+
+.contractor_wrap .contractor_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #5F6265;
+  border-radius: 5px;
+  padding: 35px 0;
+  margin-bottom: 25px;
+}
+
+.contractor_wrap .contractor_inner .contractor_content .contractor_title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #FFFFFF;
+  font-family: teko_rg;
+  margin-bottom: 30px;
+}
+
+.contractor_wrap .contractor_inner .contractor_content .contractor_title span {
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 35px;
+  color: #FFFFFF;
+  font-family: teko_light;
+}
+
+.contractor_wrap .contractor_inner .contractor_content .contractor_title a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #77CAD2;
+  font-family: teko_light;
+  padding-left: 10px;
+}
+
+.contractor_wrap .contractor_wallet {
+  background: linear-gradient(269.77deg, #585D62 0.1%, rgba(95, 98, 101, 0.656647) 98.07%, rgba(95, 98, 101, 0.656647) 98.07%, rgba(95, 98, 101, 0.656647) 98.07%);
+  -webkit-box-shadow: 8px 10px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 8px 10px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding-top: 60px;
+  padding-bottom: 100px;
+  margin-bottom: 100px;
+}
+
+.contractor_wrap .contractor_wallet .nav-tabs {
+  gap: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+}
+
+.contractor_wrap .contractor_wallet .nav-tabs .nav-item {
+  max-width: 548px;
+  width: 100%;
+  height: 80px;
+}
+
+.contractor_wrap .contractor_wallet .nav-tabs .nav-item .nav-link.active {
+  background: #77CAD2;
+}
+
+.contractor_wrap .contractor_wallet .nav-tabs .nav-item .nav-link {
+  background: #808080;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  font-family: teko_rg;
+  color: #3A3839;
+  border: none;
+}
+
+.contractor_wrap .contractor_wallet .tab-content {
+  padding-top: 30px;
+}
+
+.contractor_wrap .contractor_wallet .tab-content .add_btn {
+  max-width: 160px;
+  width: 100%;
+  height: 50px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 2px #F5F5F5;
+          box-shadow: 0px 2px 2px #F5F5F5;
+  border-radius: 5px;
+  gap: 3px;
+  font-family: teko_rg;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 20px;
+  color: #000000;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.contractor_wrap .contractor_wallet .tab-content .add_btn img {
+  width: 11px;
+}
+
+.contractor_wrap .contractor_wallet .tab-content .table_contractor_account table {
+  max-width: 1078px;
+  width: 100%;
+  margin: 0 auto;
+  border-spacing: 0 16px;
+}
+
+.contractor_wrap .contractor_wallet .tab-content .table_contractor_account table tr.border_bottom::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: calc(100% + 129px);
+  left: -65px;
+  background-color: #F5F5F5;
+  bottom: 60px;
+}
+
+.contractor_wrap .contractor_wallet .tab-content .table_contractor_account table tr.border_bottom {
+  height: 120px;
+  vertical-align: baseline;
+}
+
+.contractor_wrap .contractor_wallet .tab-content .table_contractor_account table .clr_red {
+  color: #DD1F1F;
+}
+
+.contractor_wrap .contractor_wallet .tab-content .table_contractor_account table .clr_green {
+  color: #209F00;
+}
+
+.contractor_wrap .contractor_wallet .tab-content .table_contractor_account table .clr_blue {
+  color: #407BFF;
+}
+
+.contractor_wrap .contractor_wallet .tab-content .table_contractor_account.table_contractor_account2 table {
+  max-width: 825px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contractor_wrap .contractor_wallet .tab-content .table_contractor_account.table_contractor_account2 table tr.border_bottom::after {
+  content: "";
+  width: calc(100% + 381px);
+  left: -190px;
+}
+
+.contractor_wrap .contractor_wallet .tab-content .table_contractor_account.table_contractor_account2 table img {
+  width: 45px;
+}
+
+.contractor_wrap .contractor_wallet .tab-content .table_contractor_account.table_contractor_account2 table td {
+  vertical-align: middle;
+  padding: 10px 0;
+}
+
+.contractor_wrap .contractor_wallet .tab-content .table_contractor_account.table_contractor_account2 table td h6 {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 20px;
+  color: #3A3839;
+  font-family: teko_rg;
+  margin-bottom: 10px;
+}
+
+.payment_report .payment_content {
+  max-width: 620px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.payment_report .payment_content .report_arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 40px 0;
+}
+
+.payment_report .payment_content h3 {
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 40px;
+  color: #FFFFFF;
+  font-family: teko_rg;
+  text-align: center;
+}
+
+.payment_report .payment_content .payment_value {
+  margin-bottom: 50px;
+}
+
+.payment_report .payment_content .payment_value p {
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 50px;
+  color: #FFFFFF;
+  font-family: teko_rg;
+  text-align: center;
+}
+
+.payment_report .payment_tbl table {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  border-spacing: 0 8px;
+}
+
+.payment_report .payment_tbl table .clr_red {
+  color: #B71C1C;
+}
+
+.payment_report .payment_tbl table .clr_green {
+  color: #209F00;
+}
+
+.payment_report .payment_tbl table .border_bottom {
+  height: 80px;
+  vertical-align: baseline;
+}
+
+.payment_report .payment_tbl table .border_bottom::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: calc(100% + 18px);
+  left: -18px;
+  background-color: #F5F5F5;
+  bottom: 30px;
+}
+
+.chart_content {
+  max-width: 100% !important;
+}
+
+.chart_content .drop_wraps {
+  margin-top: 30px;
+}
+
+.chart_content .chart_title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.chart_content .dropdown {
+  margin-bottom: 15px;
+}
+
+.chart_content .dropdown .btn {
+  max-width: 325px;
+  margin: 0 auto;
+  height: 40px;
+  font-family: teko_rg;
+}
+
+.chart_content .dropdown .btn img {
+  width: 17px;
+}
+
+.chart_content .dropdown ul {
+  max-width: 325px;
+  inset: unset !important;
+  position: unset !important;
+  -webkit-transform: unset !important;
+          transform: unset !important;
+  margin: 0 auto !important;
+  margin-top: 5px !important;
+}
+
+.chart_content .dropdown ul a {
+  font-family: teko_rg;
+}
+
+.graph_chat {
+  padding: 90px 60px;
+  background: rgba(25, 26, 29, 0.93);
+  border-radius: 5px;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+.dewq_btnz {
+  margin-left: 50px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.dewq_left img {
+  max-width: 180px;
+}
+
+.dewq_left .nav_inner {
+  height: 190px !important;
+}
+
+@media (max-width: 1199.98px) {
+  .dewq_left img {
+    max-width: 150px !important;
+  }
+  .manage_wallet .active_days {
+    max-width: 540px;
+  }
+  .manage_wallet .wallet_title.wallet__title {
+    max-width: 540px;
+  }
+  .manage_wallet .table_wrap.transaction_tbl td {
+    line-height: 21px;
+    vertical-align: middle;
+  }
+  .modal_personal_wallet.modal_manage_wallet .modal-dialog {
+    min-width: 920px !important;
+  }
+  .nav_wrapper .nav_inner .nav_right .btn.logout_btn.dash_btn {
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  .nav_wrapper .nav_inner .nav_right .btn.logout_btn {
+    width: 130px;
+    height: 45px;
+  }
+  .manage_wallet .wallet_title h1 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .manage_wallet .wallet_title {
+    margin-bottom: 30px;
+  }
+  .manage_wallet .wallet_title img {
+    max-width: 50px;
+  }
+  .manage_wallet h3 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+  .manage_wallet .table_wrap th {
+    font-size: 32px;
+    line-height: 30px;
+  }
+  .manage_wallet .table_wrap td {
+    font-size: 26px;
+    line-height: 26px;
+    padding: 20px 0;
+  }
+  .manage_wallet .table_wrap .table {
+    margin-bottom: 40px;
+  }
+  .manage_wallet .wallet_label .add_wallet {
+    max-width: 170px;
+    height: 45px;
+    gap: 5px;
+  }
+  .manage_wallet {
+    height: 100vh;
+  }
+  .manage_wallet .table_wrap .table.second_tbl {
+    padding-bottom: 0;
+  }
+  .index_hero {
+    height: calc(100vh - 126px);
+  }
+  .index_hero .container {
+    height: 100%;
+  }
+  .index_hero .hero_img img {
+    -webkit-transform: unset;
+            transform: unset;
+  }
+  .index_hero .hero__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .index_hero .hero_img {
+    position: unset;
+    margin: 0 auto;
+    -webkit-transform: unset;
+            transform: unset;
+    max-width: 700px;
+  }
+  .why_choose .why_choose_main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 50px;
+  }
+  .why_choose {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .service_wrap {
+    padding: 90px 0;
+  }
+  .service_wrap .service_inner {
+    max-width: 660px;
+  }
+  .price_wrap {
+    padding: 80px 0;
+  }
+  .price_wrap h2 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .price_wrap p {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .price_wrap .price_inner .price_box {
+    padding: 30px;
+    max-width: 360px;
+  }
+  .price_wrap .price_inner .price_box .price__box {
+    padding: 30px;
+  }
+  .price_wrap .price_inner .price_box .account_btn {
+    max-width: 240px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .price_wrap .price_inner .price_box h1 {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 30px 0;
+  }
+  .team_wrap {
+    padding-bottom: 90px;
+  }
+  .contact_wrap {
+    padding: 90px 0;
+  }
+  .contact_wrap .contact_inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .contact_wrap .live_wrap {
+    max-width: inherit;
+  }
+  .index_nav .index_tabs li a {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .team_wrap .team_inner .team_box .img_wrap img {
+    margin-bottom: 30px;
+    max-width: 280px;
+    width: 100%;
+  }
+  .team_wrap h2 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .price_wrap .price_inner {
+    max-width: 880px;
+  }
+  .price_wrap .price_inner .price_box .buynow_btn {
+    max-width: 180px;
+    height: 45px;
+    font-size: 25px;
+    line-height: 25px;
+    margin-top: 25px;
+  }
+  .service_wrap .service_inner .service_box p {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .service_wrap .service_inner .service_box .img_wrap img {
+    max-width: 100px;
+  }
+  .service_wrap h1 {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
+  .index_hero .hero__main .hero_content {
+    height: auto;
+    margin: 0 auto;
+  }
+  .hero_wrapper .wallet_balance .dash_main .dash_content .accordion_head {
+    max-width: 830px;
+  }
+  .hero_wrapper .wallet_balance .wallet_main .dash_content {
+    max-width: 970px;
+  }
+  .hero_wrapper .wallet_balance .wallet_main .dash_content .accordion-button::after {
+    margin-left: 5px;
+  }
+  .hero_wrapper .wallet_balance .wallet_main .dash_content .accordion-button {
+    padding-right: 5px;
+  }
+  .modal_order_365 .modal-dialog {
+    min-width: 900px !important;
+  }
+  .modal_order_detail .modal-dialog {
+    min-width: 900px !important;
+  }
+  .modal_payment_sent .modal-dialog {
+    min-width: 900px !important;
+  }
+  .hero_wrapper .crypto_account .payment2_inner h1 {
+    font-size: 40px;
+    line-height: 40px;
+    padding-top: 15px !important;
+  }
+  .hero_wrapper .need_review {
+    padding: 20px 20px 150px 20px;
+  }
+  .hero_wrapper .need_review .review_content.sub_wrap {
+    max-width: 670px;
+    padding-right: 0px;
+    padding-left: 117px;
+  }
+  .hero_wrapper .need_review .review_head {
+    max-width: 790px;
+  }
+  .total_payment {
+    padding-bottom: 120px;
+  }
+  .total_payment .payment_inner h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .total_payment .payment_inner .payment_left h3 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 15px;
+  }
+  .total_payment .payment_inner .send_payment {
+    max-width: 410px;
+    height: 55px;
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 30px;
+    margin-left: auto;
+  }
+  .total_payment .payment_inner {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  .hero_wrapper .need_review .review_content {
+    padding: 5px 20px;
+    max-width: 840px;
+  }
+  .hero_wrapper .crypto_account .payment2_inner h3 {
+    font-size: 35px;
+    line-height: 35px;
+    left: 10px;
+    top: 10px;
+  }
+  .hero_wrapper .crypto_account .payment2_inner p {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .hero_wrapper .crypto_account .payment2_inner .payment2_detail {
+    padding-top: 0px;
+    padding-bottom: 60px;
+  }
+  .hero_wrapper.payment2_main {
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero_wrapper .crypto_account .payment2_inner {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .wallet_balance .wallet_main .expired_sec .expired_content {
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+  .modal_Checkout_inbox .modal-dialog {
+    min-width: 910px !important;
+  }
+  .modal_monthly_report .modal-dialog {
+    min-width: 930px !important;
+  }
+  .modal_personal_wallet .modal-dialog {
+    min-width: 930px !important;
+  }
+  .hero_wrapper .crypto_account .crypto_left h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .hero_wrapper .crypto_account .crypto_left p {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .hero_wrapper .crypto_account .crypto_left h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .hero_wrapper .crypto_account .crypto_right .crypto_btn a {
+    font-size: 16px;
+    line-height: 16px;
+    gap: 5px;
+  }
+  .hero_wrapper .crypto_account .crypto_right .crypto_btn img {
+    width: 25px;
+  }
+  .hero_wrapper .crypto_account .crypto_right .crypto_btn.monthly {
+    max-width: 140px;
+  }
+  .hero_wrapper .crypto_account .crypto_right .crypto_btn.wallet {
+    max-width: 180px;
+  }
+  .hero_wrapper .crypto_account .crypto_right .crypto_btn.personal {
+    max-width: 180px;
+  }
+  .hero_wrapper .crypto_account .crypto_right {
+    max-width: 340px;
+    gap: 15px;
+  }
+  .hero_wrapper .wallet_balance .wallet_main {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+  }
+  .wallet_balance .wallet_main .wallet_header .wallet_title img {
+    width: 20px;
+  }
+  .wallet_balance .wallet_main .wallet_header .wallet_title {
+    gap: 10px;
+  }
+  .hero_wrapper .wallet_balance .wallet_main .wallet_header .wallet_title h3 {
+    font-size: 32px;
+    line-height: 26px;
+  }
+  .hero_wrapper .crypto_account .crypto_right .crypto_btn {
+    height: 45px;
+  }
+  .hero_wrapper .crypto_account {
+    padding: 30px 15px;
+  }
+  .wallet_balance .wallet_main .wallet_content .accordion_head img {
+    width: 70px;
+  }
+  .wallet_balance .wallet_main .wallet_content .accordion_head {
+    max-width: 800px;
+  }
+  .wallet_balance .wallet_main .wallet_content {
+    padding-top: 15px;
+    max-width: 900px;
+  }
+  .nav_wrapper .nav_inner .nav_right .dropdown .dropdown-menu {
+    left: 0px !important;
+    top: 34px !important;
+    width: 380px;
+  }
+  .nav_wrapper .nav_inner .nav_right .dropdown .notify_arrow {
+    top: -25px;
+  }
+  .nav_wrapper .nav_inner .nav_right .dropdown .dropdown-menu li .wallet_detail .wallet_btn {
+    max-width: 150px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .nav_wrapper .nav_inner .nav_right .btn.create_btn {
+    width: 170px;
+    height: 50px;
+  }
+  .nav_wrapper .nav_inner .nav_right .btn.sign_btn {
+    width: 100px;
+    height: 50px;
+  }
+  .nav_wrapper .nav_inner .nav_right .btn {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 18px;
+  }
+  .hero_wrapper .hero_inner {
+    padding-left: 20px;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero_wrapper .hero_inner .hero_left .hero_title {
+    font-weight: 700;
+    line-height: 40px;
+  }
+  .hero_wrapper .hero_inner .hero_left .hero_detail {
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  .hero_wrapper .hero_inner .hero_left .input_wrap input {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 20px;
+  }
+  .hero_wrapper .hero_inner .hero_left .input_wrap .img_wrap {
+    right: 20px;
+  }
+  .hero_wrapper .hero_inner .hero_left .navtab_wrap {
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+  .hero_wrapper .hero_inner .hero_left .create_btn {
+    height: 50px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .hero_wrapper .hero_inner .hero_left .already_login {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .hero_wrapper {
+    margin-bottom: -1px;
+    min-height: calc(100vh - 275px);
+  }
+  .footer_wrapper {
+    background-color: #5F6265;
+    padding: 25px 0;
+  }
+  .footer_wrapper .footer_inner ul li {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .footer_wrapper .footer_inner ul {
+    max-width: 780px;
+  }
+  .footer_wrapper .footer_inner .social_icons {
+    gap: 10px;
+  }
+  .footer_wrapper .footer_inner .social_icons img {
+    max-width: 35px;
+    width: 100%;
+  }
+  .hero_wrapper .hero_inner .hero_left {
+    max-width: 600px;
+  }
+  .bg_body.bg_multipleAccount {
+    padding-top: 30px;
+  }
+  .hero_wrapper .multiple_inner {
+    padding: 0 20px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .hero_wrapper .multiple_inner h2 {
+    font-size: 36px;
+    line-height: 35px;
+    margin-bottom: 10px;
+  }
+  .hero_wrapper .multiple_inner .your_account h3 {
+    font-size: 33px;
+    line-height: 33px;
+  }
+  .hero_wrapper .multiple_inner .your_account p {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 15px;
+  }
+  .hero_wrapper .multiple_inner .your_account .input_wrap input {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .hero_wrapper .multiple_inner .account_main .account_inner h3 {
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+  .hero_wrapper .multiple_inner .your_account {
+    padding-bottom: 40px;
+  }
+  .nav_wrapper .nav_inner .nav_right .right_inner {
+    width: 450px;
+  }
+  .nav_wrapper .nav_inner .nav_right .right_inner .nav_icons {
+    gap: 15px;
+  }
+  .nav_wrapper .nav_inner .nav_right .right_inner .nav_icons .img_wrap img {
+    max-width: 45px;
+    width: 100%;
+  }
+  .defi_img .container .person_img img {
+    max-width: 260px;
+  }
+  .defi_img .container .person_img {
+    right: 30px;
+  }
+  .contractor_wrap .contractor_inner .contractor_content .contractor_title {
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 15px;
+  }
+  .contractor_wrap .contractor_inner .contractor_content .contractor_title span {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .contractor_wrap .contractor_inner .contractor_content .contractor_title a {
+    padding-left: 7px;
+  }
+  .contractor_wrap .contractor_inner {
+    padding: 25px 0;
+  }
+  .contractor_wrap .contractor_wallet .nav-tabs .nav-item .nav-link {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .contractor_wrap .contractor_wallet .nav-tabs {
+    gap: 25px;
+  }
+  .contractor_wrap .contractor_wallet .nav-tabs .nav-item {
+    max-width: 380px;
+    height: 65px;
+  }
+  .contractor_wrap .contractor_wallet .tab-content .table_contractor_account table {
+    max-width: 920px;
+  }
+  .contractor_wrap .contractor_wallet .tab-content .table_contractor_account table tr.border_bottom::after {
+    bottom: 25px;
+  }
+  .contractor_wrap .contractor_wallet .tab-content .table_contractor_account table tr.border_bottom {
+    height: 80px;
+  }
+  .contractor_wrap .contractor_wallet .tab-content .table_contractor_account.table_contractor_account2 table tr.border_bottom::after {
+    content: "";
+    width: calc(100% + 174px);
+    left: -87px;
+  }
+  .contractor_wrap .contractor_wallet .tab-content .table_contractor_account.table_contractor_account2 table img {
+    width: 40px;
+  }
+  .contractor_wrap .contractor_wallet .tab-content .table_contractor_account table tr.border_bottom::after {
+    width: calc(100% + 81px);
+    left: -41px;
+  }
+  .payment_report .payment_content .report_arrow .payment_arrow {
+    max-width: 140px;
+    width: 100%;
+  }
+  .payment_report .payment_content h3 {
+    font-size: 40px;
+  }
+  .payment_report .payment_content {
+    max-width: 480px;
+  }
+  .payment_report .payment_content .report_arrow {
+    margin: 30px 0;
+  }
+  .payment_report .payment_tbl table {
+    max-width: 940px;
+  }
+  .payment_report .payment_tbl table .border_bottom::after {
+    width: calc(100% + 60px);
+    left: -30px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .dewq_left img {
+    max-width: 100px !important;
+  }
+  .defi_img.defi_dewq .img_wrap img {
+    max-width: 110px;
+  }
+  .dewq_btnz {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .dewq_btnz .btn.logout_btn {
+    width: 125px !important;
+  }
+  .ul_open {
+    width: 188px;
+    padding: 5px 5px;
+  }
+  .ul_open li {
+    margin: 0 5px;
+  }
+  .ul_open .popover__menu {
+    min-width: 65px;
+    top: 35px;
+    right: 13px;
+  }
+  .ul_open .popover__menu.whale_poper {
+    right: -18px;
+  }
+  .ul_open .popover__menu:after {
+    border-width: 8px;
+  }
+  .ul_open img {
+    width: 20px !important;
+  }
+  .ul_open .popover__menu-item button {
+    padding: 5px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .nav_wrapper .nav_inner.nav_inner {
+    height: 75px;
+  }
+  .modal_personal_wallet .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap input {
+    font-size: 22px;
+  }
+  .nav_wrapper .nav_inner .nav_right .right_inner .nav_icons .img_wrap {
+    height: auto;
+  }
+  .manage_wallet .wallet_title {
+    margin-bottom: 20px;
+  }
+  .manage_wallet .active_heading {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .manage_wallet .active_days {
+    max-width: 434px;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  .manage_wallet .table_wrap.transaction_tbl tr {
+    height: 0;
+  }
+  .manage_wallet .table_wrap.transaction_tbl table {
+    border-spacing: 0 10px;
+  }
+  .manage_wallet .active_days .active_inner {
+    max-width: 110px;
+  }
+  .manage_wallet .active_days .active_btnz .active_btn {
+    font-size: 20px;
+    line-height: 18px;
+    height: 40px;
+  }
+  .manage_wallet .wallet_title.wallet__title {
+    max-width: 434px;
+    margin-bottom: 20px;
+  }
+  .modal_personal_wallet.modal_manage_wallet .modal-dialog {
+    min-width: 670px !important;
+  }
+  .manage_wallet .table_wrap tr {
+    height: 60px;
+    vertical-align: middle;
+  }
+  .manage_wallet .table_wrap .edit_delete_btnz {
+    top: 0;
+  }
+  .manage_wallet .table_wrap .edit_delete_btnz .edit_delete {
+    width: 30px;
+    height: 30px;
+  }
+  .manage_wallet .table_wrap .edit_delete_btnz .edit_delete img {
+    width: 18px;
+  }
+  .manage_wallet .table_wrap .edit_delete_btnz .edit_delete.bg_clr {
+    margin-top: 2px;
+  }
+  .manage_wallet .table_wrap .edit_tr {
+    max-width: 25px;
+    height: calc(100% - 1px);
+  }
+  .manage_wallet .table_wrap.transaction_tbl .edit_tr {
+    max-width: 25px;
+    height: 100%;
+  }
+  .manage_wallet .table_wrap .edit_tr span {
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .modal_order_365 .modal-dialog .modal-content .modal-body .order_btn.payment_btn {
+    max-width: 320px;
+    width: 100%;
+  }
+  .nav_wrapper .nav_inner .nav_right {
+    height: 45px;
+  }
+  .nav_wrapper .nav_inner .nav_right .btn.logout_btn.dash_btn {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .manage_wallet .wallet_title h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .manage_wallet .table_wrap th img {
+    width: 17px;
+  }
+  .manage_wallet .table_wrap td {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 15px 0;
+  }
+  .manage_wallet .wallet_label .add_wallet {
+    max-width: 160px;
+    height: 40px;
+  }
+  .manage_wallet .wallet_label .add_wallet span {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+  }
+  .manage_wallet .wallet_label .wallet_dropdown .dropdown a {
+    padding: 0 10px;
+    font-size: 21px;
+    line-height: 20px;
+  }
+  .manage_wallet .wallet_label .wallet_dropdown .dropdown a img {
+    width: 20px;
+  }
+  .manage_wallet .wallet_label .wallet_dropdown .dropdown {
+    height: 45px;
+  }
+  .manage_wallet .wallet_label .input_wrap input {
+    padding: 0px;
+    padding-left: 35px;
+    font-size: 22px;
+    line-height: 20px;
+  }
+  .manage_wallet .wallet_label .input_wrap {
+    height: 45px;
+  }
+  .manage_wallet .wallet_label .input_wrap .img_wrap {
+    left: 10px;
+    width: 22px;
+  }
+  .manage_wallet .wallet_label {
+    margin-bottom: 30px;
+    padding-left: 10px;
+  }
+  .manage_wallet {
+    height: 80vh;
+  }
+  .manage_wallet h3 {
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+  }
+  .manage_wallet .table_wrap th {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .index_hero {
+    height: 100vh;
+    padding: 50px 0;
+  }
+  .service_wrap .service_inner .service_box {
+    max-width: 190px;
+    width: 100%;
+  }
+  .price_wrap .price_inner .price_box .account_btn {
+    max-width: 200px;
+    font-size: 25px;
+    line-height: 24px;
+  }
+  .price_wrap .price_inner .price_box {
+    max-width: 325px;
+  }
+  .price_wrap .price_inner {
+    max-width: 700px;
+  }
+  .price_wrap {
+    padding: 60px 0;
+  }
+  .price_wrap .price_inner .price_box .buynow_btn {
+    max-width: 150px;
+    height: 40px;
+    line-height: 24px;
+  }
+  .team_wrap {
+    padding: 60px 0;
+  }
+  .team_wrap .team_inner .team_box .img_wrap img {
+    margin-bottom: 20px;
+    max-width: 210px;
+  }
+  .contact_wrap {
+    padding: 60px 0;
+  }
+  .contact_wrap .live_wrap .live_chat {
+    max-width: 200px;
+    height: 50px;
+  }
+  .index_hero .hero_img {
+    max-width: 600px;
+  }
+  .service_wrap {
+    padding: 60px 0;
+  }
+  .service_wrap .service_inner .service_box .img_wrap img {
+    max-width: 80px;
+  }
+  .hero_wrapper .wallet_balance .dash_main .dash_content .accordion_head {
+    max-width: 600px;
+  }
+  .index_hero .hero__main {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .index_nav .index_tabs li a {
+    font-size: 21px;
+    line-height: 20px;
+    padding: 0;
+  }
+  .index_hero .hero__main .hero_content .hero_title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .index_hero .hero__main .hero_content {
+    max-width: 375px;
+  }
+  .index_hero .hero__main .hero_content .hero_detail {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .hero_wrapper .wallet_balance .wallet_main .dash_content {
+    max-width: 700px;
+  }
+  .modal_order_365 .modal-dialog .modal-content .modal-body {
+    padding-bottom: 50px;
+  }
+  .modal_order_365 .modal-dialog .modal-content .modal-body .order_btn {
+    max-width: 460px;
+    gap: 25px;
+  }
+  .modal_order_365 .modal-dialog {
+    min-width: 690px !important;
+  }
+  .hero_wrapper .wallet_balance .wallet_main .expired_sec .expired_content.expired__content {
+    padding-bottom: 30px;
+  }
+  .hero_wrapper .crypto_account .crypto_left {
+    padding-left: 15px;
+  }
+  .hero_wrapper .crypto_account .crypto_left .active_sub .add_time {
+    margin-bottom: 10px;
+  }
+  .modal_order_detail .modal-dialog {
+    min-width: 690px !important;
+  }
+  .modal_payment_sent .modal-dialog {
+    min-width: 690px !important;
+  }
+  .modal_order_detail .modal-dialog .modal-content .modal-body .order_btn {
+    max-width: 460px;
+    gap: 25px;
+  }
+  .hero_wrapper .crypto_account {
+    padding: 25px 0px;
+  }
+  .hero_wrapper .need_review .review_head {
+    max-width: 520px;
+    padding-left: 10px;
+  }
+  .total_payment .payment_inner h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .hero_wrapper .need_review .review_head h5 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .total_payment .payment_inner .payment_left h3 {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .total_payment .payment_inner .payment_left .drop_wrap .dropdown a {
+    padding-left: 15px;
+    padding-right: 10px;
+    font-size: 34px;
+    line-height: 32px;
+    height: 45px;
+  }
+  .total_payment .payment_inner .send_payment {
+    max-width: 290px;
+    height: 45px;
+    font-size: 34px;
+    line-height: 30px;
+    margin-top: 20px;
+  }
+  .total_payment {
+    padding: 90px 0;
+  }
+  .total_payment .payment_inner .payment_left .drop_wrap .dropdown {
+    width: 250px;
+    -webkit-transition: unset;
+    transition: unset;
+  }
+  .hero_wrapper .need_review .review_content.sub_wrap {
+    max-width: 465px;
+    padding-left: 26px;
+  }
+  .hero_wrapper .need_review {
+    padding: 20px 20px 100px 20px;
+  }
+  .hero_wrapper .need_review .review_head h6 {
+    font-size: 40px;
+    line-height: 40px;
+    max-width: 200px;
+  }
+  .hero_wrapper .crypto_account .payment2_inner .btnz_wrap .payment_order {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .hero_wrapper .crypto_account .payment2_inner .btnz_wrap {
+    gap: 0;
+    padding-bottom: 50px;
+  }
+  .hero_wrapper .crypto_account .payment2_inner h1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .hero_wrapper .crypto_account .payment2_inner h3 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .hero_wrapper .crypto_account .payment2_inner p {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .hero_wrapper .crypto_account .payment2_inner p {
+    font-size: 34px;
+    line-height: 30px;
+  }
+  .hero_wrapper .wallet_balance .wallet_main .expired_sec {
+    padding-top: 50px;
+  }
+  .wallet_balance .wallet_main .expired_sec .img_wrap img {
+    max-width: 400px;
+    width: 100%;
+  }
+  .hero_wrapper .wallet_balance .wallet_main .expired_sec .expired_content h3 {
+    font-size: 40px;
+    line-height: 40px;
+    padding-bottom: 10px;
+  }
+  .hero_wrapper .wallet_balance .wallet_main .expired_sec .expired_content {
+    padding-bottom: 20px;
+  }
+  .hero_wrapper .wallet_balance .wallet_main .expired_sec .expired_content p {
+    font-size: 32px;
+    line-height: 30px;
+  }
+  .modal_Checkout_inbox .modal-dialog {
+    min-width: 670px !important;
+  }
+  .modal_Checkout_inbox .modal-dialog .modal-content .modal-header .img_wrap img {
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  .modal_Checkout_inbox .modal-dialog .modal-content .modal-body {
+    padding-bottom: 30px;
+  }
+  .hero_wrapper .crypto_account .crypto_right .crypto_btn img {
+    width: 22px;
+  }
+  .hero_wrapper .crypto_account .crypto_left h1 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .wallet_balance .wallet_main .wallet_content .accordion_head img {
+    width: 60px;
+  }
+  .wallet_balance .wallet_main .wallet_content .accordion_head {
+    max-width: 590px;
+  }
+  .modal_monthly_report .modal-dialog {
+    min-width: 700px !important;
+  }
+  .modal_monthly_report .modal-dialog .modal-content .modal-header .img_wrap img {
+    max-width: 200px;
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  .modal_personal_wallet .modal-dialog {
+    min-width: 700px !important;
+  }
+  .modal_personal_wallet .modal-dialog .modal-content .modal-header .img_wrap img {
+    max-width: 200px;
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  .modal_monthly_report .modal-dialog .modal-content .modal-body h2 {
+    font-size: 40px;
+    line-height: 50px;
+    padding-bottom: 30px;
+  }
+  .modal_monthly_report .modal-dialog .modal-content .modal-body .report_inner {
+    max-width: 400px;
+  }
+  .modal_monthly_report .modal-dialog .modal-content .modal-body .confirm_btn {
+    max-width: 190px;
+    height: 45px;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 16px;
+    margin-top: 25px;
+  }
+  .modal_personal_wallet .modal-dialog .modal-content .modal-body .confirm_btn {
+    max-width: 190px;
+    height: 45px;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 16px;
+    margin-top: 55px;
+  }
+  .modal_monthly_report .modal-dialog .modal-content .modal-body {
+    padding-bottom: 25px;
+  }
+  .modal_personal_wallet .modal-dialog .modal-content .modal-body h2 {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 50px;
+    padding-top: 10px;
+  }
+  .modal_personal_wallet .modal-dialog .modal-content .modal-body h6 {
+    font-size: 30px;
+    line-height: 40px;
+    padding-bottom: 25px;
+  }
+  .modal_personal_wallet .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap {
+    max-width: 300px;
+  }
+  .modal_personal_wallet .modal-dialog .modal-content .modal-body .wallet_inner {
+    max-width: 650px;
+  }
+  .modal_personal_wallet .modal-dialog .modal-content .modal-body .text_area {
+    max-width: 650px;
+  }
+  .hero_wrapper .crypto_account .crypto_right .crypto_btn.monthly {
+    max-width: 130px;
+  }
+  .hero_wrapper .crypto_account .crypto_right .crypto_btn.wallet {
+    max-width: 160px;
+  }
+  .hero_wrapper .crypto_account .crypto_right .crypto_btn.personal {
+    max-width: 160px;
+  }
+  .bg_multipleAccount .hero_wrapper {
+    min-height: calc(100vh - 210px);
+  }
+  .alert_success {
+    padding-top: 5px !important;
+    left: 15px !important;
+    font-size: 18px;
+  }
+  .alert_danger {
+    padding-top: 5px !important;
+    left: 15px !important;
+    font-size: 18px;
+  }
+  .modal_view_user .modal-dialog {
+    min-width: 700px !important;
+  }
+  .nav_wrapper .nav_inner .nav_right .nav-tabs {
+    width: 350px;
+  }
+  .nav_wrapper .nav_inner .nav_right .nav-tabs .nav-link {
+    width: 100px;
+    font-size: 16px;
+  }
+  .popover {
+    left: initial !important;
+  }
+  .popover .popover-arrow {
+    left: initial !important;
+  }
+  .popover .popover-arrow::after {
+    border-left-color: #77CAD2;
+    border-top-color: transparent;
+  }
+  .popover .popover-arrow::before {
+    border-top-color: transparent;
+  }
+  .nav_wrapper .nav_inner .nav_right .btn.create_btn {
+    width: 140px;
+    height: 45px;
+  }
+  .nav_wrapper .nav_inner .nav_right .btn.sign_btn {
+    width: 85px;
+    height: 45px;
+  }
+  .nav_wrapper .nav_inner .nav_left img {
+    max-width: 240px;
+  }
+  .nav_wrapper .nav_inner .nav_right .btn {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 16px;
+  }
+  .hero_wrapper .hero_inner {
+    padding-left: 0;
+    padding-top: 30px;
+    margin-bottom: 40px;
+  }
+  .hero_wrapper .hero_inner .hero_left .create_btn {
+    height: 45px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .defi_img .container img {
+    max-width: 200px;
+  }
+  .footer_wrapper .footer_inner ul li {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .footer_wrapper .footer_inner ul {
+    max-width: 625px;
+  }
+  .footer_wrapper .footer_inner .social_icons {
+    gap: 5px;
+  }
+  .footer_wrapper {
+    padding: 15px 0;
+  }
+  .defi_img .container {
+    border-bottom: 1px solid #808080d4;
+    padding-bottom: 10px;
+  }
+  .hero_wrapper .hero_inner .hero_right {
+    max-width: 600px;
+  }
+  .hero_wrapper .multiple_inner {
+    max-width: 700px;
+    margin-bottom: 50px;
+  }
+  .nav_wrapper .nav_inner .nav_right .right_inner {
+    width: 330px;
+  }
+  .nav_wrapper .nav_inner .nav_right .btn.logout_btn {
+    width: 110px;
+    height: 40px;
+  }
+  .hero_wrapper .multiple_inner .your_account h3 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .hero_wrapper .multiple_inner .your_account .input_wrap input {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .hero_wrapper .multiple_inner .account_main .account_inner {
+    max-width: 300px;
+  }
+  .hero_wrapper .multiple_inner .account_main .account_inner h3 {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+  .hero_wrapper .multiple_inner .account_main {
+    padding-bottom: 45px;
+  }
+  .defi_img .container .person_img img {
+    max-width: 175px;
+  }
+  .contractor_wrap .contractor_wallet .nav-tabs .nav-item {
+    max-width: 290px;
+    height: 60px;
+  }
+  .contractor_wrap .contractor_wallet .tab-content .add_btn {
+    max-width: 130px;
+    height: 45px;
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  .contractor_wrap .contractor_wallet .tab-content .table_contractor_account.table_contractor_account2 table {
+    max-width: 630px;
+  }
+  .contractor_wrap .contractor_wallet .tab-content .table_contractor_account.table_contractor_account2 table tr.border_bottom::after {
+    content: "";
+    width: calc(100% + 113px);
+    left: -56px;
+  }
+  .contractor_wrap .contractor_wallet {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    margin-bottom: 80px;
+  }
+  .nav_wrapper .nav_inner .nav_right .right_inner .nav_icons .img_wrap img {
+    max-width: 30px;
+  }
+  .contractor_wrap .contractor_wallet .tab-content .table_contractor_account.table_contractor_account2 table img {
+    width: 30px;
+  }
+  .contractor_wrap .contractor_wallet .tab-content .table_contractor_account table {
+    max-width: 700px;
+  }
+  .contractor_wrap .contractor_wallet .tab-content .table_contractor_account table tr.border_bottom::after {
+    width: calc(100% + 43px);
+    left: -21px;
+  }
+  .table_wrap th {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .payment_report .payment_content .report_arrow .payment_arrow {
+    max-width: 100px;
+  }
+  .payment_report .payment_content {
+    max-width: 380px;
+  }
+  .payment_report .payment_content h3 {
+    font-size: 35px;
+    line-height: 30px;
+  }
+  .payment_report .payment_content .payment_value p {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .payment_report .payment_tbl table td {
+    max-width: 110px;
+    overflow-wrap: break-word;
+  }
+  .payment_report .payment_tbl table .border_bottom::after {
+    width: calc(100% + 32px);
+    left: -16px;
+  }
+  .chart_content .chart_title {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 15px;
+  }
+  .graph_chat {
+    padding: 25px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+  .chart_content .chart_title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .dewq_nav .nav_inner {
+    height: 100% !important;
+    padding: 5px 0 !important;
+  }
+  .dewq_nav .nav_inner .dewq_btnz {
+    margin: 0;
+    gap: 5px;
+  }
+  .hero_wrapper .crypto_account .payment2_inner .btnz_wrap .payment_order.bewq_order {
+    height: 30px;
+    font-size: 18px;
+    max-width: 150px;
+    width: 100%;
+  }
+  .hero_wrapper .need_review .review_head h6 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .dewq_nav .nav_inner .nav_right .right_inner {
+    gap: 20px;
+  }
+  .dewq_btnz .btn.logout_btn {
+    width: 85px !important;
+  }
+  .dewq_left img {
+    max-width: 80px !important;
+  }
+  .ul_open .popover__menu.whale_poper {
+    right: -23px;
+  }
+  .ul_open .popover__menu {
+    top: 33px;
+    right: 7px;
+  }
+  .ul_open {
+    width: 170px;
+  }
+  .ul_open img {
+    width: 17px !important;
+  }
+  .nav_wrapper .nav_inner.nav__inner {
+    height: 70px;
+    gap: 2px;
+  }
+  .nav_wrapper .nav_inner.nav__inner .nav_right {
+    height: auto;
+  }
+  .nav_wrapper .nav_inner.nav__inner .nav_right .right_inner {
+    width: 100%;
+  }
+  .nav_wrapper .nav_inner.nav__inner .nav_right .right_inner .nav_icons {
+    margin-right: 15px;
+    gap: 10px;
+  }
+  .manage_wallet .active_heading {
+    font-size: 18px;
+    line-height: 17px;
+  }
+  .manage_wallet .active_days .active_inner {
+    max-width: 85px;
+    gap: 3px;
+  }
+  .manage_wallet .wallet_title.wallet__title {
+    margin-bottom: 10px;
+    gap: 5px;
+  }
+  .manage_wallet .wallet_title.wallet__title img {
+    width: 18px !important;
+  }
+  .manage_wallet .table_wrap.transaction_tbl table {
+    border-spacing: 0 5px;
+    margin-bottom: 10px;
+  }
+  .manage_wallet .table_wrap.transaction_tbl td {
+    line-height: 18px;
+    padding: 10px 0;
+  }
+  .manage_wallet .active_days {
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .manage_wallet .active_days .active_btnz .active_btn {
+    font-size: 14px;
+    line-height: 14px;
+    height: 25px;
+  }
+  .manage_wallet .active_days .active_btnz {
+    gap: 8px;
+  }
+  .modal_personal_wallet.modal_manage_wallet .modal-dialog {
+    min-width: 315px !important;
+  }
+  .modal_manage_wallet .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .modal_manage_wallet .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap input {
+    width: 290px !important;
+  }
+  .modal_manage_wallet .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap .dropdown .btn {
+    max-width: 290px !important;
+    width: 290px !important;
+    height: 40px;
+  }
+  .modal_manage_wallet .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap .dropdown .btn img {
+    width: 20px;
+  }
+  .modal_manage_wallet .modal-dialog .modal-content .modal-body .text_area {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .modal_manage_wallet .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .modal_manage_wallet .modal-dialog .modal-content .modal-body .text_area textarea {
+    max-width: 290px !important;
+  }
+  .modal_manage_wallet .modal-dialog .modal-content .modal-body label {
+    width: 100%;
+    padding-left: 20px !important;
+    margin-bottom: 5px;
+    padding-bottom: 0 !important;
+  }
+  .modal_manage_wallet .modal-dialog .modal-content .modal-header {
+    padding: 10px !important;
+  }
+  .modal_manage_wallet .modal-dialog .modal-content .modal-body .wallet_inner {
+    gap: 5px;
+  }
+  .modal_manage_wallet .modal-dialog .modal-content .modal-body .confirm_btn {
+    margin-top: 15px;
+  }
+  .modal_view_user .modal-dialog .modal-content .modal-body .user_main .user_inner .user_name .img_wrap img {
+    max-width: 22px;
+    top: -2px;
+  }
+  .manage_wallet .table_wrap tr {
+    height: 40px;
+  }
+  .manage_wallet .table_wrap .edit_tr {
+    max-width: 18px !important;
+    height: 100%;
+  }
+  .manage_wallet .table_wrap .edit_tr span {
+    font-size: 12px;
+    line-height: 11px;
+  }
+  .manage_wallet .table_wrap .edit_delete_btnz .edit_delete {
+    width: 22px;
+    height: 22px;
+  }
+  .manage_wallet .table_wrap .edit_delete_btnz .edit_delete img {
+    width: 12px;
+  }
+  .modal_order_365 .modal-dialog .modal-content .modal-body .order_btn.payment_btn {
+    max-width: 200px;
+    width: 100%;
+  }
+  .modal_order_365 .modal-dialog .modal-content .modal-body .payment2_titl {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .manage_wallet .wallet_title h1 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .manage_wallet .wallet_title img {
+    max-width: 30px;
+  }
+  .manage_wallet .wallet_title {
+    margin-bottom: 10px;
+  }
+  .manage_wallet .table_wrap th {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .manage_wallet .table_wrap th img {
+    width: 10px;
+  }
+  .manage_wallet .table_wrap td {
+    font-size: 16px;
+    line-height: 14px;
+    vertical-align: middle;
+  }
+  .manage_wallet .table_wrap .table {
+    margin-bottom: 20px;
+  }
+  .manage_wallet .table_wrap th .tbl_title {
+    width: 90px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 5px;
+  }
+  .manage_wallet .table_wrap .tbl_title2 {
+    width: 80px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 5px;
+  }
+  .manage_wallet {
+    height: auto;
+  }
+  .manage_wallet h3 {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+  }
+  .index_nav .index_tabs {
+    margin-top: 10px;
+  }
+  .defi_img.defi_manage {
+    margin-top: 20px;
+  }
+  .manage_wallet .wallet_label {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
+  }
+  .manage_wallet .wallet_label .add_wallet span {
+    font-size: 18px;
+    line-height: 17px;
+  }
+  .index_hero {
+    padding: 30px 0;
+  }
+  .index_hero .hero__main .hero_content .hero_title {
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 10px;
+  }
+  .index_hero .hero__main .hero_content .hero_detail {
+    font-size: 22px;
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+  .index_hero .hero__main .hero_content .register_btn {
+    max-width: 140px;
+    height: 40px;
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .why_choose {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .why_choose .why_choose_main {
+    gap: 35px;
+  }
+  .why_choose .why_choose_main .why_choose_content h3 {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .why_choose .why_choose_main .why_choose_content p {
+    font-size: 22px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .service_wrap {
+    padding: 45px 0;
+  }
+  .service_wrap h1 {
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 20px;
+  }
+  .service_wrap .service_inner {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
+  .price_wrap {
+    padding: 45px 0;
+  }
+  .price_wrap h2 {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .price_wrap p {
+    font-size: 22px;
+    line-height: 23px;
+    margin-bottom: 25px;
+  }
+  .price_wrap .price_inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
+  .price_wrap .price_inner .price_box .price__box {
+    padding: 15px;
+  }
+  .price_wrap .price_inner .price_box {
+    padding: 15px;
+    max-width: 270px;
+  }
+  .team_wrap h2 {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .team_wrap .team_inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
+  .contact_wrap {
+    padding: 45px 0;
+  }
+  .contact_wrap .contact_inner .contact_box h2 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .contact_wrap .contact_inner .contact_box .input_wrap label {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+  .contact_wrap .contact_inner .contact_box {
+    padding: 25px;
+  }
+  .contact_wrap .contact_inner .contact_box .send_message {
+    max-width: 170px;
+    height: 45px;
+    font-size: 23px;
+    line-height: 20px;
+  }
+  .contact_wrap .contact_inner .contact_box .input_wrap textarea {
+    height: 120px;
+    margin-bottom: 20px;
+  }
+  .contact_wrap .live_wrap {
+    margin-top: 30px;
+  }
+  .contact_wrap .live_wrap .live_chat {
+    max-width: 170px;
+    height: 45px;
+  }
+  .contact_wrap .live_wrap .live_chat img {
+    width: 15px;
+  }
+  .contact_wrap .live_wrap .live_chat span {
+    font-size: 23px;
+    line-height: 20px;
+  }
+  .team_wrap {
+    padding: 45px 0;
+  }
+  .price_wrap .price_inner .price_box h1 {
+    font-size: 45px;
+    line-height: 45px;
+    margin: 15px 0;
+  }
+  .price_wrap .price_inner .price_box h5 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .price_wrap .price_inner .price_box .account_btn {
+    max-width: 165px;
+    font-size: 23px;
+    line-height: 20px;
+    height: 40px;
+  }
+  .price_wrap .price_inner .price_box .buynow_btn {
+    max-width: 115px;
+    height: 35px;
+    line-height: 20px;
+    font-size: 20px;
+  }
+  .index_hero .hero__main .hero_content {
+    max-width: 260px;
+  }
+  .modal_order_365 .modal-dialog {
+    min-width: 350px !important;
+    max-width: 350px !important;
+    margin: 0 auto !important;
+  }
+  .modal_order_365 .modal-dialog .modal-content .modal-body {
+    padding-bottom: 20px;
+  }
+  .modal_order_365 .modal-dialog .modal-content .modal-body h2 {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 10px;
+  }
+  .modal_order_365 .modal-dialog .modal-content .modal-body .report_inner .input_wrap {
+    margin-left: 10px;
+  }
+  .modal_order_365 .modal-dialog .modal-content .modal-body .confirm_btn {
+    max-width: 200px;
+    height: 45px;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .modal_order_365 .modal-dialog .modal-content .modal-body .order_btn {
+    gap: 10px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 15px auto;
+  }
+  .modal_order_365 .modal-dialog .modal-content .modal-body .report_inner .input_wrap .input_calender img {
+    width: 20px;
+  }
+  .modal_order_365 .modal-dialog .modal-content .modal-body .report_inner .input_wrap .input_calender p {
+    font-size: 25px;
+    line-height: 24px;
+  }
+  .modal_order_365 .modal-dialog .modal-content .modal-body .report_inner .input_wrap .input_calender {
+    height: 40px;
+    width: 300px;
+  }
+  .modal_order_365 .modal-dialog .modal-content .modal-body .report_inner .input_wrap label {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .modal_order_365 .modal-dialog .modal-content .modal-body .order_detail.order__detail {
+    font-size: 20px;
+    line-height: 16px;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  .modal_order_365 .modal-dialog .modal-content .modal-header .img_wrap img {
+    max-width: 150px;
+    width: 100%;
+    padding-top: 0;
+    padding-left: 0px;
+  }
+  .modal_monthly_report .modal-dialog .modal-content .modal-body .drop_wrap,
+  .modal_order_detail .modal-dialog .modal-content .modal-body .drop_wrap {
+    max-width: 300px;
+    margin: 16px auto;
+  }
+  .modal_monthly_report .modal-dialog .modal-content .modal-body .drop_wrap label,
+  .modal_order_detail .modal-dialog .modal-content .modal-body .drop_wrap label {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 0;
+  }
+  .modal_monthly_report .modal-dialog .modal-content .modal-body .drop_wrap .dropdown a,
+  .modal_order_detail .modal-dialog .modal-content .modal-body .drop_wrap .dropdown a {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 25px;
+    line-height: 25px;
+    height: 40px;
+  }
+  .modal_monthly_report .modal-dialog .modal-content .modal-body .drop_wrap .dropdown a,
+  .modal_order_detail .modal-dialog .modal-content .modal-body .drop_wrap .dropdown a img {
+    width: 20px;
+  }
+  .modal_monthly_report .modal-dialog .modal-content .modal-body .drop_wrap h4,
+  .modal_order_detail .modal-dialog .modal-content .modal-body .drop_wrap h4 {
+    font-size: 25px;
+    line-height: 25px;
+    margin: 20px 0;
+  }
+  .hero_wrapper .wallet_balance .wallet_main .expired_sec .expired_content.expired__content {
+    padding-bottom: 0;
+  }
+  .hero_wrapper .wallet_balance .wallet_main .wallet_header .wallet_title h3 {
+    font-size: 22px;
+    line-height: 20px;
+  }
+  .hero_wrapper .wallet_balance .dash_main .wallet_content .accordion-button {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .hero_wrapper .wallet_balance .dash_main .wallet_content .accordion_head h3 {
+    font-size: 20px;
+    line-height: 18px;
+  }
+  .hero_wrapper .wallet_balance .dash_main .wallet_content .accordion_head p {
+    font-size: 20px;
+    line-height: 18px;
+  }
+  .hero_wrapper .wallet_balance .dash_main .wallet_content .accordion_head {
+    margin: unset;
+    max-width: 300px;
+  }
+  .hero_wrapper .wallet_balance .dash_main .wallet_content .accordion-button::after {
+    width: 10px;
+  }
+  .hero_wrapper .wallet_balance .dash_main .wallet_content .accordion-item {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .hero_wrapper .wallet_balance .dash_main {
+    padding-top: 25px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+  }
+  .hero_wrapper .wallet_balance .dash_main .wallet_header .wallet_title {
+    gap: 6px;
+  }
+  .hero_wrapper .crypto_account .crypto_left .active_sub h4 {
+    font-size: 22px;
+    line-height: 18px;
+  }
+  .hero_wrapper .crypto_account .crypto_left .active_sub h4 span {
+    font-size: 20px;
+  }
+  .hero_wrapper .crypto_account .crypto_left .active_sub .add_time .time_btn {
+    max-width: 90px;
+    height: 28px;
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .hero_wrapper .crypto_account .crypto_left .active_sub .add_time .time_btn img {
+    width: 20px;
+  }
+  .hero_wrapper .crypto_account .crypto_left .active_sub .add_time p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .modal_order_detail .modal-dialog {
+    min-width: 350px !important;
+    max-width: 350px !important;
+    margin: 0 auto !important;
+  }
+  .modal_payment_sent .modal-dialog {
+    min-width: 350px !important;
+    max-width: 350px !important;
+    margin: 0 auto !important;
+  }
+  .modal_payment_sent .modal-dialog .modal-content .modal-header.payment_head .img_wrap img {
+    max-width: 150px;
+    width: 100%;
+    padding-top: 0;
+    padding-left: 0;
+  }
+  .modal_payment_sent .modal-dialog .modal-content .modal-body .img_wrap img {
+    max-width: 130px;
+    width: 100%;
+  }
+  .modal_payment_sent .modal-dialog .modal-content .modal-body .img_wrap {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .modal_payment_sent .modal-dialog .modal-content .modal-body h6 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .modal_payment_sent .modal-dialog .modal-content .modal-body .go_dash {
+    max-width: 250px;
+    height: 45px;
+    font-size: 25px;
+    line-height: 25px;
+    margin-top: 20px;
+  }
+  .modal_payment_sent .modal-dialog .modal-content .modal-body {
+    padding-bottom: 30px;
+  }
+  .modal_order_detail .modal-dialog .modal-content .modal-header .img_wrap img {
+    max-width: 150px;
+    width: 100%;
+    padding-top: 0;
+    padding-left: 0px;
+  }
+  .modal_order_detail .modal-dialog .modal-content .modal-body h2 {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 10px;
+  }
+  .modal_order_detail .modal-dialog .modal-content .modal-body .order_detail {
+    font-size: 25px;
+    line-height: 25px;
+    max-width: 240px;
+    margin-bottom: 25px;
+  }
+  .modal_order_detail .modal-dialog .modal-content .modal-body .report_inner .input_wrap label {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .modal_order_detail .modal-dialog .modal-content .modal-body .report_inner .input_wrap .input_calender {
+    height: 40px;
+    width: 300px;
+  }
+  .modal_order_detail .modal-dialog .modal-content .modal-body .order_detail.order__detail {
+    font-size: 20px;
+    line-height: 16px;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  .modal_order_detail .modal-dialog .modal-content .modal-body .confirm_btn {
+    max-width: 200px;
+    height: 45px;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .modal_order_detail .modal-dialog .modal-content .modal-body .order_btn {
+    gap: 10px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 15px auto;
+  }
+  .modal_order_detail .modal-dialog .modal-content .modal-body {
+    padding-bottom: 30px;
+  }
+  .modal_order_detail .modal-dialog .modal-content .modal-body .report_inner .input_wrap .input_calender p {
+    font-size: 25px;
+    line-height: 24px;
+  }
+  .modal_order_detail .modal-dialog .modal-content .modal-body .report_inner .input_wrap .input_calender img {
+    width: 20px;
+  }
+  .modal_order_detail .modal-dialog .modal-content .modal-body .report_inner .input_wrap {
+    margin-left: 10px;
+  }
+  .hero_wrapper .crypto_account .payment2_inner h3 {
+    font-size: 18px;
+    line-height: 16px;
+  }
+  .hero_wrapper .crypto_account .payment2_inner h1 {
+    padding-top: 20px !important;
+  }
+  .hero_wrapper .need_review {
+    padding: 10px 5px 70px 5px;
+  }
+  .hero_wrapper .need_review .review_head h5 {
+    font-size: 22px;
+    line-height: 20px;
+    width: auto;
+  }
+  .hero_wrapper .need_review .review_head h6 {
+    font-size: 22px;
+    line-height: 20px;
+    max-width: 40px;
+    padding-left: 30px;
+  }
+  .hero_wrapper .need_review .review_content h4 {
+    font-size: 22px;
+    line-height: 20px;
+    width: auto;
+  }
+  .hero_wrapper .need_review .form-group label::before {
+    width: 20px;
+    height: 20px;
+  }
+  .hero_wrapper .need_review .review_content .btn {
+    font-size: 15px;
+    line-height: 15px;
+    max-width: 110px;
+    border-radius: 20px;
+    height: 35px;
+  }
+  .hero_wrapper .need_review .review_head {
+    max-width: 210px;
+  }
+  .hero_wrapper .need_review .review_content.sub_wrap {
+    max-width: 230px;
+    padding-left: 38px;
+  }
+  .hero_wrapper .need_review .form-group input:checked + label:after {
+    top: 0px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+  }
+  .hero_wrapper .need_review .form-group label {
+    font-size: 22px;
+    line-height: 20px;
+  }
+  .hero_wrapper .need_review .checkbox_wrapper .checkbox_inner .form-group p {
+    font-size: 20px;
+    line-height: 22px;
+    margin-left: 5px;
+  }
+  .hero_wrapper .need_review .checkbox_wrapper {
+    max-width: 180px;
+  }
+  .total_payment {
+    padding: 50px 0;
+  }
+  .total_payment .payment_inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .total_payment .payment_inner h1 {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .total_payment .payment_inner .payment_left h3 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .total_payment .payment_inner .send_payment {
+    max-width: 250px;
+    margin: 0 auto;
+    height: 40px;
+    font-size: 28px;
+  }
+  .total_payment .payment_inner .payment_left .drop_wrap .dropdown a {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 28px;
+    line-height: 27px;
+    height: 40px;
+  }
+  .total_payment .payment_inner .payment_left .drop_wrap .dropdown a img {
+    width: 25px;
+  }
+  .hero_wrapper .need_review .accordion .accordion-button::after {
+    height: 20px;
+    width: 20px;
+  }
+  .hero_wrapper .need_review .accordion .accordion-button {
+    width: 40px;
+  }
+  .hero_wrapper .crypto_account .payment2_inner .btnz_wrap {
+    padding-bottom: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 15px;
+  }
+  .hero_wrapper .crypto_account .payment2_inner .btnz_wrap .payment_order {
+    max-width: 200px;
+    margin: 0 auto;
+    height: 45px;
+    font-size: 22px;
+    line-height: 20px;
+  }
+  .hero_wrapper .crypto_account .payment2_inner h1 {
+    font-size: 22px;
+    line-height: 20px;
+  }
+  .hero_wrapper .crypto_account .payment2_inner p {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .hero_wrapper .wallet_balance .wallet_main .expired_sec .expired_content h3 {
+    font-size: 25px;
+    line-height: 20px;
+  }
+  .wallet_balance .wallet_main .expired_sec .expired_content {
+    padding-bottom: 0;
+    max-width: 310px;
+  }
+  .hero_wrapper .wallet_balance .wallet_main .expired_sec .expired_content p {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .wallet_balance .wallet_main .expired_sec .img_wrap img {
+    max-width: 250px;
+  }
+  .modal_Checkout_inbox .modal-dialog {
+    min-width: 350px !important;
+  }
+  .modal_Checkout_inbox .modal-dialog .modal-content .modal-header .img_wrap img {
+    padding-top: 0;
+    padding-left: 0;
+    max-width: 90px;
+  }
+  .modal_Checkout_inbox .modal-dialog .modal-content .modal-body h2 {
+    font-size: 24px;
+    line-height: 16px;
+    margin-bottom: 10px;
+  }
+  .modal_Checkout_inbox .modal-dialog .modal-content .modal-body h6 {
+    font-size: 22px;
+    line-height: 18px;
+  }
+  .modal_Checkout_inbox .modal-dialog .modal-content .modal-body .img_wrap img {
+    max-width: 170px;
+    width: 100%;
+  }
+  .hero_wrapper .crypto_account {
+    padding: 15px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 15px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero_wrapper .crypto_account .payment2_inner .payment2_detail {
+    padding-bottom: 20px;
+  }
+  .hero_wrapper .crypto_account .crypto_left {
+    text-align: center;
+  }
+  .hero_wrapper .crypto_account .crypto_left h1 {
+    font-size: 30px;
+    line-height: 40px;
+    padding-bottom: 10px;
+  }
+  .hero_wrapper .crypto_account .crypto_right .crypto_btn img {
+    width: 17px;
+    height: 17px;
+  }
+  .hero_wrapper .crypto_account .crypto_right .crypto_btn a {
+    font-size: 15px;
+  }
+  .hero_wrapper .crypto_account .crypto_right .crypto_btn {
+    height: 35px;
+  }
+  .hero_wrapper .crypto_account .crypto_right .crypto_btn.monthly {
+    max-width: 120px;
+  }
+  .hero_wrapper .wallet_balance .wallet_main .wallet_header .wallet_title h3 {
+    font-size: 18px;
+    line-height: 16px;
+  }
+  .modal_add_user2 .modal-dialog .modal-content .modal-header img {
+    width: 15px;
+  }
+  .wallet_balance .wallet_main .wallet_header .wallet_title img {
+    width: 14px;
+  }
+  .wallet_balance .wallet_main .wallet_content .accordion_head img {
+    width: 35px;
+    padding: 5px 0;
+  }
+  .hero_wrapper .wallet_balance .wallet_main .wallet_content .table_wrap h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .hero_wrapper .wallet_balance .wallet_main .wallet_content .table_wrap p {
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .hero_wrapper .wallet_balance .wallet_main .wallet_content .table_wrap .crypto_img img {
+    max-width: 30px;
+  }
+  .modal_monthly_report .modal-dialog {
+    min-width: 330px !important;
+    max-width: 340px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .modal_personal_wallet .modal-dialog {
+    min-width: 330px !important;
+    max-width: 340px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .modal_monthly_report .modal-dialog .modal-content .modal-header .img_wrap img {
+    max-width: 130px;
+    padding-top: 0;
+    padding-left: 0;
+  }
+  .modal_personal_wallet .modal-dialog .modal-content .modal-header .img_wrap img {
+    max-width: 130px;
+    padding-top: 0;
+    padding-left: 0;
+  }
+  .modal_monthly_report .modal-dialog .modal-content .modal-body h2 {
+    font-size: 25px;
+    line-height: 24px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+  }
+  .modal_personal_wallet .modal-dialog .modal-content .modal-body h2 {
+    font-size: 25px;
+    line-height: 24px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+  }
+  .modal_monthly_report .modal-dialog .modal-content .modal-body .report_inner .input_wrap .dropdown .btn {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    height: 45px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 16px;
+  }
+  .modal_monthly_report .modal-dialog .modal-content .modal-body {
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .modal_monthly_report .modal-dialog .modal-content .modal-body .report_inner .input_wrap label {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 10px;
+  }
+  .modal_monthly_report .modal-dialog .modal-content .modal-body .report_inner .input_wrap {
+    max-width: 300px;
+  }
+  .modal_monthly_report .modal-dialog .modal-content .modal-body .report_inner .input_wrap .input_calender {
+    height: 45px;
+  }
+  .modal_monthly_report .modal-dialog .modal-content .modal-body .report_inner .input_wrap .input_calender p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 18px;
+  }
+  .modal_personal_wallet .modal-dialog .modal-content .modal-body h6 {
+    font-size: 20px;
+    line-height: 18px;
+    padding-bottom: 15px;
+  }
+  .modal_personal_wallet .modal-dialog .modal-content .modal-body label {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 10px;
+  }
+  .modal_personal_wallet .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap input {
+    height: 40px;
+  }
+  .modal_personal_wallet .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap input::-webkit-input-placeholder {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .modal_personal_wallet .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap input:-ms-input-placeholder {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .modal_personal_wallet .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap input::-ms-input-placeholder {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .modal_personal_wallet .modal-dialog .modal-content .modal-body .wallet_inner .input_wrap input::placeholder {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .modal_personal_wallet .modal-dialog .modal-content .modal-body .text_area {
+    max-width: 300px;
+  }
+  .modal_personal_wallet .modal-dialog .modal-content .modal-body .confirm_btn {
+    max-width: 110px;
+    height: 35px;
+    font-size: 17px;
+    line-height: 16px;
+  }
+  .modal_personal_wallet .modal-dialog .modal-content .modal-body .wallet_inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 15px 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .modal_monthly_report .modal-dialog .modal-content .modal-body .report_inner .input_wrap img {
+    width: 22px;
+  }
+  .modal_monthly_report .modal-dialog .modal-content .modal-body .report_inner {
+    gap: 10px 0;
+  }
+  .modal_personal_wallet .modal-dialog .modal-content .modal-body {
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .modal_monthly_report .modal-dialog .modal-content .modal-body .report_inner .checkbox_wrap .form-group label {
+    font-size: 24px;
+    line-height: 16px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modal_monthly_report .modal-dialog .modal-content .modal-body .report_inner .checkbox_wrap .form-group input:checked + label:after {
+    background-size: contain;
+    top: 2px;
+    left: 2px;
+    width: 17px;
+    height: 15px;
+  }
+  .modal_monthly_report .modal-dialog .modal-content .modal-body .report_inner .checkbox_wrap .form-group label:before {
+    width: 20px;
+    height: 20px;
+  }
+  .hero_wrapper .wallet_balance .wallet_main .wallet_content .table_wrap .crypto_img {
+    gap: 5px;
+    padding-top: 0px;
+  }
+  .modal_monthly_report .modal-dialog .modal-content .modal-body .confirm_btn {
+    max-width: 110px;
+    height: 35px;
+    font-size: 17px;
+    line-height: 16px;
+    margin-top: 25px;
+  }
+  .wallet_balance .wallet_main .wallet_content .table_wrap .available_balance {
+    max-width: 50px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .wallet_balance .wallet_main .wallet_content .accordion_head h3 {
+    font-size: 16px;
+    line-height: 15px;
+  }
+  .wallet_balance .wallet_main .wallet_content .accordion_head p {
+    font-size: 16px;
+    line-height: 15px;
+  }
+  .wallet_balance .wallet_main .wallet_content {
+    max-width: 335px;
+  }
+  .wallet_balance .wallet_main .wallet_content .accordion-button {
+    padding-right: 5px;
+    border-radius: 5px;
+  }
+  .wallet_balance .wallet_main .wallet_content .accordion-body {
+    padding: 5px;
+  }
+  .wallet_balance .wallet_main .wallet_content .accordion_head {
+    max-width: 280px;
+  }
+  .modal_add_user2 .modal-dialog .modal-content .modal-body h2 {
+    font-size: 26px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+  .modal_add_user2 .modal-dialog .modal-content .modal-body .input_wrap label {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .modal_add_user2 .modal-dialog .modal-content .modal-body .input_wrap {
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+  .modal_add_user2 .modal-dialog {
+    min-width: 320px !important;
+  }
+  .modal_add_user2 .modal-dialog .modal-content .modal-body .input_wrap input {
+    height: 40px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .modal_add_user2 .modal-dialog .modal-content .modal-body .input_wrap .dropdown .btn {
+    height: 45px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 17px;
+    line-height: 16px;
+  }
+  .modal_add_user2 .modal-dialog .modal-content .modal-body .input_wrap .dropdown img {
+    width: 25px;
+  }
+  .modal_add_user2 .modal-dialog .modal-content .modal-body .input_wrap .dropdown ul li a {
+    font-size: 16px;
+    line-height: 15px;
+    padding-top: 5px;
+  }
+  .modal_add_user2 .modal-dialog .modal-content .modal-body .confirm_btn {
+    max-width: 115px;
+    height: 45px;
+    font-size: 18px;
+    line-height: 16px;
+    margin-top: 25px;
+  }
+  .modal_add_user2 .modal-dialog .modal-content .modal-body {
+    padding-bottom: 30px;
+  }
+  .update_name .modal-dialog .modal-content .modal-body .input_wrap label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .update_name .modal-dialog .modal-content .modal-body .input_wrap input {
+    height: 45px;
+    font-size: 17px;
+    line-height: 17px;
+  }
+  .update_name .modal-dialog .modal-content .modal-body .input_wrap {
+    max-width: 300px;
+  }
+  .update_name .modal-dialog .modal-content .modal-body .confirm_btn {
+    max-width: 115px;
+    height: 45px;
+    font-size: 17px;
+    line-height: 17px;
+    margin-top: 15px;
+  }
+  .alert_success {
+    left: 6px !important;
+    font-size: 16px;
+  }
+  .alert_danger {
+    left: 6px !important;
+    font-size: 16px;
+  }
+  .modal_add_user .modal-dialog {
+    min-width: 350px !important;
+    margin-left: 12px !important;
+    margin-right: 20px !important;
+  }
+  .modal_view_user .modal-dialog .modal-content .modal-body .user_main {
+    gap: 30px 0px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 310px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .modal_view_user .modal-dialog .modal-content .modal-body h2 {
+    font-size: 26px;
+    line-height: 26px;
+  }
+  .modal_view_user .modal-dialog .modal-content .modal-header img {
+    width: 15px;
+  }
+  .modal_view_user .modal-dialog .modal-content .modal-header {
+    padding-bottom: 10px;
+  }
+  .modal_view_user .modal-dialog .modal-content .modal-body {
+    padding-bottom: 30px;
+  }
+  .modal_delete .modal-dialog {
+    min-width: 340px !important;
+  }
+  .modal_delete .modal-dialog .modal-content .modal-header img {
+    width: 15px;
+  }
+  .modal_delete .modal-dialog .modal-content .modal-body h2 {
+    font-size: 26px;
+    line-height: 26px;
+    padding-bottom: 10px;
+  }
+  .modal_delete .modal-dialog .modal-content .modal-body p {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 330px;
+    padding-bottom: 20px;
+  }
+  .modal_delete .modal-dialog .modal-content .modal-body .btn_wrap .btn {
+    font-size: 17px;
+    line-height: 17px;
+    max-width: 115px;
+    height: 40px;
+  }
+  .nav_wrapper .nav_inner .nav_right .dropdown .dropdown-menu {
+    width: 270px;
+  }
+  .nav_wrapper .nav_inner .nav_right .dropdown .dropdown-menu li .dropdown-item.header_sec h4 {
+    font-size: 20px;
+    line-height: 18px;
+  }
+  .nav_wrapper .nav_inner .nav_right .dropdown .dropdown-menu li .wallet_detail p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .nav_wrapper .nav_inner .nav_right .dropdown .notify_arrow {
+    top: -16px;
+    right: 123px;
+  }
+  .nav_wrapper .nav_inner .nav_right .dropdown .dropdown-menu {
+    left: 50% !important;
+    -webkit-transform: translate(-50%, 0%) !important;
+            transform: translate(-50%, 0%) !important;
+    top: 35px !important;
+  }
+  .modal_setting .modal-dialog {
+    min-width: 330px !important;
+  }
+  .nav_wrapper .nav_inner .nav_right .dropdown .dropdown-menu li .wallet_detail .wallet_btn {
+    max-width: 110px;
+    font-size: 14px;
+    line-height: 14px;
+    height: 35px;
+  }
+  .modal_setting .modal-dialog .modal-content .modal-header img {
+    width: 15px;
+  }
+  .modal_setting .modal-dialog .modal-content .modal-body h2 {
+    font-size: 26px;
+    line-height: 26px;
+    padding-bottom: 15px;
+  }
+  .modal_setting .modal-dialog .modal-content .modal-body .input_wrap .user_img {
+    width: 16px;
+    left: 8px;
+  }
+  .modal_setting .modal-dialog .modal-content .modal-body .input_wrap label {
+    font-size: 16px;
+    line-height: 16px;
+    left: 30px;
+  }
+  .modal_setting .modal-dialog .modal-content .modal-body .input_wrap .right_arrow {
+    width: 20px;
+  }
+  .modal_setting .modal-dialog .modal-content .modal-body .input_wrap input {
+    height: 50px;
+  }
+  .nav_wrapper .nav_inner .nav_right .dropdown .dropdown-menu li .dropdown-item.header_sec {
+    padding: 15px 0;
+  }
+  .modal_setting .modal-dialog .modal-content .modal-body .input_wrap {
+    max-width: 250px;
+    margin: unset;
+    margin-right: auto !important;
+    margin-bottom: 10px;
+  }
+  .modal_setting .modal-dialog .modal-content .modal-body .input_wrap .coming_soon p {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .modal_setting .modal-dialog .modal-content .modal-body .input_wrap .coming_soon {
+    right: -32%;
+  }
+  .update_name .modal-dialog .modal-content .modal-header img {
+    width: 15px;
+  }
+  .update_name .modal-dialog {
+    min-width: 330px !important;
+  }
+  .modal_setting .modal-dialog .modal-content .modal-body {
+    padding-bottom: 30px;
+    padding-left: 20px;
+  }
+  .update_name .modal-dialog .modal-content .modal-body h2 {
+    font-size: 26px;
+    line-height: 26px;
+    margin-bottom: 15px;
+  }
+  .nav_wrapper .nav_inner .nav_right .dropdown .dropdown-menu li .wallet_detail {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .modal_delete .modal-dialog .modal-content .modal-body {
+    padding-bottom: 25px;
+  }
+  .modal_view_user .modal-dialog {
+    min-width: 320px !important;
+  }
+  .modal_view_user .modal-dialog .modal-content .modal-body .user_main .user_inner h4 {
+    font-size: 17px;
+  }
+  .modal_view_user .modal-dialog .modal-content .modal-body .user_main .user_inner .user_name h5 {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .modal_view_user .modal-dialog .modal-content .modal-body .user_main .user_inner .user_name .img_wrap {
+    width: 23px;
+  }
+  .modal_view_user .modal-dialog .modal-content .modal-body .user_main .user_inner {
+    max-width: 125px;
+  }
+  .modal_add_user .modal-dialog .modal-content .modal-body h2 {
+    font-size: 22px;
+    line-height: 20px;
+    padding-bottom: 15px;
+  }
+  .modal_add_user .modal-dialog .modal-content .modal-header {
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: end !important;
+  }
+  .modal_add_user .modal-dialog .modal-content .modal-header img {
+    width: 15px;
+  }
+  .modal_add_user .modal-dialog .modal-content .modal-body .input_wrap .user_img {
+    width: 25px;
+  }
+  .modal_add_user .modal-dialog .modal-content .modal-body .input_wrap label {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .modal_add_user .modal-dialog .modal-content .modal-body .input_wrap input {
+    height: 45px;
+  }
+  .modal_add_user .modal-dialog .modal-content .modal-body .input_wrap .right_arrow {
+    width: 25px;
+  }
+  .modal_add_user .modal-dialog .modal-content .modal-body {
+    padding-bottom: 40px;
+  }
+  .modal_add_user .modal-dialog .modal-content .modal-body .input_wrap {
+    max-width: 280px;
+  }
+  .hero_wrapper .hero_inner .hero_left .input_wrap {
+    max-width: 320px;
+    width: 100%;
+  }
+  .nav_wrapper .nav_inner .nav_right .btn.create_btn {
+    width: 110px;
+    height: 30px;
+  }
+  .nav_wrapper .nav_inner .nav_right .btn.sign_btn {
+    width: 60px;
+    height: 30px;
+  }
+  .nav_wrapper .nav_inner .nav_left img {
+    max-width: 150px;
+  }
+  .nav_wrapper .nav_inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100px;
+  }
+  .nav_wrapper.index_nav .nav_inner {
+    height: 126px;
+  }
+  .nav_wrapper .nav_inner .nav_right .nav-tabs .nav-link {
+    height: 30px;
+    font-size: 15px;
+  }
+  .nav_wrapper .nav_inner .nav_right .btn {
+    font-size: 13px;
+  }
+  .hero_wrapper .hero_inner .hero_left .hero_title {
+    line-height: 28px;
+    font-size: 30px;
+  }
+  .hero_wrapper .hero_inner .hero_left .hero_detail {
+    line-height: 16px;
+    font-size: 16px;
+  }
+  .hero_wrapper .hero_inner .hero_left .input_wrap input {
+    font-size: 16px;
+    line-height: 17px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+  }
+  .hero_wrapper .hero_inner .hero_left .input_wrap .img_wrap {
+    right: 10px;
+    width: 25px;
+  }
+  .hero_wrapper .hero_inner .hero_left .navtab_wrap .nav-tabs .nav-link {
+    height: 30px;
+  }
+  .hero_wrapper .hero_inner .hero_left .create_btn {
+    height: 40px;
+    font-size: 16px;
+    line-height: 16px;
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .hero_wrapper .hero_inner .hero_left .navtab_wrap .nav-tabs {
+    margin: 0 auto;
+  }
+  .hero_wrapper .hero_inner .hero_left .already_login {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .hero_wrapper .hero_inner {
+    padding-top: 20px;
+    margin-bottom: 30px;
+  }
+  .hero_wrapper .hero_inner .hero_right {
+    max-width: 300px;
+  }
+  .defi_img .container img {
+    max-width: 130px;
+  }
+  .footer_wrapper .footer_inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 12px;
+  }
+  .footer_wrapper .footer_inner ul li {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .footer_wrapper .footer_inner .social_icons {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer_wrapper .footer_inner .social_icons img {
+    max-width: 30px;
+  }
+  .nav_wrapper .nav_inner .nav_right.login_btn {
+    max-width: 125px;
+  }
+  .nav_wrapper .nav_inner .nav_right .btn.logout_btn {
+    width: 65px;
+    height: 30px;
+  }
+  .nav_wrapper .nav_inner .nav_right .right_inner {
+    width: 200px;
+  }
+  .nav_wrapper .nav_inner .nav_right .right_inner .nav_icons .img_wrap img {
+    max-width: 25px;
+  }
+  .nav_wrapper .nav_inner .nav_right .right_inner .nav_icons {
+    gap: 5px;
+    margin-right: 10px;
+  }
+  .bg_body.bg_multipleAccount {
+    padding-top: 10px;
+  }
+  .hero_wrapper .multiple_inner {
+    padding: 0 10px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+  }
+  .hero_wrapper .multiple_inner h2 {
+    font-size: 22px;
+    line-height: 20px;
+  }
+  .hero_wrapper .multiple_inner .your_account h3 {
+    font-size: 22px;
+    line-height: 20px;
+  }
+  .hero_wrapper .multiple_inner .your_account p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+  .hero_wrapper .multiple_inner .your_account .input_wrap {
+    max-width: 260px;
+  }
+  .hero_wrapper .multiple_inner .your_account .input_wrap input {
+    font-size: 18px;
+    line-height: 28px;
+    padding-left: 35px;
+  }
+  .hero_wrapper .multiple_inner .your_account .input_wrap .img_wrap {
+    left: 10px;
+    width: 20px;
+  }
+  .hero_wrapper .multiple_inner .account_main {
+    padding-bottom: 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero_wrapper .multiple_inner .account_main .account_inner h3 {
+    font-size: 20px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+  .hero_wrapper .multiple_inner .account_main .account_inner {
+    padding-bottom: 15px;
+  }
+  .hero_wrapper .multiple_inner .account_main .account_inner .input_wrap label {
+    left: 15px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .hero_wrapper .multiple_inner .account_main .account_inner .input_wrap .img_wrap {
+    right: 15px;
+    width: 4px;
+  }
+  .defi_img .container .person_img img {
+    max-width: 130px;
+  }
+  .defi_img .container .person_img {
+    right: 10px;
+  }
+  .contractor_wrap .contractor_inner .contractor_content .contractor_title {
+    font-size: 25px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+  .contractor_wrap .contractor_inner .contractor_content .contractor_title span {
+    font-size: 22px;
+    line-height: 20px;
+  }
+  .contractor_wrap .contractor_inner .contractor_content .contractor_title a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    padding-left: 5px;
+  }
+  .contractor_wrap .contractor_inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 15px 0;
+  }
+  .contractor_wrap .contractor_wallet .nav-tabs .nav-item {
+    max-width: 160px;
+    height: 50px;
+  }
+  .contractor_wrap .contractor_wallet .nav-tabs .nav-item .nav-link {
+    font-size: 22px;
+    line-height: 20px;
+  }
+  .contractor_wrap .contractor_wallet .nav-tabs {
+    gap: 15px;
+  }
+  .contractor_wrap .contractor_wallet .tab-content .add_btn {
+    max-width: 100px;
+    height: 40px;
+    font-size: 21px;
+    margin-bottom: 20px;
+  }
+  .contractor_wrap .table_wrap th {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .contractor_wrap .table_wrap td {
+    font-size: 20px;
+    line-height: 18px;
+  }
+  .contractor_wrap .contractor_wallet .tab-content .table_contractor_account.table_contractor_account2 table img {
+    width: 20px;
+  }
+  .contractor_wrap .contractor_wallet .tab-content .table_contractor_account.table_contractor_account2 table td h6 {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 3px;
+  }
+  .contractor_wrap .table_wrap tr {
+    height: 60px;
+  }
+  .contractor_wrap .contractor_wallet .tab-content .table_contractor_account.table_contractor_account2 table {
+    margin-left: 5px;
+  }
+  .contractor_wrap .contractor_wallet .tab-content .table_contractor_account table tr.border_bottom::after {
+    width: 100%;
+    left: 0;
+  }
+  .contractor_wrap .contractor_wallet .tab-content .table_contractor_account table {
+    margin-left: 5px;
+  }
+  .payment_report .payment_tbl table td {
+    padding: 10px 3px;
+    vertical-align: middle;
+  }
+  .payment_report .payment_content h3 {
+    font-size: 25px;
+    line-height: 20px;
+  }
+  .payment_report .payment_content .report_arrow .payment_arrow {
+    max-width: 65px;
+  }
+  .payment_report .payment_content {
+    max-width: 250px;
+  }
+  .payment_report .payment_content .payment_value p {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .payment_report .payment_content .report_arrow {
+    margin: 20px 0;
+  }
+  .payment_report .payment_content .payment_value {
+    margin-bottom: 20px;
+  }
+  .payment_report .payment_tbl table .border_bottom {
+    height: 45px;
+  }
+  .payment_report .payment_tbl table .border_bottom::after {
+    width: 100%;
+    left: 0;
+    bottom: 8px;
+  }
+  .payment_report .table_wrap th {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .payment_report .payment_tbl table {
+    margin: 0 5px;
+  }
+  .payment_report .payment_tbl table td img {
+    width: 15px;
+  }
+  .chart_content .dropdown .btn {
+    max-width: 300px;
+    font-size: 22px;
+    line-height: 21px;
+  }
+  .chart_content .dropdown ul {
+    max-width: 300px;
+  }
+  .graph_chat {
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+}

@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <!-- navbar start  -->
+  <header class="nav_wrapper">
+    <div class="container">
+      <div class="nav_inner">
+        <div class="nav_left">
+          <a href="#"> <img src="assets/img/nav_logo.svg" alt=""></a>
+        </div>
+        <div class="nav_right">
+          <div class="right_inner">
+            <div class="nav_icons">
+              <div class="img_wrap">
+                <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/nav_add.svg"
+                    alt=""></a>
+              </div>
+              <div class="img_wrap">
+                <a href=""><img src="assets/img/nav_hat.svg" alt=""></a>
+              </div>
+              <div class="dropdown img_wrap">
+
+                <a id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><img
+                    src="assets/img/nav_notify.svg" alt=""></a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item header_sec flex_align" href="#">
+                      <h4>Notifications: <span>1 New</span></h4>
+                    </a></li>
+                  <li>
+                    <div class="wallet_detail">
+                      <p>
+                        You have <span>Unknown</span> Wallets that need to be identified.
+                        Visit your <span>wallet labels</span> now to update them.
+                      </p>
+                      <a href="" class="wallet_btn flex_align">Visit Wallet Labels</a>
+                    </div>
+                  </li>
+                  <div class="notify_arrow">
+                    <img src="assets/img/notify_arrow.svg" alt="">
+                  </div>
+                </ul>
+
+              </div>
+              <div class="img_wrap">
+                <a href="" data-bs-toggle="modal" data-bs-target="#ModalSetting"><img src="assets/img/nav_setting.svg"
+                    alt=""></a>
+              </div>
+            </div>
+            <a href="sign_up.html" class="btn logout_btn">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- navbar end  -->
+  <!-- hero section start  -->
+  <div class="bg_body bg_multipleAccount">
+    <section class="hero_wrapper">
+      <div class="container">
+        <div class="multiple_inner">
+          <h2>
+            Hi there!
+          </h2>
+          <div class="your_account">
+            <h3>
+              Your Accounts
+            </h3>
+            <p>
+              Please select an account from below to start
+            </p>
+            <div class="input_wrap">
+              <input type="text" class="form-control" placeholder="Search">
+              <div class="img_wrap">
+                <img src="assets/img/search.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="account_main">
+            <div class="account_inner">
+              <h3>
+                Super Administrator
+              </h3>
+              <div class="input_wrap">
+                <a href="dashboard_business.html"><label for="">John Doe</label></a>
+                <a href="dashboard_business.html"> <input type="text" class="form-control" disabled></a>
+                <div class="img_wrap">
+                  <img src="assets/img/vertical_dots.svg" alt="">
+                </div>
+              </div>
+              <div class="input_wrap">
+                <a href="dashboard_business.html"><label for="">John Doe</label></a>
+                <a href="dashboard_business.html"> <input type="text" class="form-control" disabled></a>
+                <div class="img_wrap">
+                  <img src="assets/img/vertical_dots.svg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="account_inner">
+              <h3>
+                Contractor
+              </h3>
+              <div class="input_wrap">
+                <a href="dashboard_business.html"><label for="">John Doe</label></a>
+                <a href="dashboard_business.html"> <input type="text" class="form-control" disabled></a>
+                <div class="img_wrap">
+                  <img src="assets/img/vertical_dots.svg" alt="">
+                </div>
+              </div>
+              <div class="input_wrap">
+                <a href="dashboard_business.html"><label for="">John Doe</label></a>
+                <a href="dashboard_business.html"> <input type="text" class="form-control" disabled></a>
+                <div class="img_wrap">
+                  <img src="assets/img/vertical_dots.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="account_main">
+            <div class="account_inner">
+              <h3>
+                Site Admin
+              </h3>
+              <div class="input_wrap">
+                <a href="dashboard_business.html"><label for="">John Doe</label></a>
+                <a href="dashboard_business.html"> <input type="text" class="form-control" disabled></a>
+                <div class="img_wrap">
+                  <img src="assets/img/vertical_dots.svg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="account_inner">
+              <h3>
+                Site Admin
+              </h3>
+              <div class="input_wrap">
+                <a href="dashboard_business.html"><label for="">John Doe</label></a>
+                <a href="dashboard_business.html"> <input type="text" class="form-control" disabled></a>
+                <div class="img_wrap">
+                  <img src="assets/img/vertical_dots.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="account_main">
+            <div class="account_inner">
+              <h3>
+                Business Owner
+              </h3>
+              <div class="input_wrap">
+                <a href="dashboard_business.html"><label for="">John Doe</label></a>
+                <a href="dashboard_business.html"> <input type="text" class="form-control" disabled></a>
+                <div class="img_wrap">
+                  <img src="assets/img/vertical_dots.svg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="account_inner">
+              <h3>
+                Personal
+              </h3>
+              <div class="input_wrap">
+                <a href="dashboard_business.html"><label for="">John Doe</label></a>
+                <a href="dashboard_business.html"> <input type="text" class="form-control" disabled></a>
+                <div class="img_wrap">
+                  <img src="assets/img/vertical_dots.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero section end  -->
+    <div class="defi_img position-relative">
+      <div class="container">
+        <div class="img_wrap">
+          <img src="assets/img/nav_logo.svg" alt="">
+        </div>
+        <div class="person_img">
+          <img src="assets/img/person.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- footer start  -->
+    <footer class="footer_wrapper">
+      <div class="container">
+        <div class="footer_inner">
+          <ul>
+            <li>TERMS AND CONDITIONS </li>
+            <li>PRIVACY POLICY</li>
+            <li> STATEMENT TO CONSUMERS OF DEWQ FINANCE DATA AND SERVICES</li>
+          </ul>
+          <div class="social_icons">
+            <div class="img_wrap">
+              <a href=""><img src="assets/img/linkedin.svg" alt=""></a>
+            </div>
+            <div class="img_wrap">
+              <a href=""><img src="assets/img/twitter.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- footer end  -->
+  <!-- modal add acount start -->
+  <!-- Modal -->
+  <section class="modal_add_user">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img src="assets/img/X.svg" alt="" data-bs-dismiss="modal" aria-label="Close">
+          </div>
+          <div class="modal-body">
+            <h2>
+              Add an User to Your Account
+            </h2>
+            <div class="input_wrap">
+              <div class="user_img">
+                <img src="assets/img/view_user.svg" alt="">
+              </div>
+              <label for="" data-bs-toggle="modal" data-bs-target="#exampleModal1">View Users</label>
+              <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal1"> <input type="text"
+                  class="form-control"></a>
+              <div class="right_arrow">
+                <img src="assets/img/right_arrow.svg" alt="">
+              </div>
+            </div>
+            <div class="input_wrap">
+              <div class="user_img">
+                <img src="assets/img/add_user.svg" alt="">
+              </div>
+              <label for="" data-bs-toggle="modal" data-bs-target="#add_user2">Add Users</label>
+              <a href="" data-bs-toggle="modal" data-bs-target="#add_user2"><input type="text" class="form-control"></a>
+              <div class="right_arrow">
+                <img src="assets/img/right_arrow.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- modal add acount end -->
+  <!-- modal add acount2 start -->
+  <!-- Modal -->
+  <section class="modal_add_user2">
+    <div class="modal fade" id="add_user2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-between">
+            <a href="" data-bs-toggle="modal" data-bs-dismiss="modal"> <img src="assets/img/left_arrow.svg" alt=""></a>
+            <img src="assets/img/X.svg" alt="" data-bs-dismiss="modal" aria-label="Close">
+          </div>
+          <div class="modal-body">
+            <h2>
+              Add Users
+            </h2>
+            <div class="input_wrap">
+              <label for="">Username</label>
+              <a> <input type="text" class="form-control" placeholder="New Username"></a>
+            </div>
+            <div class="input_wrap">
+              <label for="">Email</label>
+              <a><input type="text" class="form-control" placeholder="Email"></a>
+            </div>
+            <div class="input_wrap">
+              <label for="">Account Type</label>
+              <div class="dropdown">
+                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                  aria-expanded="false">Select Account Type<img src="assets/img/drop_down.svg" alt=""
+                    class="rotate"></a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Super Administrator</a></li>
+                  <li><a class="dropdown-item" href="#">Site Admin</a></li>
+                  <li><a class="dropdown-item" href="#">Business Owner</a></li>
+                  <li><a class="dropdown-item" href="#">Business Admin</a></li>
+                </ul>
+              </div>
+
+            </div>
+            <a class="btn confirm_btn flex_align pushme" id="foo">Confirm</a>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- modal add acount2 end -->
+  <!-- modal view  user start -->
+  <section class="modal_view_user">
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a href="" data-bs-toggle="modal" data-bs-dismiss="modal"> <img src="assets/img/left_arrow.svg" alt=""></a>
+            <img src="assets/img/X.svg" alt="" data-bs-dismiss="modal" aria-label="Close">
+          </div>
+          <div class="modal-body">
+            <h2>
+              View Users
+            </h2>
+            <div class="user_main">
+              <div class="user_inner">
+                <h4>
+                  Super Administrator
+                </h4>
+                <div class="user_name border_bg">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+                <div class="user_name">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="user_inner">
+                <h4>
+                  Contractor
+                </h4>
+                <div class="user_name border_bg">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+                <div class="user_name">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="user_inner">
+                <h4>
+                  Site Admin
+                </h4>
+                <div class="user_name border_bg">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+                <div class="user_name">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="user_inner">
+                <h4>
+                  Business Owner
+                </h4>
+                <div class="user_name border_bg">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+                <div class="user_name">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="user_inner">
+                <h4>
+                  Business Admin
+                </h4>
+                <div class="user_name border_bg">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+                <div class="user_name">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="user_inner">
+                <h4>
+                  Personal
+                </h4>
+                <div class="user_name border_bg">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+                <div class="user_name">
+                  <h5>
+                    John Doe
+                  </h5>
+                  <div class="img_wrap">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img src="assets/img/delete.svg"
+                        alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- modal view  user end -->
+  <!-- delete modal start  -->
+  <section class="modal_delete">
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img src="assets/img/X_black.svg" alt="" data-bs-dismiss="modal" aria-label="Close">
+          </div>
+          <div class="modal-body">
+            <h2>
+              Remove User
+            </h2>
+            <p>
+              Are you sure you want to remove <span>John Doe?</span>
+              By doing this, this person won’t have access to the account anymore
+            </p>
+            <div class="btn_wrap">
+              <a href="" class="btn cancel_btn flex_align">Cancel</a>
+              <a href="" class="btn confirm_btn flex_align">Confirm</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- delete modal end  -->
+  <!-- setting modal start  -->
+  <section class="modal_setting">
+    <div class="modal fade" id="ModalSetting" tabindex="-1" aria-labelledby="ModalSetting" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img src="assets/img/X.svg" alt="" data-bs-dismiss="modal" aria-label="Close">
+          </div>
+          <div class="modal-body">
+            <h2>
+              Account Settings
+            </h2>
+            <div class="input_wrap">
+              <div class="user_img">
+                <img src="assets/img/update_user.svg" alt="">
+              </div>
+              <label for="" data-bs-toggle="modal" data-bs-target="#UpdateName">Update Account Nickname</label>
+              <a href="" data-bs-toggle="modal" data-bs-target="#UpdateName"> <input type="text"
+                  class="form-control"></a>
+              <div class="right_arrow">
+                <img src="assets/img/right_arrow.svg" alt="">
+              </div>
+            </div>
+            <div class="input_wrap">
+              <div class="user_img">
+                <img src="assets/img/email.svg" alt="">
+              </div>
+              <label for="" data-bs-toggle="modal" data-bs-target="#UpdateEmail">Update Email</label>
+              <a href="" data-bs-toggle="modal" data-bs-target="#UpdateEmail"><input type="email"
+                  class="form-control"></a>
+              <div class="right_arrow">
+                <img src="assets/img/right_arrow.svg" alt="">
+              </div>
+            </div>
+            <div class="input_wrap">
+              <div class="user_img">
+                <img src="assets/img/change_pass.svg" alt="">
+              </div>
+              <label for="" data-bs-toggle="modal" data-bs-target="#ChangePassword">Change Password</label>
+              <a href="" data-bs-toggle="modal" data-bs-target="#ChangePassword"><input type="password"
+                  class="form-control"></a>
+              <div class="right_arrow">
+                <img src="assets/img/right_arrow.svg" alt="">
+              </div>
+            </div>
+            <div class="input_wrap">
+              <div class="user_img">
+                <img src="assets/img/NFT.svg" alt="">
+              </div>
+              <label for="">NFT Membership Confirmation</label>
+              <a href=""><input type="text" class="form-control"></a>
+              <div class="coming_soon">
+                <p>
+                  (Coming Soon)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- setting modal end  -->
+  <!-- modal update_name start -->
+  <!-- Modal -->
+  <section class="update_name">
+    <div class="modal fade" id="UpdateName" tabindex="-1" aria-labelledby="UpdateName" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-start">
+            <a href="" data-bs-toggle="modal" data-bs-dismiss="modal"> <img src="assets/img/left_arrow.svg" alt=""></a>
+          </div>
+          <div class="modal-body">
+            <h2>
+              Account Settings
+            </h2>
+            <div class="input_wrap">
+              <label for="">Update Account Nickname</label>
+              <a href=""> <input type="text" class="form-control" placeholder="Enter Your New Nickname"></a>
+            </div>
+            <a href="" class="btn confirm_btn flex_align">Confirm</a>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- modal update_name end -->
+  <!-- modal update_email start -->
+  <!-- Modal -->
+  <section class="update_name">
+    <div class="modal fade" id="UpdateEmail" tabindex="-1" aria-labelledby="UpdateEmail" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-start">
+            <a href="" data-bs-toggle="modal" data-bs-dismiss="modal"> <img src="assets/img/left_arrow.svg" alt=""></a>
+          </div>
+          <div class="modal-body">
+            <h2>
+              Account Settings
+            </h2>
+            <div class="input_wrap">
+              <label for="">Update Account Email</label>
+              <a href=""> <input type="email" class="form-control" placeholder="Enter your new email"></a>
+            </div>
+            <a href="" class="btn confirm_btn flex_align">Confirm</a>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- modal update_email end -->
+  <!-- modal change_password start -->
+  <!-- Modal -->
+  <section class="update_name">
+    <div class="modal fade" id="ChangePassword" tabindex="-1" aria-labelledby="ChangePassword" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-start">
+            <a href="" data-bs-toggle="modal" data-bs-dismiss="modal"> <img src="assets/img/left_arrow.svg" alt=""></a>
+          </div>
+          <div class="modal-body">
+            <h2>
+              Account Settings
+            </h2>
+            <div class="input_wrap">
+              <label for="">Change Password</label>
+              <a href=""> <input type="password" class="form-control" placeholder="Enter your new password"></a>
+            </div>
+            <div class="input_wrap mt-md-4">
+              <a href=""> <input type="password" class="form-control" placeholder="Confirm Password"></a>
+            </div>
+            <a href="" class="btn confirm_btn flex_align">Confirm</a>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- modal change_password end -->
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  <!-- <img src="assets/img/tick.svg" alt=""> -->
+</body>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  $('.pushme').on('click', () => {
+    $('.pushme').text('Confirmed')
+  })
+</script>
+<script>
+  $('#foo').click(function () {
+    $('.pushme').append(' <img src="assets/img/tick.svg" alt="">');
+  });
+</script>
+
+</html>
